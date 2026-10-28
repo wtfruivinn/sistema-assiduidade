@@ -7,28 +7,26 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # ============================================================
 # SEGURANÇA (Produção)
 # ============================================================
-# No servidor, a SECRET_KEY será definida como variável de ambiente.
-# Em desenvolvimento local, usa esta chave (não a partilhes).
 SECRET_KEY = os.environ.get(
     'DJANGO_SECRET_KEY', 
     '*)lv2+s7hoys2!gm6qm4mp4n8=$w%k42i!j7kc*l*4$d%2@8%&'
 )
 
-# ⚠️ No servidor, DEBUG tem de ser False.
 DEBUG = False
 
 # ============================================================
-# HOSTS PERMITIDOS
+# HOSTS PERMITIDOS (PythonAnywhere + Render)
 # ============================================================
-# O teu username no PythonAnywhere é 'ruivo999' (minúsculas).
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
     'ruivo999.pythonanywhere.com',
+    '.onrender.com',  # NOVO: Aceita qualquer subdomínio do Render
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     'https://ruivo999.pythonanywhere.com',
+    'https://*.onrender.com',  # NOVO: Aceita qualquer subdomínio do Render
 ]
 
 # ============================================================
@@ -48,7 +46,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # NOVO: Para servir estáticos em produção
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # Para servir estáticos em produção
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -108,17 +106,15 @@ USE_TZ = True
 # FICHEIROS ESTÁTICOS
 # ============================================================
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'  # Onde o collectstatic vai copiar os ficheiros
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-# Em desenvolvimento (DEBUG=True), o Django usa esta pasta.
-# Em produção, o WhiteNoise serve a partir do STATIC_ROOT.
 if DEBUG:
     STATICFILES_DIRS = [BASE_DIR / 'sistema' / 'static']
 else:
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # ============================================================
-# EMAIL (apenas para desenvolvimento)
+# EMAIL
 # ============================================================
 MAILERS = {
     'default': {
@@ -127,6 +123,6 @@ MAILERS = {
 }
 
 # ============================================================
-# TIPO DE CAMPO PADRÃO PARA CHAVES PRIMÁRIAS
+# TIPO DE CAMPO PADRÃO
 # ============================================================
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
