@@ -8,7 +8,7 @@ __pycache__/
 venv/
 
 # Base de dados local
-db.sqlite3
+#  db.sqlite3
 
 # Ficheiros estáticos coletados
 staticfiles/
