@@ -1,0 +1,7503 @@
+{
+  "recintos": [
+    {
+      "nome": "Campus Universidade Zambeze",
+      "latitude": -19.832163,
+      "longitude": 34.864891,
+      "raio_metros": 300
+    }
+  ],
+  "categorias": [
+    {
+      "designacao": "Assistente Universitário",
+      "valor_hora": 650,
+      "data_inicio": "2026-01-01"
+    },
+    {
+      "designacao": "Assistente Universitário Sénior",
+      "valor_hora": 750,
+      "data_inicio": "2026-01-01"
+    },
+    {
+      "designacao": "Professor Doutor",
+      "valor_hora": 950,
+      "data_inicio": "2026-01-01"
+    }
+  ],
+  "docentes": [
+    {
+      "numero_docente": "DOC001",
+      "nome": "Anakin Skywalker",
+      "categoria": "Assistente Universitário Sénior",
+      "departamento": "Informática",
+      "username": "docente20260001",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC002",
+      "nome": "Tony Stark",
+      "categoria": "Professor Doutor",
+      "departamento": "Informática",
+      "username": "docente20260002",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC003",
+      "nome": "Thomas Anderson",
+      "categoria": "Assistente Universitário",
+      "departamento": "Informática",
+      "username": "docente20260003",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC004",
+      "nome": "Marty McFly",
+      "categoria": "Assistente Universitário",
+      "departamento": "Informática",
+      "username": "docente20260004",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC005",
+      "nome": "Atticus Finch",
+      "categoria": "Professor Doutor",
+      "departamento": "Direito",
+      "username": "docente20260005",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC006",
+      "nome": "Elle Woods",
+      "categoria": "Assistente Universitário Sénior",
+      "departamento": "Direito",
+      "username": "docente20260006",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC007",
+      "nome": "Harvey Specter",
+      "categoria": "Assistente Universitário Sénior",
+      "departamento": "Direito",
+      "username": "docente20260007",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC008",
+      "nome": "Saul Goodman",
+      "categoria": "Assistente Universitário",
+      "departamento": "Direito",
+      "username": "docente20260008",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC009",
+      "nome": "Don Draper",
+      "categoria": "Professor Doutor",
+      "departamento": "Gestão",
+      "username": "docente20260009",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC010",
+      "nome": "Leslie Knope",
+      "categoria": "Assistente Universitário Sénior",
+      "departamento": "Gestão",
+      "username": "docente20260010",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC011",
+      "nome": "Michael Scott",
+      "categoria": "Assistente Universitário",
+      "departamento": "Gestão",
+      "username": "docente20260011",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC012",
+      "nome": "Tyrion Lannister",
+      "categoria": "Assistente Universitário",
+      "departamento": "Gestão",
+      "username": "docente20260012",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC013",
+      "nome": "Scrooge McDuck",
+      "categoria": "Professor Doutor",
+      "departamento": "Contabilidade",
+      "username": "docente20260013",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC014",
+      "nome": "Eugene Krabs",
+      "categoria": "Assistente Universitário Sénior",
+      "departamento": "Contabilidade",
+      "username": "docente20260014",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC015",
+      "nome": "Squidward Tentacles",
+      "categoria": "Assistente Universitário",
+      "departamento": "Contabilidade",
+      "username": "docente20260015",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC016",
+      "nome": "Oscar Martinez",
+      "categoria": "Assistente Universitário",
+      "departamento": "Contabilidade",
+      "username": "docente20260016",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC017",
+      "nome": "Bruce Wayne",
+      "categoria": "Professor Doutor",
+      "departamento": "Economia",
+      "username": "docente20260017",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC018",
+      "nome": "Lisa Simpson",
+      "categoria": "Assistente Universitário Sénior",
+      "departamento": "Economia",
+      "username": "docente20260018",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC019",
+      "nome": "Hermione Granger",
+      "categoria": "Assistente Universitário Sénior",
+      "departamento": "Economia",
+      "username": "docente20260019",
+      "password": "Teste@2026"
+    },
+    {
+      "numero_docente": "DOC020",
+      "nome": "Sheldon Cooper",
+      "categoria": "Assistente Universitário",
+      "departamento": "Economia",
+      "username": "docente20260020",
+      "password": "Teste@2026"
+    }
+  ],
+  "cursos": [
+    {
+      "codigo": "INF",
+      "nome": "Engenharia Informática",
+      "faculdade": "FCT",
+      "duracao_anos": 4
+    },
+    {
+      "codigo": "DIR",
+      "nome": "Direito",
+      "faculdade": "FD",
+      "duracao_anos": 4
+    },
+    {
+      "codigo": "GES",
+      "nome": "Gestão",
+      "faculdade": "FCSH",
+      "duracao_anos": 4
+    },
+    {
+      "codigo": "CAU",
+      "nome": "Contabilidade e Auditoria",
+      "faculdade": "FCSH",
+      "duracao_anos": 4
+    },
+    {
+      "codigo": "ECO",
+      "nome": "Economia",
+      "faculdade": "FCSH",
+      "duracao_anos": 4
+    }
+  ],
+  "ucs": [
+    {
+      "codigo": "INF101",
+      "nome": "Programação II",
+      "curso": "INF",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "INF102",
+      "nome": "Análise Matemática",
+      "curso": "INF",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "INF103",
+      "nome": "Microprocessadores",
+      "curso": "INF",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "INF104",
+      "nome": "Estruturas de Dados e Algoritmos",
+      "curso": "INF",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "INF105",
+      "nome": "Redes de Comunicações",
+      "curso": "INF",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "INF106",
+      "nome": "Engenharia de Software",
+      "curso": "INF",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "INF107",
+      "nome": "Compiladores",
+      "curso": "INF",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "INF108",
+      "nome": "Gestão Económica e Financeira",
+      "curso": "INF",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "DIR101",
+      "nome": "Introdução ao Estudo do Direito",
+      "curso": "DIR",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "DIR102",
+      "nome": "Direito Constitucional",
+      "curso": "DIR",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "DIR103",
+      "nome": "Direito Civil I",
+      "curso": "DIR",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "DIR104",
+      "nome": "Direito Penal",
+      "curso": "DIR",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "DIR105",
+      "nome": "Direito Administrativo",
+      "curso": "DIR",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "DIR106",
+      "nome": "Direito Comercial",
+      "curso": "DIR",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "DIR107",
+      "nome": "Direito do Trabalho",
+      "curso": "DIR",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "GES101",
+      "nome": "Introdução à Gestão",
+      "curso": "GES",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "GES102",
+      "nome": "Contabilidade Geral",
+      "curso": "GES",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "GES103",
+      "nome": "Marketing",
+      "curso": "GES",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "GES104",
+      "nome": "Gestão de Recursos Humanos",
+      "curso": "GES",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "GES105",
+      "nome": "Matemática Financeira",
+      "curso": "GES",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "GES106",
+      "nome": "Direito Comercial",
+      "curso": "GES",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "GES107",
+      "nome": "Gestão de Projectos",
+      "curso": "GES",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "CAU101",
+      "nome": "Contabilidade Financeira I",
+      "curso": "CAU",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "CAU102",
+      "nome": "Contabilidade Analítica",
+      "curso": "CAU",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "CAU103",
+      "nome": "Fiscalidade",
+      "curso": "CAU",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "CAU104",
+      "nome": "Auditoria Financeira",
+      "curso": "CAU",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "CAU105",
+      "nome": "Análise de Demonstrações Financeiras",
+      "curso": "CAU",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "CAU106",
+      "nome": "Direito Fiscal",
+      "curso": "CAU",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "CAU107",
+      "nome": "Controlo Interno",
+      "curso": "CAU",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "ECO101",
+      "nome": "Microeconomia",
+      "curso": "ECO",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "ECO102",
+      "nome": "Macroeconomia",
+      "curso": "ECO",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "ECO103",
+      "nome": "Estatística Económica",
+      "curso": "ECO",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "ECO104",
+      "nome": "Economia de Moçambique",
+      "curso": "ECO",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "ECO105",
+      "nome": "Economia Internacional",
+      "curso": "ECO",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "ECO106",
+      "nome": "Econometria",
+      "curso": "ECO",
+      "creditos": 6,
+      "carga_horaria": 60
+    },
+    {
+      "codigo": "ECO107",
+      "nome": "Finanças Públicas",
+      "curso": "ECO",
+      "creditos": 6,
+      "carga_horaria": 60
+    }
+  ],
+  "turmas": [
+    {
+      "codigo": "T-INF101",
+      "uc": "INF101",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-INF102",
+      "uc": "INF102",
+      "ano_letivo": "2026/2027",
+      "semestre": "2º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-INF103",
+      "uc": "INF103",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-INF104",
+      "uc": "INF104",
+      "ano_letivo": "2026/2027",
+      "semestre": "2º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-INF105",
+      "uc": "INF105",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-INF106",
+      "uc": "INF106",
+      "ano_letivo": "2026/2027",
+      "semestre": "2º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-INF107",
+      "uc": "INF107",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-INF108",
+      "uc": "INF108",
+      "ano_letivo": "2026/2027",
+      "semestre": "2º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-DIR101",
+      "uc": "DIR101",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-DIR102",
+      "uc": "DIR102",
+      "ano_letivo": "2026/2027",
+      "semestre": "2º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-DIR103",
+      "uc": "DIR103",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-DIR104",
+      "uc": "DIR104",
+      "ano_letivo": "2026/2027",
+      "semestre": "2º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-DIR105",
+      "uc": "DIR105",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-DIR106",
+      "uc": "DIR106",
+      "ano_letivo": "2026/2027",
+      "semestre": "2º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-DIR107",
+      "uc": "DIR107",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-GES101",
+      "uc": "GES101",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-GES102",
+      "uc": "GES102",
+      "ano_letivo": "2026/2027",
+      "semestre": "2º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-GES103",
+      "uc": "GES103",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-GES104",
+      "uc": "GES104",
+      "ano_letivo": "2026/2027",
+      "semestre": "2º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-GES105",
+      "uc": "GES105",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-GES106",
+      "uc": "GES106",
+      "ano_letivo": "2026/2027",
+      "semestre": "2º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-GES107",
+      "uc": "GES107",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-CAU101",
+      "uc": "CAU101",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-CAU102",
+      "uc": "CAU102",
+      "ano_letivo": "2026/2027",
+      "semestre": "2º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-CAU103",
+      "uc": "CAU103",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-CAU104",
+      "uc": "CAU104",
+      "ano_letivo": "2026/2027",
+      "semestre": "2º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-CAU105",
+      "uc": "CAU105",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-CAU106",
+      "uc": "CAU106",
+      "ano_letivo": "2026/2027",
+      "semestre": "2º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-CAU107",
+      "uc": "CAU107",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-ECO101",
+      "uc": "ECO101",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-ECO102",
+      "uc": "ECO102",
+      "ano_letivo": "2026/2027",
+      "semestre": "2º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-ECO103",
+      "uc": "ECO103",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-ECO104",
+      "uc": "ECO104",
+      "ano_letivo": "2026/2027",
+      "semestre": "2º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-ECO105",
+      "uc": "ECO105",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-ECO106",
+      "uc": "ECO106",
+      "ano_letivo": "2026/2027",
+      "semestre": "2º",
+      "capacidade": 80
+    },
+    {
+      "codigo": "T-ECO107",
+      "uc": "ECO107",
+      "ano_letivo": "2026/2027",
+      "semestre": "1º",
+      "capacidade": 80
+    }
+  ],
+  "salas": [
+    {
+      "codigo": "NE-101",
+      "edificio": "Novo Edifício",
+      "piso": "1",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8324677,
+      "longitude": 34.864893,
+      "qr_code": "QR-NE-101"
+    },
+    {
+      "codigo": "NE-102",
+      "edificio": "Novo Edifício",
+      "piso": "1",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8321535,
+      "longitude": 34.865179,
+      "qr_code": "QR-NE-102"
+    },
+    {
+      "codigo": "NE-103",
+      "edificio": "Novo Edifício",
+      "piso": "1",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8324809,
+      "longitude": 34.8646696,
+      "qr_code": "QR-NE-103"
+    },
+    {
+      "codigo": "NE-104",
+      "edificio": "Novo Edifício",
+      "piso": "1",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8320822,
+      "longitude": 34.8649362,
+      "qr_code": "QR-NE-104"
+    },
+    {
+      "codigo": "NE-105",
+      "edificio": "Novo Edifício",
+      "piso": "1",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8319363,
+      "longitude": 34.8649292,
+      "qr_code": "QR-NE-105"
+    },
+    {
+      "codigo": "NE-106",
+      "edificio": "Novo Edifício",
+      "piso": "2",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8319786,
+      "longitude": 34.8651055,
+      "qr_code": "QR-NE-106"
+    },
+    {
+      "codigo": "NE-107",
+      "edificio": "Novo Edifício",
+      "piso": "2",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8319622,
+      "longitude": 34.8649602,
+      "qr_code": "QR-NE-107"
+    },
+    {
+      "codigo": "NE-108",
+      "edificio": "Novo Edifício",
+      "piso": "2",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8323711,
+      "longitude": 34.8649824,
+      "qr_code": "QR-NE-108"
+    },
+    {
+      "codigo": "NE-109",
+      "edificio": "Novo Edifício",
+      "piso": "2",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8324744,
+      "longitude": 34.8651444,
+      "qr_code": "QR-NE-109"
+    },
+    {
+      "codigo": "NE-110",
+      "edificio": "Novo Edifício",
+      "piso": "2",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8322033,
+      "longitude": 34.8651428,
+      "qr_code": "QR-NE-110"
+    },
+    {
+      "codigo": "AE-101",
+      "edificio": "Antigo Edifício",
+      "piso": "1",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8320149,
+      "longitude": 34.8650345,
+      "qr_code": "QR-AE-101"
+    },
+    {
+      "codigo": "AE-102",
+      "edificio": "Antigo Edifício",
+      "piso": "1",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8323948,
+      "longitude": 34.8646922,
+      "qr_code": "QR-AE-102"
+    },
+    {
+      "codigo": "AE-103",
+      "edificio": "Antigo Edifício",
+      "piso": "1",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8317791,
+      "longitude": 34.8652345,
+      "qr_code": "QR-AE-103"
+    },
+    {
+      "codigo": "AE-104",
+      "edificio": "Antigo Edifício",
+      "piso": "1",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8319189,
+      "longitude": 34.8652907,
+      "qr_code": "QR-AE-104"
+    },
+    {
+      "codigo": "AE-105",
+      "edificio": "Antigo Edifício",
+      "piso": "1",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8321521,
+      "longitude": 34.8645521,
+      "qr_code": "QR-AE-105"
+    },
+    {
+      "codigo": "AE-106",
+      "edificio": "Antigo Edifício",
+      "piso": "2",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8322907,
+      "longitude": 34.864937,
+      "qr_code": "QR-AE-106"
+    },
+    {
+      "codigo": "AE-107",
+      "edificio": "Antigo Edifício",
+      "piso": "2",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8323293,
+      "longitude": 34.864857,
+      "qr_code": "QR-AE-107"
+    },
+    {
+      "codigo": "AE-108",
+      "edificio": "Antigo Edifício",
+      "piso": "2",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8318618,
+      "longitude": 34.8650542,
+      "qr_code": "QR-AE-108"
+    },
+    {
+      "codigo": "AE-109",
+      "edificio": "Antigo Edifício",
+      "piso": "2",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8321011,
+      "longitude": 34.8645108,
+      "qr_code": "QR-AE-109"
+    },
+    {
+      "codigo": "AE-110",
+      "edificio": "Antigo Edifício",
+      "piso": "2",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8319943,
+      "longitude": 34.8647818,
+      "qr_code": "QR-AE-110"
+    },
+    {
+      "codigo": "FD-101",
+      "edificio": "Faculdade de Direito",
+      "piso": "1",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8322252,
+      "longitude": 34.86481,
+      "qr_code": "QR-FD-101"
+    },
+    {
+      "codigo": "FD-102",
+      "edificio": "Faculdade de Direito",
+      "piso": "1",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8320944,
+      "longitude": 34.8648898,
+      "qr_code": "QR-FD-102"
+    },
+    {
+      "codigo": "FD-103",
+      "edificio": "Faculdade de Direito",
+      "piso": "1",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8324698,
+      "longitude": 34.8648961,
+      "qr_code": "QR-FD-103"
+    },
+    {
+      "codigo": "FD-104",
+      "edificio": "Faculdade de Direito",
+      "piso": "2",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8319629,
+      "longitude": 34.8649711,
+      "qr_code": "QR-FD-104"
+    },
+    {
+      "codigo": "FD-105",
+      "edificio": "Faculdade de Direito",
+      "piso": "2",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8321702,
+      "longitude": 34.8652244,
+      "qr_code": "QR-FD-105"
+    },
+    {
+      "codigo": "FD-106",
+      "edificio": "Faculdade de Direito",
+      "piso": "2",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8323561,
+      "longitude": 34.864827,
+      "qr_code": "QR-FD-106"
+    },
+    {
+      "codigo": "FD-107",
+      "edificio": "Faculdade de Direito",
+      "piso": "2",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.831822,
+      "longitude": 34.8648744,
+      "qr_code": "QR-FD-107"
+    },
+    {
+      "codigo": "ANF-A",
+      "edificio": "Anfiteatros",
+      "piso": "0",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8321486,
+      "longitude": 34.8645113,
+      "qr_code": "QR-ANF-A"
+    },
+    {
+      "codigo": "ANF-B",
+      "edificio": "Anfiteatros",
+      "piso": "0",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8323834,
+      "longitude": 34.8645942,
+      "qr_code": "QR-ANF-B"
+    },
+    {
+      "codigo": "ANF-C",
+      "edificio": "Anfiteatros",
+      "piso": "0",
+      "recinto": "Campus Universidade Zambeze",
+      "latitude": -19.8325239,
+      "longitude": 34.8650547,
+      "qr_code": "QR-ANF-C"
+    }
+  ],
+  "estudantes": [
+    {
+      "numero_estudante": "E0001",
+      "nome": "Vegeta Monkey",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0001@exemplo.test",
+      "turmas": [
+        "T-INF101",
+        "T-INF102",
+        "T-INF103",
+        "T-INF104"
+      ]
+    },
+    {
+      "numero_estudante": "E0002",
+      "nome": "Luffy Skyrunner",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0002@exemplo.test",
+      "turmas": [
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104"
+      ]
+    },
+    {
+      "numero_estudante": "E0003",
+      "nome": "Sam Kenobi",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0003@exemplo.test",
+      "turmas": [
+        "T-GES101",
+        "T-GES102",
+        "T-GES103",
+        "T-GES104"
+      ]
+    },
+    {
+      "numero_estudante": "E0004",
+      "nome": "Frodo Kusanagi",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0004@exemplo.test",
+      "turmas": [
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104"
+      ]
+    },
+    {
+      "numero_estudante": "E0005",
+      "nome": "Frodo Hyrule",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0005@exemplo.test",
+      "turmas": [
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104"
+      ]
+    },
+    {
+      "numero_estudante": "E0006",
+      "nome": "Ron Haruno",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0006@exemplo.test",
+      "turmas": [
+        "T-INF102",
+        "T-INF103",
+        "T-INF104",
+        "T-INF105"
+      ]
+    },
+    {
+      "numero_estudante": "E0007",
+      "nome": "Vegeta Weasley",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0007@exemplo.test",
+      "turmas": [
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105"
+      ]
+    },
+    {
+      "numero_estudante": "E0008",
+      "nome": "Harry Hyrule",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0008@exemplo.test",
+      "turmas": [
+        "T-GES102",
+        "T-GES103",
+        "T-GES104",
+        "T-GES105"
+      ]
+    },
+    {
+      "numero_estudante": "E0009",
+      "nome": "Goku Roronoa",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0009@exemplo.test",
+      "turmas": [
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105"
+      ]
+    },
+    {
+      "numero_estudante": "E0010",
+      "nome": "Aragorn Gamgee",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0010@exemplo.test",
+      "turmas": [
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105"
+      ]
+    },
+    {
+      "numero_estudante": "E0011",
+      "nome": "Luke Skyrunner",
+      "curso": "INF",
+      "ano_ingresso": 2023,
+      "email": "e0011@exemplo.test",
+      "turmas": [
+        "T-INF103",
+        "T-INF104",
+        "T-INF105",
+        "T-INF106"
+      ]
+    },
+    {
+      "numero_estudante": "E0012",
+      "nome": "Han Brown",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0012@exemplo.test",
+      "turmas": [
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106"
+      ]
+    },
+    {
+      "numero_estudante": "E0013",
+      "nome": "Sakura Roronoa",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0013@exemplo.test",
+      "turmas": [
+        "T-GES103",
+        "T-GES104",
+        "T-GES105",
+        "T-GES106"
+      ]
+    },
+    {
+      "numero_estudante": "E0014",
+      "nome": "Rey Brown",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0014@exemplo.test",
+      "turmas": [
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106"
+      ]
+    },
+    {
+      "numero_estudante": "E0015",
+      "nome": "Finn Ketchum",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0015@exemplo.test",
+      "turmas": [
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106"
+      ]
+    },
+    {
+      "numero_estudante": "E0016",
+      "nome": "Sakura Starfall",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0016@exemplo.test",
+      "turmas": [
+        "T-INF104",
+        "T-INF105",
+        "T-INF106",
+        "T-INF107"
+      ]
+    },
+    {
+      "numero_estudante": "E0017",
+      "nome": "Simba Haruno",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0017@exemplo.test",
+      "turmas": [
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107"
+      ]
+    },
+    {
+      "numero_estudante": "E0018",
+      "nome": "Zelda Kenobi",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0018@exemplo.test",
+      "turmas": [
+        "T-GES104",
+        "T-GES105",
+        "T-GES106",
+        "T-GES107"
+      ]
+    },
+    {
+      "numero_estudante": "E0019",
+      "nome": "Mario Lion",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0019@exemplo.test",
+      "turmas": [
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107"
+      ]
+    },
+    {
+      "numero_estudante": "E0020",
+      "nome": "Aragorn Baggins",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0020@exemplo.test",
+      "turmas": [
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107"
+      ]
+    },
+    {
+      "numero_estudante": "E0021",
+      "nome": "Vegeta Organa",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0021@exemplo.test",
+      "turmas": [
+        "T-INF105",
+        "T-INF106",
+        "T-INF107",
+        "T-INF108"
+      ]
+    },
+    {
+      "numero_estudante": "E0022",
+      "nome": "Zoro Dragon",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0022@exemplo.test",
+      "turmas": [
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101"
+      ]
+    },
+    {
+      "numero_estudante": "E0023",
+      "nome": "Ash Kenobi",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0023@exemplo.test",
+      "turmas": [
+        "T-GES105",
+        "T-GES106",
+        "T-GES107",
+        "T-GES101"
+      ]
+    },
+    {
+      "numero_estudante": "E0024",
+      "nome": "Rey Gamgee",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0024@exemplo.test",
+      "turmas": [
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101"
+      ]
+    },
+    {
+      "numero_estudante": "E0025",
+      "nome": "Sasuke Organa",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0025@exemplo.test",
+      "turmas": [
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101"
+      ]
+    },
+    {
+      "numero_estudante": "E0026",
+      "nome": "Ron Gamgee",
+      "curso": "INF",
+      "ano_ingresso": 2023,
+      "email": "e0026@exemplo.test",
+      "turmas": [
+        "T-INF106",
+        "T-INF107",
+        "T-INF108",
+        "T-INF101"
+      ]
+    },
+    {
+      "numero_estudante": "E0027",
+      "nome": "Nala Dragon",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0027@exemplo.test",
+      "turmas": [
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102"
+      ]
+    },
+    {
+      "numero_estudante": "E0028",
+      "nome": "Misty Monkey",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0028@exemplo.test",
+      "turmas": [
+        "T-GES106",
+        "T-GES107",
+        "T-GES101",
+        "T-GES102"
+      ]
+    },
+    {
+      "numero_estudante": "E0029",
+      "nome": "Sakura Solo",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0029@exemplo.test",
+      "turmas": [
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102"
+      ]
+    },
+    {
+      "numero_estudante": "E0030",
+      "nome": "Sakura Weasley",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0030@exemplo.test",
+      "turmas": [
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102"
+      ]
+    },
+    {
+      "numero_estudante": "E0031",
+      "nome": "Aragorn Weasley",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0031@exemplo.test",
+      "turmas": [
+        "T-INF107",
+        "T-INF108",
+        "T-INF101",
+        "T-INF102"
+      ]
+    },
+    {
+      "numero_estudante": "E0032",
+      "nome": "Luke Ketchum",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0032@exemplo.test",
+      "turmas": [
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103"
+      ]
+    },
+    {
+      "numero_estudante": "E0033",
+      "nome": "Misty Starfall",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0033@exemplo.test",
+      "turmas": [
+        "T-GES107",
+        "T-GES101",
+        "T-GES102",
+        "T-GES103"
+      ]
+    },
+    {
+      "numero_estudante": "E0034",
+      "nome": "Finn Hyrule",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0034@exemplo.test",
+      "turmas": [
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103"
+      ]
+    },
+    {
+      "numero_estudante": "E0035",
+      "nome": "Zoro Potter",
+      "curso": "ECO",
+      "ano_ingresso": 2025,
+      "email": "e0035@exemplo.test",
+      "turmas": [
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103"
+      ]
+    },
+    {
+      "numero_estudante": "E0036",
+      "nome": "Luffy Baggins",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0036@exemplo.test",
+      "turmas": [
+        "T-INF108",
+        "T-INF101",
+        "T-INF102",
+        "T-INF103"
+      ]
+    },
+    {
+      "numero_estudante": "E0037",
+      "nome": "Leia Uchiha",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0037@exemplo.test",
+      "turmas": [
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104"
+      ]
+    },
+    {
+      "numero_estudante": "E0038",
+      "nome": "Zelda Baggins",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0038@exemplo.test",
+      "turmas": [
+        "T-GES101",
+        "T-GES102",
+        "T-GES103",
+        "T-GES104"
+      ]
+    },
+    {
+      "numero_estudante": "E0039",
+      "nome": "Sam Hyrule",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0039@exemplo.test",
+      "turmas": [
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104"
+      ]
+    },
+    {
+      "numero_estudante": "E0040",
+      "nome": "Ron Brown",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0040@exemplo.test",
+      "turmas": [
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104"
+      ]
+    },
+    {
+      "numero_estudante": "E0041",
+      "nome": "Han Starfall",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0041@exemplo.test",
+      "turmas": [
+        "T-INF101",
+        "T-INF102",
+        "T-INF103",
+        "T-INF104"
+      ]
+    },
+    {
+      "numero_estudante": "E0042",
+      "nome": "Sakura Uchiha",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0042@exemplo.test",
+      "turmas": [
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105"
+      ]
+    },
+    {
+      "numero_estudante": "E0043",
+      "nome": "Misty Kenobi",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0043@exemplo.test",
+      "turmas": [
+        "T-GES102",
+        "T-GES103",
+        "T-GES104",
+        "T-GES105"
+      ]
+    },
+    {
+      "numero_estudante": "E0044",
+      "nome": "Nala Starfall",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0044@exemplo.test",
+      "turmas": [
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105"
+      ]
+    },
+    {
+      "numero_estudante": "E0045",
+      "nome": "Link Solo",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0045@exemplo.test",
+      "turmas": [
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105"
+      ]
+    },
+    {
+      "numero_estudante": "E0046",
+      "nome": "Rey Monkey",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0046@exemplo.test",
+      "turmas": [
+        "T-INF102",
+        "T-INF103",
+        "T-INF104",
+        "T-INF105"
+      ]
+    },
+    {
+      "numero_estudante": "E0047",
+      "nome": "Sakura Haruno",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0047@exemplo.test",
+      "turmas": [
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106"
+      ]
+    },
+    {
+      "numero_estudante": "E0048",
+      "nome": "Sakura Brown",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0048@exemplo.test",
+      "turmas": [
+        "T-GES103",
+        "T-GES104",
+        "T-GES105",
+        "T-GES106"
+      ]
+    },
+    {
+      "numero_estudante": "E0049",
+      "nome": "Luffy Uchiha",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0049@exemplo.test",
+      "turmas": [
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106"
+      ]
+    },
+    {
+      "numero_estudante": "E0050",
+      "nome": "Sam Haruno",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0050@exemplo.test",
+      "turmas": [
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106"
+      ]
+    },
+    {
+      "numero_estudante": "E0051",
+      "nome": "Leia Dragon",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0051@exemplo.test",
+      "turmas": [
+        "T-INF103",
+        "T-INF104",
+        "T-INF105",
+        "T-INF106"
+      ]
+    },
+    {
+      "numero_estudante": "E0052",
+      "nome": "Misty Uzumaki",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0052@exemplo.test",
+      "turmas": [
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107"
+      ]
+    },
+    {
+      "numero_estudante": "E0053",
+      "nome": "Sasuke Kusanagi",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0053@exemplo.test",
+      "turmas": [
+        "T-GES104",
+        "T-GES105",
+        "T-GES106",
+        "T-GES107"
+      ]
+    },
+    {
+      "numero_estudante": "E0054",
+      "nome": "Han Roronoa",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0054@exemplo.test",
+      "turmas": [
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107"
+      ]
+    },
+    {
+      "numero_estudante": "E0055",
+      "nome": "Aragorn Solo",
+      "curso": "ECO",
+      "ano_ingresso": 2025,
+      "email": "e0055@exemplo.test",
+      "turmas": [
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107"
+      ]
+    },
+    {
+      "numero_estudante": "E0056",
+      "nome": "Ron Uchiha",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0056@exemplo.test",
+      "turmas": [
+        "T-INF104",
+        "T-INF105",
+        "T-INF106",
+        "T-INF107"
+      ]
+    },
+    {
+      "numero_estudante": "E0057",
+      "nome": "Leia Hyrule",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0057@exemplo.test",
+      "turmas": [
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101"
+      ]
+    },
+    {
+      "numero_estudante": "E0058",
+      "nome": "Vegeta Lion",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0058@exemplo.test",
+      "turmas": [
+        "T-GES105",
+        "T-GES106",
+        "T-GES107",
+        "T-GES101"
+      ]
+    },
+    {
+      "numero_estudante": "E0059",
+      "nome": "Han Lion",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0059@exemplo.test",
+      "turmas": [
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101"
+      ]
+    },
+    {
+      "numero_estudante": "E0060",
+      "nome": "Goku Skyrunner",
+      "curso": "ECO",
+      "ano_ingresso": 2025,
+      "email": "e0060@exemplo.test",
+      "turmas": [
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101"
+      ]
+    },
+    {
+      "numero_estudante": "E0061",
+      "nome": "Simba Brown",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0061@exemplo.test",
+      "turmas": [
+        "T-INF105",
+        "T-INF106",
+        "T-INF107",
+        "T-INF108"
+      ]
+    },
+    {
+      "numero_estudante": "E0062",
+      "nome": "Sam Gamgee",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0062@exemplo.test",
+      "turmas": [
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102"
+      ]
+    },
+    {
+      "numero_estudante": "E0063",
+      "nome": "Luke Gamgee",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0063@exemplo.test",
+      "turmas": [
+        "T-GES106",
+        "T-GES107",
+        "T-GES101",
+        "T-GES102"
+      ]
+    },
+    {
+      "numero_estudante": "E0064",
+      "nome": "Naruto Ketchum",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0064@exemplo.test",
+      "turmas": [
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102"
+      ]
+    },
+    {
+      "numero_estudante": "E0065",
+      "nome": "Finn Lion",
+      "curso": "ECO",
+      "ano_ingresso": 2025,
+      "email": "e0065@exemplo.test",
+      "turmas": [
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102"
+      ]
+    },
+    {
+      "numero_estudante": "E0066",
+      "nome": "Leia Skyrunner",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0066@exemplo.test",
+      "turmas": [
+        "T-INF106",
+        "T-INF107",
+        "T-INF108",
+        "T-INF101"
+      ]
+    },
+    {
+      "numero_estudante": "E0067",
+      "nome": "Frodo Gamgee",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0067@exemplo.test",
+      "turmas": [
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103"
+      ]
+    },
+    {
+      "numero_estudante": "E0068",
+      "nome": "Sasuke Potter",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0068@exemplo.test",
+      "turmas": [
+        "T-GES107",
+        "T-GES101",
+        "T-GES102",
+        "T-GES103"
+      ]
+    },
+    {
+      "numero_estudante": "E0069",
+      "nome": "Simba Skyrunner",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0069@exemplo.test",
+      "turmas": [
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103"
+      ]
+    },
+    {
+      "numero_estudante": "E0070",
+      "nome": "Sasuke Monkey",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0070@exemplo.test",
+      "turmas": [
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103"
+      ]
+    },
+    {
+      "numero_estudante": "E0071",
+      "nome": "Vegeta Solo",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0071@exemplo.test",
+      "turmas": [
+        "T-INF107",
+        "T-INF108",
+        "T-INF101",
+        "T-INF102"
+      ]
+    },
+    {
+      "numero_estudante": "E0072",
+      "nome": "Finn Potter",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0072@exemplo.test",
+      "turmas": [
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104"
+      ]
+    },
+    {
+      "numero_estudante": "E0073",
+      "nome": "Mario Monkey",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0073@exemplo.test",
+      "turmas": [
+        "T-GES101",
+        "T-GES102",
+        "T-GES103",
+        "T-GES104"
+      ]
+    },
+    {
+      "numero_estudante": "E0074",
+      "nome": "Sam Dragon",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0074@exemplo.test",
+      "turmas": [
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104"
+      ]
+    },
+    {
+      "numero_estudante": "E0075",
+      "nome": "Sasuke Uchiha",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0075@exemplo.test",
+      "turmas": [
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104"
+      ]
+    },
+    {
+      "numero_estudante": "E0076",
+      "nome": "Misty Lion",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0076@exemplo.test",
+      "turmas": [
+        "T-INF108",
+        "T-INF101",
+        "T-INF102",
+        "T-INF103"
+      ]
+    },
+    {
+      "numero_estudante": "E0077",
+      "nome": "Leia Uzumaki",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0077@exemplo.test",
+      "turmas": [
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105"
+      ]
+    },
+    {
+      "numero_estudante": "E0078",
+      "nome": "Luffy Solo",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0078@exemplo.test",
+      "turmas": [
+        "T-GES102",
+        "T-GES103",
+        "T-GES104",
+        "T-GES105"
+      ]
+    },
+    {
+      "numero_estudante": "E0079",
+      "nome": "Leia Starfall",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0079@exemplo.test",
+      "turmas": [
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105"
+      ]
+    },
+    {
+      "numero_estudante": "E0080",
+      "nome": "Vegeta Gamgee",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0080@exemplo.test",
+      "turmas": [
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105"
+      ]
+    },
+    {
+      "numero_estudante": "E0081",
+      "nome": "Link Kenobi",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0081@exemplo.test",
+      "turmas": [
+        "T-INF101",
+        "T-INF102",
+        "T-INF103",
+        "T-INF104"
+      ]
+    },
+    {
+      "numero_estudante": "E0082",
+      "nome": "Sam Uchiha",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0082@exemplo.test",
+      "turmas": [
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106"
+      ]
+    },
+    {
+      "numero_estudante": "E0083",
+      "nome": "Naruto Brown",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0083@exemplo.test",
+      "turmas": [
+        "T-GES103",
+        "T-GES104",
+        "T-GES105",
+        "T-GES106"
+      ]
+    },
+    {
+      "numero_estudante": "E0084",
+      "nome": "Misty Kusanagi",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0084@exemplo.test",
+      "turmas": [
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106"
+      ]
+    },
+    {
+      "numero_estudante": "E0085",
+      "nome": "Ron Kenobi",
+      "curso": "ECO",
+      "ano_ingresso": 2025,
+      "email": "e0085@exemplo.test",
+      "turmas": [
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106"
+      ]
+    },
+    {
+      "numero_estudante": "E0086",
+      "nome": "Han Potter",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0086@exemplo.test",
+      "turmas": [
+        "T-INF102",
+        "T-INF103",
+        "T-INF104",
+        "T-INF105"
+      ]
+    },
+    {
+      "numero_estudante": "E0087",
+      "nome": "Misty Uchiha",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0087@exemplo.test",
+      "turmas": [
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107"
+      ]
+    },
+    {
+      "numero_estudante": "E0088",
+      "nome": "Ron Baggins",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0088@exemplo.test",
+      "turmas": [
+        "T-GES104",
+        "T-GES105",
+        "T-GES106",
+        "T-GES107"
+      ]
+    },
+    {
+      "numero_estudante": "E0089",
+      "nome": "Goku Starfall",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0089@exemplo.test",
+      "turmas": [
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107"
+      ]
+    },
+    {
+      "numero_estudante": "E0090",
+      "nome": "Misty Potter",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0090@exemplo.test",
+      "turmas": [
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107"
+      ]
+    },
+    {
+      "numero_estudante": "E0091",
+      "nome": "Rey Solo",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0091@exemplo.test",
+      "turmas": [
+        "T-INF103",
+        "T-INF104",
+        "T-INF105",
+        "T-INF106"
+      ]
+    },
+    {
+      "numero_estudante": "E0092",
+      "nome": "Leia Kenobi",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0092@exemplo.test",
+      "turmas": [
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101"
+      ]
+    },
+    {
+      "numero_estudante": "E0093",
+      "nome": "Harry Kusanagi",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0093@exemplo.test",
+      "turmas": [
+        "T-GES105",
+        "T-GES106",
+        "T-GES107",
+        "T-GES101"
+      ]
+    },
+    {
+      "numero_estudante": "E0094",
+      "nome": "Vegeta Kusanagi",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0094@exemplo.test",
+      "turmas": [
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101"
+      ]
+    },
+    {
+      "numero_estudante": "E0095",
+      "nome": "Han Solo",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0095@exemplo.test",
+      "turmas": [
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101"
+      ]
+    },
+    {
+      "numero_estudante": "E0096",
+      "nome": "Luke Starfall",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0096@exemplo.test",
+      "turmas": [
+        "T-INF104",
+        "T-INF105",
+        "T-INF106",
+        "T-INF107"
+      ]
+    },
+    {
+      "numero_estudante": "E0097",
+      "nome": "Simba Hyrule",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0097@exemplo.test",
+      "turmas": [
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102"
+      ]
+    },
+    {
+      "numero_estudante": "E0098",
+      "nome": "Finn Weasley",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0098@exemplo.test",
+      "turmas": [
+        "T-GES106",
+        "T-GES107",
+        "T-GES101",
+        "T-GES102"
+      ]
+    },
+    {
+      "numero_estudante": "E0099",
+      "nome": "Goku Monkey",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0099@exemplo.test",
+      "turmas": [
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102"
+      ]
+    },
+    {
+      "numero_estudante": "E0100",
+      "nome": "Naruto Kusanagi",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0100@exemplo.test",
+      "turmas": [
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102"
+      ]
+    },
+    {
+      "numero_estudante": "E0101",
+      "nome": "Luffy Kusanagi",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0101@exemplo.test",
+      "turmas": [
+        "T-INF105",
+        "T-INF106",
+        "T-INF107",
+        "T-INF108"
+      ]
+    },
+    {
+      "numero_estudante": "E0102",
+      "nome": "Luffy Haruno",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0102@exemplo.test",
+      "turmas": [
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103"
+      ]
+    },
+    {
+      "numero_estudante": "E0103",
+      "nome": "Sasuke Roronoa",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0103@exemplo.test",
+      "turmas": [
+        "T-GES107",
+        "T-GES101",
+        "T-GES102",
+        "T-GES103"
+      ]
+    },
+    {
+      "numero_estudante": "E0104",
+      "nome": "Luke Uchiha",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0104@exemplo.test",
+      "turmas": [
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103"
+      ]
+    },
+    {
+      "numero_estudante": "E0105",
+      "nome": "Ron Solo",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0105@exemplo.test",
+      "turmas": [
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103"
+      ]
+    },
+    {
+      "numero_estudante": "E0106",
+      "nome": "Ron Starfall",
+      "curso": "INF",
+      "ano_ingresso": 2023,
+      "email": "e0106@exemplo.test",
+      "turmas": [
+        "T-INF106",
+        "T-INF107",
+        "T-INF108",
+        "T-INF101"
+      ]
+    },
+    {
+      "numero_estudante": "E0107",
+      "nome": "Ron Kusanagi",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0107@exemplo.test",
+      "turmas": [
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104"
+      ]
+    },
+    {
+      "numero_estudante": "E0108",
+      "nome": "Vegeta Baggins",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0108@exemplo.test",
+      "turmas": [
+        "T-GES101",
+        "T-GES102",
+        "T-GES103",
+        "T-GES104"
+      ]
+    },
+    {
+      "numero_estudante": "E0109",
+      "nome": "Sakura Potter",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0109@exemplo.test",
+      "turmas": [
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104"
+      ]
+    },
+    {
+      "numero_estudante": "E0110",
+      "nome": "Simba Kusanagi",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0110@exemplo.test",
+      "turmas": [
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104"
+      ]
+    },
+    {
+      "numero_estudante": "E0111",
+      "nome": "Goku Solo",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0111@exemplo.test",
+      "turmas": [
+        "T-INF107",
+        "T-INF108",
+        "T-INF101",
+        "T-INF102"
+      ]
+    },
+    {
+      "numero_estudante": "E0112",
+      "nome": "Zelda Roronoa",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0112@exemplo.test",
+      "turmas": [
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105"
+      ]
+    },
+    {
+      "numero_estudante": "E0113",
+      "nome": "Leia Brown",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0113@exemplo.test",
+      "turmas": [
+        "T-GES102",
+        "T-GES103",
+        "T-GES104",
+        "T-GES105"
+      ]
+    },
+    {
+      "numero_estudante": "E0114",
+      "nome": "Naruto Roronoa",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0114@exemplo.test",
+      "turmas": [
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105"
+      ]
+    },
+    {
+      "numero_estudante": "E0115",
+      "nome": "Mario Hyrule",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0115@exemplo.test",
+      "turmas": [
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105"
+      ]
+    },
+    {
+      "numero_estudante": "E0116",
+      "nome": "Zoro Monkey",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0116@exemplo.test",
+      "turmas": [
+        "T-INF108",
+        "T-INF101",
+        "T-INF102",
+        "T-INF103"
+      ]
+    },
+    {
+      "numero_estudante": "E0117",
+      "nome": "Simba Roronoa",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0117@exemplo.test",
+      "turmas": [
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106"
+      ]
+    },
+    {
+      "numero_estudante": "E0118",
+      "nome": "Finn Monkey",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0118@exemplo.test",
+      "turmas": [
+        "T-GES103",
+        "T-GES104",
+        "T-GES105",
+        "T-GES106"
+      ]
+    },
+    {
+      "numero_estudante": "E0119",
+      "nome": "Link Haruno",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0119@exemplo.test",
+      "turmas": [
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106"
+      ]
+    },
+    {
+      "numero_estudante": "E0120",
+      "nome": "Sasuke Solo",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0120@exemplo.test",
+      "turmas": [
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106"
+      ]
+    },
+    {
+      "numero_estudante": "E0121",
+      "nome": "Nala Brown",
+      "curso": "INF",
+      "ano_ingresso": 2023,
+      "email": "e0121@exemplo.test",
+      "turmas": [
+        "T-INF101",
+        "T-INF102",
+        "T-INF103",
+        "T-INF104"
+      ]
+    },
+    {
+      "numero_estudante": "E0122",
+      "nome": "Ron Roronoa",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0122@exemplo.test",
+      "turmas": [
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107"
+      ]
+    },
+    {
+      "numero_estudante": "E0123",
+      "nome": "Luke Solo",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0123@exemplo.test",
+      "turmas": [
+        "T-GES104",
+        "T-GES105",
+        "T-GES106",
+        "T-GES107"
+      ]
+    },
+    {
+      "numero_estudante": "E0124",
+      "nome": "Rey Kusanagi",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0124@exemplo.test",
+      "turmas": [
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107"
+      ]
+    },
+    {
+      "numero_estudante": "E0125",
+      "nome": "Sasuke Baggins",
+      "curso": "ECO",
+      "ano_ingresso": 2025,
+      "email": "e0125@exemplo.test",
+      "turmas": [
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107"
+      ]
+    },
+    {
+      "numero_estudante": "E0126",
+      "nome": "Sasuke Uzumaki",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0126@exemplo.test",
+      "turmas": [
+        "T-INF102",
+        "T-INF103",
+        "T-INF104",
+        "T-INF105"
+      ]
+    },
+    {
+      "numero_estudante": "E0127",
+      "nome": "Nala Hyrule",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0127@exemplo.test",
+      "turmas": [
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101"
+      ]
+    },
+    {
+      "numero_estudante": "E0128",
+      "nome": "Nala Uzumaki",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0128@exemplo.test",
+      "turmas": [
+        "T-GES105",
+        "T-GES106",
+        "T-GES107",
+        "T-GES101"
+      ]
+    },
+    {
+      "numero_estudante": "E0129",
+      "nome": "Nami Ketchum",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0129@exemplo.test",
+      "turmas": [
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101"
+      ]
+    },
+    {
+      "numero_estudante": "E0130",
+      "nome": "Zelda Organa",
+      "curso": "ECO",
+      "ano_ingresso": 2025,
+      "email": "e0130@exemplo.test",
+      "turmas": [
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101"
+      ]
+    },
+    {
+      "numero_estudante": "E0131",
+      "nome": "Sasuke Haruno",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0131@exemplo.test",
+      "turmas": [
+        "T-INF103",
+        "T-INF104",
+        "T-INF105",
+        "T-INF106"
+      ]
+    },
+    {
+      "numero_estudante": "E0132",
+      "nome": "Sam Monkey",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0132@exemplo.test",
+      "turmas": [
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102"
+      ]
+    },
+    {
+      "numero_estudante": "E0133",
+      "nome": "Zelda Skyrunner",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0133@exemplo.test",
+      "turmas": [
+        "T-GES106",
+        "T-GES107",
+        "T-GES101",
+        "T-GES102"
+      ]
+    },
+    {
+      "numero_estudante": "E0134",
+      "nome": "Harry Dragon",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0134@exemplo.test",
+      "turmas": [
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102"
+      ]
+    },
+    {
+      "numero_estudante": "E0135",
+      "nome": "Han Skyrunner",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0135@exemplo.test",
+      "turmas": [
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102"
+      ]
+    },
+    {
+      "numero_estudante": "E0136",
+      "nome": "Aragorn Kenobi",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0136@exemplo.test",
+      "turmas": [
+        "T-INF104",
+        "T-INF105",
+        "T-INF106",
+        "T-INF107"
+      ]
+    },
+    {
+      "numero_estudante": "E0137",
+      "nome": "Zoro Uzumaki",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0137@exemplo.test",
+      "turmas": [
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103"
+      ]
+    },
+    {
+      "numero_estudante": "E0138",
+      "nome": "Nala Lion",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0138@exemplo.test",
+      "turmas": [
+        "T-GES107",
+        "T-GES101",
+        "T-GES102",
+        "T-GES103"
+      ]
+    },
+    {
+      "numero_estudante": "E0139",
+      "nome": "Sakura Hyrule",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0139@exemplo.test",
+      "turmas": [
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103"
+      ]
+    },
+    {
+      "numero_estudante": "E0140",
+      "nome": "Goku Gamgee",
+      "curso": "ECO",
+      "ano_ingresso": 2025,
+      "email": "e0140@exemplo.test",
+      "turmas": [
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103"
+      ]
+    },
+    {
+      "numero_estudante": "E0141",
+      "nome": "Han Weasley",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0141@exemplo.test",
+      "turmas": [
+        "T-INF105",
+        "T-INF106",
+        "T-INF107",
+        "T-INF108"
+      ]
+    },
+    {
+      "numero_estudante": "E0142",
+      "nome": "Goku Organa",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0142@exemplo.test",
+      "turmas": [
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104"
+      ]
+    },
+    {
+      "numero_estudante": "E0143",
+      "nome": "Harry Uzumaki",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0143@exemplo.test",
+      "turmas": [
+        "T-GES101",
+        "T-GES102",
+        "T-GES103",
+        "T-GES104"
+      ]
+    },
+    {
+      "numero_estudante": "E0144",
+      "nome": "Naruto Baggins",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0144@exemplo.test",
+      "turmas": [
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104"
+      ]
+    },
+    {
+      "numero_estudante": "E0145",
+      "nome": "Frodo Brown",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0145@exemplo.test",
+      "turmas": [
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104"
+      ]
+    },
+    {
+      "numero_estudante": "E0146",
+      "nome": "Frodo Organa",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0146@exemplo.test",
+      "turmas": [
+        "T-INF106",
+        "T-INF107",
+        "T-INF108",
+        "T-INF101"
+      ]
+    },
+    {
+      "numero_estudante": "E0147",
+      "nome": "Finn Skyrunner",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0147@exemplo.test",
+      "turmas": [
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105"
+      ]
+    },
+    {
+      "numero_estudante": "E0148",
+      "nome": "Sam Roronoa",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0148@exemplo.test",
+      "turmas": [
+        "T-GES102",
+        "T-GES103",
+        "T-GES104",
+        "T-GES105"
+      ]
+    },
+    {
+      "numero_estudante": "E0149",
+      "nome": "Vegeta Uchiha",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0149@exemplo.test",
+      "turmas": [
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105"
+      ]
+    },
+    {
+      "numero_estudante": "E0150",
+      "nome": "Nami Uchiha",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0150@exemplo.test",
+      "turmas": [
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105"
+      ]
+    },
+    {
+      "numero_estudante": "E0151",
+      "nome": "Misty Dragon",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0151@exemplo.test",
+      "turmas": [
+        "T-INF107",
+        "T-INF108",
+        "T-INF101",
+        "T-INF102"
+      ]
+    },
+    {
+      "numero_estudante": "E0152",
+      "nome": "Naruto Gamgee",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0152@exemplo.test",
+      "turmas": [
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106"
+      ]
+    },
+    {
+      "numero_estudante": "E0153",
+      "nome": "Link Weasley",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0153@exemplo.test",
+      "turmas": [
+        "T-GES103",
+        "T-GES104",
+        "T-GES105",
+        "T-GES106"
+      ]
+    },
+    {
+      "numero_estudante": "E0154",
+      "nome": "Rey Lion",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0154@exemplo.test",
+      "turmas": [
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106"
+      ]
+    },
+    {
+      "numero_estudante": "E0155",
+      "nome": "Vegeta Brown",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0155@exemplo.test",
+      "turmas": [
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106"
+      ]
+    },
+    {
+      "numero_estudante": "E0156",
+      "nome": "Ron Monkey",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0156@exemplo.test",
+      "turmas": [
+        "T-INF108",
+        "T-INF101",
+        "T-INF102",
+        "T-INF103"
+      ]
+    },
+    {
+      "numero_estudante": "E0157",
+      "nome": "Zelda Weasley",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0157@exemplo.test",
+      "turmas": [
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107"
+      ]
+    },
+    {
+      "numero_estudante": "E0158",
+      "nome": "Mario Dragon",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0158@exemplo.test",
+      "turmas": [
+        "T-GES104",
+        "T-GES105",
+        "T-GES106",
+        "T-GES107"
+      ]
+    },
+    {
+      "numero_estudante": "E0159",
+      "nome": "Sam Weasley",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0159@exemplo.test",
+      "turmas": [
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107"
+      ]
+    },
+    {
+      "numero_estudante": "E0160",
+      "nome": "Ash Weasley",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0160@exemplo.test",
+      "turmas": [
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107"
+      ]
+    },
+    {
+      "numero_estudante": "E0161",
+      "nome": "Vegeta Potter",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0161@exemplo.test",
+      "turmas": [
+        "T-INF101",
+        "T-INF102",
+        "T-INF103",
+        "T-INF104"
+      ]
+    },
+    {
+      "numero_estudante": "E0162",
+      "nome": "Sakura Skyrunner",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0162@exemplo.test",
+      "turmas": [
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101"
+      ]
+    },
+    {
+      "numero_estudante": "E0163",
+      "nome": "Zoro Gamgee",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0163@exemplo.test",
+      "turmas": [
+        "T-GES105",
+        "T-GES106",
+        "T-GES107",
+        "T-GES101"
+      ]
+    },
+    {
+      "numero_estudante": "E0164",
+      "nome": "Leia Gamgee",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0164@exemplo.test",
+      "turmas": [
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101"
+      ]
+    },
+    {
+      "numero_estudante": "E0165",
+      "nome": "Harry Haruno",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0165@exemplo.test",
+      "turmas": [
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101"
+      ]
+    },
+    {
+      "numero_estudante": "E0166",
+      "nome": "Luffy Kenobi",
+      "curso": "INF",
+      "ano_ingresso": 2023,
+      "email": "e0166@exemplo.test",
+      "turmas": [
+        "T-INF102",
+        "T-INF103",
+        "T-INF104",
+        "T-INF105"
+      ]
+    },
+    {
+      "numero_estudante": "E0167",
+      "nome": "Link Gamgee",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0167@exemplo.test",
+      "turmas": [
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102"
+      ]
+    },
+    {
+      "numero_estudante": "E0168",
+      "nome": "Ash Organa",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0168@exemplo.test",
+      "turmas": [
+        "T-GES106",
+        "T-GES107",
+        "T-GES101",
+        "T-GES102"
+      ]
+    },
+    {
+      "numero_estudante": "E0169",
+      "nome": "Sasuke Skyrunner",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0169@exemplo.test",
+      "turmas": [
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102"
+      ]
+    },
+    {
+      "numero_estudante": "E0170",
+      "nome": "Harry Lion",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0170@exemplo.test",
+      "turmas": [
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102"
+      ]
+    },
+    {
+      "numero_estudante": "E0171",
+      "nome": "Sakura Kenobi",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0171@exemplo.test",
+      "turmas": [
+        "T-INF103",
+        "T-INF104",
+        "T-INF105",
+        "T-INF106"
+      ]
+    },
+    {
+      "numero_estudante": "E0172",
+      "nome": "Simba Monkey",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0172@exemplo.test",
+      "turmas": [
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103"
+      ]
+    },
+    {
+      "numero_estudante": "E0173",
+      "nome": "Misty Hyrule",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0173@exemplo.test",
+      "turmas": [
+        "T-GES107",
+        "T-GES101",
+        "T-GES102",
+        "T-GES103"
+      ]
+    },
+    {
+      "numero_estudante": "E0174",
+      "nome": "Aragorn Dragon",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0174@exemplo.test",
+      "turmas": [
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103"
+      ]
+    },
+    {
+      "numero_estudante": "E0175",
+      "nome": "Ash Dragon",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0175@exemplo.test",
+      "turmas": [
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103"
+      ]
+    },
+    {
+      "numero_estudante": "E0176",
+      "nome": "Nami Brown",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0176@exemplo.test",
+      "turmas": [
+        "T-INF104",
+        "T-INF105",
+        "T-INF106",
+        "T-INF107"
+      ]
+    },
+    {
+      "numero_estudante": "E0177",
+      "nome": "Finn Roronoa",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0177@exemplo.test",
+      "turmas": [
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104"
+      ]
+    },
+    {
+      "numero_estudante": "E0178",
+      "nome": "Misty Ketchum",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0178@exemplo.test",
+      "turmas": [
+        "T-GES101",
+        "T-GES102",
+        "T-GES103",
+        "T-GES104"
+      ]
+    },
+    {
+      "numero_estudante": "E0179",
+      "nome": "Luke Weasley",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0179@exemplo.test",
+      "turmas": [
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104"
+      ]
+    },
+    {
+      "numero_estudante": "E0180",
+      "nome": "Nami Kenobi",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0180@exemplo.test",
+      "turmas": [
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104"
+      ]
+    },
+    {
+      "numero_estudante": "E0181",
+      "nome": "Nala Uchiha",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0181@exemplo.test",
+      "turmas": [
+        "T-INF105",
+        "T-INF106",
+        "T-INF107",
+        "T-INF108"
+      ]
+    },
+    {
+      "numero_estudante": "E0182",
+      "nome": "Aragorn Uchiha",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0182@exemplo.test",
+      "turmas": [
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105"
+      ]
+    },
+    {
+      "numero_estudante": "E0183",
+      "nome": "Sam Skyrunner",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0183@exemplo.test",
+      "turmas": [
+        "T-GES102",
+        "T-GES103",
+        "T-GES104",
+        "T-GES105"
+      ]
+    },
+    {
+      "numero_estudante": "E0184",
+      "nome": "Mario Organa",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0184@exemplo.test",
+      "turmas": [
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105"
+      ]
+    },
+    {
+      "numero_estudante": "E0185",
+      "nome": "Rey Roronoa",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0185@exemplo.test",
+      "turmas": [
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105"
+      ]
+    },
+    {
+      "numero_estudante": "E0186",
+      "nome": "Goku Hyrule",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0186@exemplo.test",
+      "turmas": [
+        "T-INF106",
+        "T-INF107",
+        "T-INF108",
+        "T-INF101"
+      ]
+    },
+    {
+      "numero_estudante": "E0187",
+      "nome": "Ash Lion",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0187@exemplo.test",
+      "turmas": [
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106"
+      ]
+    },
+    {
+      "numero_estudante": "E0188",
+      "nome": "Sam Brown",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0188@exemplo.test",
+      "turmas": [
+        "T-GES103",
+        "T-GES104",
+        "T-GES105",
+        "T-GES106"
+      ]
+    },
+    {
+      "numero_estudante": "E0189",
+      "nome": "Misty Roronoa",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0189@exemplo.test",
+      "turmas": [
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106"
+      ]
+    },
+    {
+      "numero_estudante": "E0190",
+      "nome": "Leia Organa",
+      "curso": "ECO",
+      "ano_ingresso": 2025,
+      "email": "e0190@exemplo.test",
+      "turmas": [
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106"
+      ]
+    },
+    {
+      "numero_estudante": "E0191",
+      "nome": "Goku Brown",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0191@exemplo.test",
+      "turmas": [
+        "T-INF107",
+        "T-INF108",
+        "T-INF101",
+        "T-INF102"
+      ]
+    },
+    {
+      "numero_estudante": "E0192",
+      "nome": "Simba Lion",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0192@exemplo.test",
+      "turmas": [
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107"
+      ]
+    },
+    {
+      "numero_estudante": "E0193",
+      "nome": "Link Roronoa",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0193@exemplo.test",
+      "turmas": [
+        "T-GES104",
+        "T-GES105",
+        "T-GES106",
+        "T-GES107"
+      ]
+    },
+    {
+      "numero_estudante": "E0194",
+      "nome": "Sakura Ketchum",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0194@exemplo.test",
+      "turmas": [
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107"
+      ]
+    },
+    {
+      "numero_estudante": "E0195",
+      "nome": "Han Kusanagi",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0195@exemplo.test",
+      "turmas": [
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107"
+      ]
+    },
+    {
+      "numero_estudante": "E0196",
+      "nome": "Luffy Monkey",
+      "curso": "INF",
+      "ano_ingresso": 2023,
+      "email": "e0196@exemplo.test",
+      "turmas": [
+        "T-INF108",
+        "T-INF101",
+        "T-INF102",
+        "T-INF103"
+      ]
+    },
+    {
+      "numero_estudante": "E0197",
+      "nome": "Luffy Weasley",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0197@exemplo.test",
+      "turmas": [
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101"
+      ]
+    },
+    {
+      "numero_estudante": "E0198",
+      "nome": "Ash Haruno",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0198@exemplo.test",
+      "turmas": [
+        "T-GES105",
+        "T-GES106",
+        "T-GES107",
+        "T-GES101"
+      ]
+    },
+    {
+      "numero_estudante": "E0199",
+      "nome": "Luke Kenobi",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0199@exemplo.test",
+      "turmas": [
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101"
+      ]
+    },
+    {
+      "numero_estudante": "E0200",
+      "nome": "Ash Brown",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0200@exemplo.test",
+      "turmas": [
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101"
+      ]
+    },
+    {
+      "numero_estudante": "E0201",
+      "nome": "Nala Weasley",
+      "curso": "INF",
+      "ano_ingresso": 2023,
+      "email": "e0201@exemplo.test",
+      "turmas": [
+        "T-INF101",
+        "T-INF102",
+        "T-INF103",
+        "T-INF104"
+      ]
+    },
+    {
+      "numero_estudante": "E0202",
+      "nome": "Ash Solo",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0202@exemplo.test",
+      "turmas": [
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102"
+      ]
+    },
+    {
+      "numero_estudante": "E0203",
+      "nome": "Nala Monkey",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0203@exemplo.test",
+      "turmas": [
+        "T-GES106",
+        "T-GES107",
+        "T-GES101",
+        "T-GES102"
+      ]
+    },
+    {
+      "numero_estudante": "E0204",
+      "nome": "Misty Gamgee",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0204@exemplo.test",
+      "turmas": [
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102"
+      ]
+    },
+    {
+      "numero_estudante": "E0205",
+      "nome": "Naruto Dragon",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0205@exemplo.test",
+      "turmas": [
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102"
+      ]
+    },
+    {
+      "numero_estudante": "E0206",
+      "nome": "Simba Uchiha",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0206@exemplo.test",
+      "turmas": [
+        "T-INF102",
+        "T-INF103",
+        "T-INF104",
+        "T-INF105"
+      ]
+    },
+    {
+      "numero_estudante": "E0207",
+      "nome": "Zoro Kenobi",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0207@exemplo.test",
+      "turmas": [
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103"
+      ]
+    },
+    {
+      "numero_estudante": "E0208",
+      "nome": "Ron Organa",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0208@exemplo.test",
+      "turmas": [
+        "T-GES107",
+        "T-GES101",
+        "T-GES102",
+        "T-GES103"
+      ]
+    },
+    {
+      "numero_estudante": "E0209",
+      "nome": "Link Dragon",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0209@exemplo.test",
+      "turmas": [
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103"
+      ]
+    },
+    {
+      "numero_estudante": "E0210",
+      "nome": "Aragorn Starfall",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0210@exemplo.test",
+      "turmas": [
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103"
+      ]
+    },
+    {
+      "numero_estudante": "E0211",
+      "nome": "Nala Gamgee",
+      "curso": "INF",
+      "ano_ingresso": 2023,
+      "email": "e0211@exemplo.test",
+      "turmas": [
+        "T-INF103",
+        "T-INF104",
+        "T-INF105",
+        "T-INF106"
+      ]
+    },
+    {
+      "numero_estudante": "E0212",
+      "nome": "Luffy Dragon",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0212@exemplo.test",
+      "turmas": [
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104"
+      ]
+    },
+    {
+      "numero_estudante": "E0213",
+      "nome": "Leia Solo",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0213@exemplo.test",
+      "turmas": [
+        "T-GES101",
+        "T-GES102",
+        "T-GES103",
+        "T-GES104"
+      ]
+    },
+    {
+      "numero_estudante": "E0214",
+      "nome": "Nala Potter",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0214@exemplo.test",
+      "turmas": [
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104"
+      ]
+    },
+    {
+      "numero_estudante": "E0215",
+      "nome": "Luke Potter",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0215@exemplo.test",
+      "turmas": [
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104"
+      ]
+    },
+    {
+      "numero_estudante": "E0216",
+      "nome": "Rey Uzumaki",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0216@exemplo.test",
+      "turmas": [
+        "T-INF104",
+        "T-INF105",
+        "T-INF106",
+        "T-INF107"
+      ]
+    },
+    {
+      "numero_estudante": "E0217",
+      "nome": "Simba Starfall",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0217@exemplo.test",
+      "turmas": [
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105"
+      ]
+    },
+    {
+      "numero_estudante": "E0218",
+      "nome": "Luke Hyrule",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0218@exemplo.test",
+      "turmas": [
+        "T-GES102",
+        "T-GES103",
+        "T-GES104",
+        "T-GES105"
+      ]
+    },
+    {
+      "numero_estudante": "E0219",
+      "nome": "Link Baggins",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0219@exemplo.test",
+      "turmas": [
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105"
+      ]
+    },
+    {
+      "numero_estudante": "E0220",
+      "nome": "Naruto Weasley",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0220@exemplo.test",
+      "turmas": [
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105"
+      ]
+    },
+    {
+      "numero_estudante": "E0221",
+      "nome": "Zoro Weasley",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0221@exemplo.test",
+      "turmas": [
+        "T-INF105",
+        "T-INF106",
+        "T-INF107",
+        "T-INF108"
+      ]
+    },
+    {
+      "numero_estudante": "E0222",
+      "nome": "Vegeta Skyrunner",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0222@exemplo.test",
+      "turmas": [
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106"
+      ]
+    },
+    {
+      "numero_estudante": "E0223",
+      "nome": "Ash Monkey",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0223@exemplo.test",
+      "turmas": [
+        "T-GES103",
+        "T-GES104",
+        "T-GES105",
+        "T-GES106"
+      ]
+    },
+    {
+      "numero_estudante": "E0224",
+      "nome": "Sam Baggins",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0224@exemplo.test",
+      "turmas": [
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106"
+      ]
+    },
+    {
+      "numero_estudante": "E0225",
+      "nome": "Luke Monkey",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0225@exemplo.test",
+      "turmas": [
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106"
+      ]
+    },
+    {
+      "numero_estudante": "E0226",
+      "nome": "Frodo Solo",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0226@exemplo.test",
+      "turmas": [
+        "T-INF106",
+        "T-INF107",
+        "T-INF108",
+        "T-INF101"
+      ]
+    },
+    {
+      "numero_estudante": "E0227",
+      "nome": "Rey Potter",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0227@exemplo.test",
+      "turmas": [
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107"
+      ]
+    },
+    {
+      "numero_estudante": "E0228",
+      "nome": "Frodo Baggins",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0228@exemplo.test",
+      "turmas": [
+        "T-GES104",
+        "T-GES105",
+        "T-GES106",
+        "T-GES107"
+      ]
+    },
+    {
+      "numero_estudante": "E0229",
+      "nome": "Han Uchiha",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0229@exemplo.test",
+      "turmas": [
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107"
+      ]
+    },
+    {
+      "numero_estudante": "E0230",
+      "nome": "Zoro Kusanagi",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0230@exemplo.test",
+      "turmas": [
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107"
+      ]
+    },
+    {
+      "numero_estudante": "E0231",
+      "nome": "Mario Baggins",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0231@exemplo.test",
+      "turmas": [
+        "T-INF107",
+        "T-INF108",
+        "T-INF101",
+        "T-INF102"
+      ]
+    },
+    {
+      "numero_estudante": "E0232",
+      "nome": "Zelda Lion",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0232@exemplo.test",
+      "turmas": [
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101"
+      ]
+    },
+    {
+      "numero_estudante": "E0233",
+      "nome": "Luffy Hyrule",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0233@exemplo.test",
+      "turmas": [
+        "T-GES105",
+        "T-GES106",
+        "T-GES107",
+        "T-GES101"
+      ]
+    },
+    {
+      "numero_estudante": "E0234",
+      "nome": "Nami Lion",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0234@exemplo.test",
+      "turmas": [
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101"
+      ]
+    },
+    {
+      "numero_estudante": "E0235",
+      "nome": "Frodo Monkey",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0235@exemplo.test",
+      "turmas": [
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101"
+      ]
+    },
+    {
+      "numero_estudante": "E0236",
+      "nome": "Zelda Uzumaki",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0236@exemplo.test",
+      "turmas": [
+        "T-INF108",
+        "T-INF101",
+        "T-INF102",
+        "T-INF103"
+      ]
+    },
+    {
+      "numero_estudante": "E0237",
+      "nome": "Sasuke Kenobi",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0237@exemplo.test",
+      "turmas": [
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102"
+      ]
+    },
+    {
+      "numero_estudante": "E0238",
+      "nome": "Frodo Kenobi",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0238@exemplo.test",
+      "turmas": [
+        "T-GES106",
+        "T-GES107",
+        "T-GES101",
+        "T-GES102"
+      ]
+    },
+    {
+      "numero_estudante": "E0239",
+      "nome": "Goku Uchiha",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0239@exemplo.test",
+      "turmas": [
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102"
+      ]
+    },
+    {
+      "numero_estudante": "E0240",
+      "nome": "Goku Potter",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0240@exemplo.test",
+      "turmas": [
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102"
+      ]
+    },
+    {
+      "numero_estudante": "E0241",
+      "nome": "Harry Organa",
+      "curso": "INF",
+      "ano_ingresso": 2023,
+      "email": "e0241@exemplo.test",
+      "turmas": [
+        "T-INF101",
+        "T-INF102",
+        "T-INF103",
+        "T-INF104"
+      ]
+    },
+    {
+      "numero_estudante": "E0242",
+      "nome": "Ash Roronoa",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0242@exemplo.test",
+      "turmas": [
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103"
+      ]
+    },
+    {
+      "numero_estudante": "E0243",
+      "nome": "Zelda Gamgee",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0243@exemplo.test",
+      "turmas": [
+        "T-GES107",
+        "T-GES101",
+        "T-GES102",
+        "T-GES103"
+      ]
+    },
+    {
+      "numero_estudante": "E0244",
+      "nome": "Finn Solo",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0244@exemplo.test",
+      "turmas": [
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103"
+      ]
+    },
+    {
+      "numero_estudante": "E0245",
+      "nome": "Vegeta Hyrule",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0245@exemplo.test",
+      "turmas": [
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103"
+      ]
+    },
+    {
+      "numero_estudante": "E0246",
+      "nome": "Luke Kusanagi",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0246@exemplo.test",
+      "turmas": [
+        "T-INF102",
+        "T-INF103",
+        "T-INF104",
+        "T-INF105"
+      ]
+    },
+    {
+      "numero_estudante": "E0247",
+      "nome": "Goku Kusanagi",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0247@exemplo.test",
+      "turmas": [
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104"
+      ]
+    },
+    {
+      "numero_estudante": "E0248",
+      "nome": "Leia Baggins",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0248@exemplo.test",
+      "turmas": [
+        "T-GES101",
+        "T-GES102",
+        "T-GES103",
+        "T-GES104"
+      ]
+    },
+    {
+      "numero_estudante": "E0249",
+      "nome": "Link Brown",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0249@exemplo.test",
+      "turmas": [
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104"
+      ]
+    },
+    {
+      "numero_estudante": "E0250",
+      "nome": "Misty Baggins",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0250@exemplo.test",
+      "turmas": [
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104"
+      ]
+    },
+    {
+      "numero_estudante": "E0251",
+      "nome": "Nami Roronoa",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0251@exemplo.test",
+      "turmas": [
+        "T-INF103",
+        "T-INF104",
+        "T-INF105",
+        "T-INF106"
+      ]
+    },
+    {
+      "numero_estudante": "E0252",
+      "nome": "Nala Skyrunner",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0252@exemplo.test",
+      "turmas": [
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105"
+      ]
+    },
+    {
+      "numero_estudante": "E0253",
+      "nome": "Link Skyrunner",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0253@exemplo.test",
+      "turmas": [
+        "T-GES102",
+        "T-GES103",
+        "T-GES104",
+        "T-GES105"
+      ]
+    },
+    {
+      "numero_estudante": "E0254",
+      "nome": "Luffy Uzumaki",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0254@exemplo.test",
+      "turmas": [
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105"
+      ]
+    },
+    {
+      "numero_estudante": "E0255",
+      "nome": "Leia Potter",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0255@exemplo.test",
+      "turmas": [
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105"
+      ]
+    },
+    {
+      "numero_estudante": "E0256",
+      "nome": "Simba Solo",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0256@exemplo.test",
+      "turmas": [
+        "T-INF104",
+        "T-INF105",
+        "T-INF106",
+        "T-INF107"
+      ]
+    },
+    {
+      "numero_estudante": "E0257",
+      "nome": "Nala Organa",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0257@exemplo.test",
+      "turmas": [
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106"
+      ]
+    },
+    {
+      "numero_estudante": "E0258",
+      "nome": "Ash Uchiha",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0258@exemplo.test",
+      "turmas": [
+        "T-GES103",
+        "T-GES104",
+        "T-GES105",
+        "T-GES106"
+      ]
+    },
+    {
+      "numero_estudante": "E0259",
+      "nome": "Harry Brown",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0259@exemplo.test",
+      "turmas": [
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106"
+      ]
+    },
+    {
+      "numero_estudante": "E0260",
+      "nome": "Sakura Monkey",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0260@exemplo.test",
+      "turmas": [
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106"
+      ]
+    },
+    {
+      "numero_estudante": "E0261",
+      "nome": "Han Dragon",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0261@exemplo.test",
+      "turmas": [
+        "T-INF105",
+        "T-INF106",
+        "T-INF107",
+        "T-INF108"
+      ]
+    },
+    {
+      "numero_estudante": "E0262",
+      "nome": "Naruto Organa",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0262@exemplo.test",
+      "turmas": [
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107"
+      ]
+    },
+    {
+      "numero_estudante": "E0263",
+      "nome": "Frodo Roronoa",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0263@exemplo.test",
+      "turmas": [
+        "T-GES104",
+        "T-GES105",
+        "T-GES106",
+        "T-GES107"
+      ]
+    },
+    {
+      "numero_estudante": "E0264",
+      "nome": "Finn Uzumaki",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0264@exemplo.test",
+      "turmas": [
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107"
+      ]
+    },
+    {
+      "numero_estudante": "E0265",
+      "nome": "Misty Haruno",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0265@exemplo.test",
+      "turmas": [
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107"
+      ]
+    },
+    {
+      "numero_estudante": "E0266",
+      "nome": "Misty Skyrunner",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0266@exemplo.test",
+      "turmas": [
+        "T-INF106",
+        "T-INF107",
+        "T-INF108",
+        "T-INF101"
+      ]
+    },
+    {
+      "numero_estudante": "E0267",
+      "nome": "Link Uzumaki",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0267@exemplo.test",
+      "turmas": [
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101"
+      ]
+    },
+    {
+      "numero_estudante": "E0268",
+      "nome": "Luffy Gamgee",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0268@exemplo.test",
+      "turmas": [
+        "T-GES105",
+        "T-GES106",
+        "T-GES107",
+        "T-GES101"
+      ]
+    },
+    {
+      "numero_estudante": "E0269",
+      "nome": "Goku Kenobi",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0269@exemplo.test",
+      "turmas": [
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101"
+      ]
+    },
+    {
+      "numero_estudante": "E0270",
+      "nome": "Zoro Ketchum",
+      "curso": "ECO",
+      "ano_ingresso": 2025,
+      "email": "e0270@exemplo.test",
+      "turmas": [
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101"
+      ]
+    },
+    {
+      "numero_estudante": "E0271",
+      "nome": "Mario Roronoa",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0271@exemplo.test",
+      "turmas": [
+        "T-INF107",
+        "T-INF108",
+        "T-INF101",
+        "T-INF102"
+      ]
+    },
+    {
+      "numero_estudante": "E0272",
+      "nome": "Zelda Uchiha",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0272@exemplo.test",
+      "turmas": [
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102"
+      ]
+    },
+    {
+      "numero_estudante": "E0273",
+      "nome": "Naruto Skyrunner",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0273@exemplo.test",
+      "turmas": [
+        "T-GES106",
+        "T-GES107",
+        "T-GES101",
+        "T-GES102"
+      ]
+    },
+    {
+      "numero_estudante": "E0274",
+      "nome": "Naruto Kenobi",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0274@exemplo.test",
+      "turmas": [
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102"
+      ]
+    },
+    {
+      "numero_estudante": "E0275",
+      "nome": "Han Gamgee",
+      "curso": "ECO",
+      "ano_ingresso": 2025,
+      "email": "e0275@exemplo.test",
+      "turmas": [
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102"
+      ]
+    },
+    {
+      "numero_estudante": "E0276",
+      "nome": "Sakura Uzumaki",
+      "curso": "INF",
+      "ano_ingresso": 2023,
+      "email": "e0276@exemplo.test",
+      "turmas": [
+        "T-INF108",
+        "T-INF101",
+        "T-INF102",
+        "T-INF103"
+      ]
+    },
+    {
+      "numero_estudante": "E0277",
+      "nome": "Harry Gamgee",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0277@exemplo.test",
+      "turmas": [
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103"
+      ]
+    },
+    {
+      "numero_estudante": "E0278",
+      "nome": "Harry Kenobi",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0278@exemplo.test",
+      "turmas": [
+        "T-GES107",
+        "T-GES101",
+        "T-GES102",
+        "T-GES103"
+      ]
+    },
+    {
+      "numero_estudante": "E0279",
+      "nome": "Nala Kusanagi",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0279@exemplo.test",
+      "turmas": [
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103"
+      ]
+    },
+    {
+      "numero_estudante": "E0280",
+      "nome": "Zoro Baggins",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0280@exemplo.test",
+      "turmas": [
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103"
+      ]
+    },
+    {
+      "numero_estudante": "E0281",
+      "nome": "Misty Solo",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0281@exemplo.test",
+      "turmas": [
+        "T-INF101",
+        "T-INF102",
+        "T-INF103",
+        "T-INF104"
+      ]
+    },
+    {
+      "numero_estudante": "E0282",
+      "nome": "Harry Potter",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0282@exemplo.test",
+      "turmas": [
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104"
+      ]
+    },
+    {
+      "numero_estudante": "E0283",
+      "nome": "Sam Lion",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0283@exemplo.test",
+      "turmas": [
+        "T-GES101",
+        "T-GES102",
+        "T-GES103",
+        "T-GES104"
+      ]
+    },
+    {
+      "numero_estudante": "E0284",
+      "nome": "Finn Organa",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0284@exemplo.test",
+      "turmas": [
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104"
+      ]
+    },
+    {
+      "numero_estudante": "E0285",
+      "nome": "Zoro Starfall",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0285@exemplo.test",
+      "turmas": [
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104"
+      ]
+    },
+    {
+      "numero_estudante": "E0286",
+      "nome": "Sakura Baggins",
+      "curso": "INF",
+      "ano_ingresso": 2023,
+      "email": "e0286@exemplo.test",
+      "turmas": [
+        "T-INF102",
+        "T-INF103",
+        "T-INF104",
+        "T-INF105"
+      ]
+    },
+    {
+      "numero_estudante": "E0287",
+      "nome": "Ron Dragon",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0287@exemplo.test",
+      "turmas": [
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105"
+      ]
+    },
+    {
+      "numero_estudante": "E0288",
+      "nome": "Zelda Kusanagi",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0288@exemplo.test",
+      "turmas": [
+        "T-GES102",
+        "T-GES103",
+        "T-GES104",
+        "T-GES105"
+      ]
+    },
+    {
+      "numero_estudante": "E0289",
+      "nome": "Zoro Lion",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0289@exemplo.test",
+      "turmas": [
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105"
+      ]
+    },
+    {
+      "numero_estudante": "E0290",
+      "nome": "Sasuke Hyrule",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0290@exemplo.test",
+      "turmas": [
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105"
+      ]
+    },
+    {
+      "numero_estudante": "E0291",
+      "nome": "Finn Kenobi",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0291@exemplo.test",
+      "turmas": [
+        "T-INF103",
+        "T-INF104",
+        "T-INF105",
+        "T-INF106"
+      ]
+    },
+    {
+      "numero_estudante": "E0292",
+      "nome": "Goku Dragon",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0292@exemplo.test",
+      "turmas": [
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106"
+      ]
+    },
+    {
+      "numero_estudante": "E0293",
+      "nome": "Mario Skyrunner",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0293@exemplo.test",
+      "turmas": [
+        "T-GES103",
+        "T-GES104",
+        "T-GES105",
+        "T-GES106"
+      ]
+    },
+    {
+      "numero_estudante": "E0294",
+      "nome": "Simba Uzumaki",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0294@exemplo.test",
+      "turmas": [
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106"
+      ]
+    },
+    {
+      "numero_estudante": "E0295",
+      "nome": "Vegeta Dragon",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0295@exemplo.test",
+      "turmas": [
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106"
+      ]
+    },
+    {
+      "numero_estudante": "E0296",
+      "nome": "Han Uzumaki",
+      "curso": "INF",
+      "ano_ingresso": 2023,
+      "email": "e0296@exemplo.test",
+      "turmas": [
+        "T-INF104",
+        "T-INF105",
+        "T-INF106",
+        "T-INF107"
+      ]
+    },
+    {
+      "numero_estudante": "E0297",
+      "nome": "Luffy Ketchum",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0297@exemplo.test",
+      "turmas": [
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107"
+      ]
+    },
+    {
+      "numero_estudante": "E0298",
+      "nome": "Harry Ketchum",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0298@exemplo.test",
+      "turmas": [
+        "T-GES104",
+        "T-GES105",
+        "T-GES106",
+        "T-GES107"
+      ]
+    },
+    {
+      "numero_estudante": "E0299",
+      "nome": "Mario Starfall",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0299@exemplo.test",
+      "turmas": [
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107"
+      ]
+    },
+    {
+      "numero_estudante": "E0300",
+      "nome": "Sasuke Starfall",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0300@exemplo.test",
+      "turmas": [
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107"
+      ]
+    },
+    {
+      "numero_estudante": "E0301",
+      "nome": "Aragorn Organa",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0301@exemplo.test",
+      "turmas": [
+        "T-INF105",
+        "T-INF106",
+        "T-INF107",
+        "T-INF108"
+      ]
+    },
+    {
+      "numero_estudante": "E0302",
+      "nome": "Finn Kusanagi",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0302@exemplo.test",
+      "turmas": [
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101"
+      ]
+    },
+    {
+      "numero_estudante": "E0303",
+      "nome": "Finn Haruno",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0303@exemplo.test",
+      "turmas": [
+        "T-GES105",
+        "T-GES106",
+        "T-GES107",
+        "T-GES101"
+      ]
+    },
+    {
+      "numero_estudante": "E0304",
+      "nome": "Rey Organa",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0304@exemplo.test",
+      "turmas": [
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101"
+      ]
+    },
+    {
+      "numero_estudante": "E0305",
+      "nome": "Harry Roronoa",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0305@exemplo.test",
+      "turmas": [
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101"
+      ]
+    },
+    {
+      "numero_estudante": "E0306",
+      "nome": "Naruto Solo",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0306@exemplo.test",
+      "turmas": [
+        "T-INF106",
+        "T-INF107",
+        "T-INF108",
+        "T-INF101"
+      ]
+    },
+    {
+      "numero_estudante": "E0307",
+      "nome": "Harry Solo",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0307@exemplo.test",
+      "turmas": [
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102"
+      ]
+    },
+    {
+      "numero_estudante": "E0308",
+      "nome": "Rey Weasley",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0308@exemplo.test",
+      "turmas": [
+        "T-GES106",
+        "T-GES107",
+        "T-GES101",
+        "T-GES102"
+      ]
+    },
+    {
+      "numero_estudante": "E0309",
+      "nome": "Luke Organa",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0309@exemplo.test",
+      "turmas": [
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102"
+      ]
+    },
+    {
+      "numero_estudante": "E0310",
+      "nome": "Nami Baggins",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0310@exemplo.test",
+      "turmas": [
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102"
+      ]
+    },
+    {
+      "numero_estudante": "E0311",
+      "nome": "Finn Dragon",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0311@exemplo.test",
+      "turmas": [
+        "T-INF107",
+        "T-INF108",
+        "T-INF101",
+        "T-INF102"
+      ]
+    },
+    {
+      "numero_estudante": "E0312",
+      "nome": "Mario Haruno",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0312@exemplo.test",
+      "turmas": [
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103"
+      ]
+    },
+    {
+      "numero_estudante": "E0313",
+      "nome": "Leia Roronoa",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0313@exemplo.test",
+      "turmas": [
+        "T-GES107",
+        "T-GES101",
+        "T-GES102",
+        "T-GES103"
+      ]
+    },
+    {
+      "numero_estudante": "E0314",
+      "nome": "Harry Skyrunner",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0314@exemplo.test",
+      "turmas": [
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103"
+      ]
+    },
+    {
+      "numero_estudante": "E0315",
+      "nome": "Leia Monkey",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0315@exemplo.test",
+      "turmas": [
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103"
+      ]
+    },
+    {
+      "numero_estudante": "E0316",
+      "nome": "Finn Gamgee",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0316@exemplo.test",
+      "turmas": [
+        "T-INF108",
+        "T-INF101",
+        "T-INF102",
+        "T-INF103"
+      ]
+    },
+    {
+      "numero_estudante": "E0317",
+      "nome": "Simba Kenobi",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0317@exemplo.test",
+      "turmas": [
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104"
+      ]
+    },
+    {
+      "numero_estudante": "E0318",
+      "nome": "Link Hyrule",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0318@exemplo.test",
+      "turmas": [
+        "T-GES101",
+        "T-GES102",
+        "T-GES103",
+        "T-GES104"
+      ]
+    },
+    {
+      "numero_estudante": "E0319",
+      "nome": "Luffy Roronoa",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0319@exemplo.test",
+      "turmas": [
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104"
+      ]
+    },
+    {
+      "numero_estudante": "E0320",
+      "nome": "Ash Ketchum",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0320@exemplo.test",
+      "turmas": [
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104"
+      ]
+    },
+    {
+      "numero_estudante": "E0321",
+      "nome": "Leia Kusanagi",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0321@exemplo.test",
+      "turmas": [
+        "T-INF101",
+        "T-INF102",
+        "T-INF103",
+        "T-INF104"
+      ]
+    },
+    {
+      "numero_estudante": "E0322",
+      "nome": "Naruto Starfall",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0322@exemplo.test",
+      "turmas": [
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105"
+      ]
+    },
+    {
+      "numero_estudante": "E0323",
+      "nome": "Simba Organa",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0323@exemplo.test",
+      "turmas": [
+        "T-GES102",
+        "T-GES103",
+        "T-GES104",
+        "T-GES105"
+      ]
+    },
+    {
+      "numero_estudante": "E0324",
+      "nome": "Link Organa",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0324@exemplo.test",
+      "turmas": [
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105"
+      ]
+    },
+    {
+      "numero_estudante": "E0325",
+      "nome": "Goku Ketchum",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0325@exemplo.test",
+      "turmas": [
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105"
+      ]
+    },
+    {
+      "numero_estudante": "E0326",
+      "nome": "Frodo Starfall",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0326@exemplo.test",
+      "turmas": [
+        "T-INF102",
+        "T-INF103",
+        "T-INF104",
+        "T-INF105"
+      ]
+    },
+    {
+      "numero_estudante": "E0327",
+      "nome": "Link Lion",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0327@exemplo.test",
+      "turmas": [
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106"
+      ]
+    },
+    {
+      "numero_estudante": "E0328",
+      "nome": "Naruto Potter",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0328@exemplo.test",
+      "turmas": [
+        "T-GES103",
+        "T-GES104",
+        "T-GES105",
+        "T-GES106"
+      ]
+    },
+    {
+      "numero_estudante": "E0329",
+      "nome": "Aragorn Kusanagi",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0329@exemplo.test",
+      "turmas": [
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106"
+      ]
+    },
+    {
+      "numero_estudante": "E0330",
+      "nome": "Frodo Haruno",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0330@exemplo.test",
+      "turmas": [
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106"
+      ]
+    },
+    {
+      "numero_estudante": "E0331",
+      "nome": "Rey Skyrunner",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0331@exemplo.test",
+      "turmas": [
+        "T-INF103",
+        "T-INF104",
+        "T-INF105",
+        "T-INF106"
+      ]
+    },
+    {
+      "numero_estudante": "E0332",
+      "nome": "Finn Baggins",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0332@exemplo.test",
+      "turmas": [
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107"
+      ]
+    },
+    {
+      "numero_estudante": "E0333",
+      "nome": "Frodo Dragon",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0333@exemplo.test",
+      "turmas": [
+        "T-GES104",
+        "T-GES105",
+        "T-GES106",
+        "T-GES107"
+      ]
+    },
+    {
+      "numero_estudante": "E0334",
+      "nome": "Ron Ketchum",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0334@exemplo.test",
+      "turmas": [
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107"
+      ]
+    },
+    {
+      "numero_estudante": "E0335",
+      "nome": "Zelda Monkey",
+      "curso": "ECO",
+      "ano_ingresso": 2025,
+      "email": "e0335@exemplo.test",
+      "turmas": [
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107"
+      ]
+    },
+    {
+      "numero_estudante": "E0336",
+      "nome": "Link Starfall",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0336@exemplo.test",
+      "turmas": [
+        "T-INF104",
+        "T-INF105",
+        "T-INF106",
+        "T-INF107"
+      ]
+    },
+    {
+      "numero_estudante": "E0337",
+      "nome": "Misty Weasley",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0337@exemplo.test",
+      "turmas": [
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101"
+      ]
+    },
+    {
+      "numero_estudante": "E0338",
+      "nome": "Goku Weasley",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0338@exemplo.test",
+      "turmas": [
+        "T-GES105",
+        "T-GES106",
+        "T-GES107",
+        "T-GES101"
+      ]
+    },
+    {
+      "numero_estudante": "E0339",
+      "nome": "Mario Weasley",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0339@exemplo.test",
+      "turmas": [
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101"
+      ]
+    },
+    {
+      "numero_estudante": "E0340",
+      "nome": "Sakura Kusanagi",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0340@exemplo.test",
+      "turmas": [
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101"
+      ]
+    },
+    {
+      "numero_estudante": "E0341",
+      "nome": "Goku Baggins",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0341@exemplo.test",
+      "turmas": [
+        "T-INF105",
+        "T-INF106",
+        "T-INF107",
+        "T-INF108"
+      ]
+    },
+    {
+      "numero_estudante": "E0342",
+      "nome": "Nami Monkey",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0342@exemplo.test",
+      "turmas": [
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102"
+      ]
+    },
+    {
+      "numero_estudante": "E0343",
+      "nome": "Zelda Haruno",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0343@exemplo.test",
+      "turmas": [
+        "T-GES106",
+        "T-GES107",
+        "T-GES101",
+        "T-GES102"
+      ]
+    },
+    {
+      "numero_estudante": "E0344",
+      "nome": "Aragorn Roronoa",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0344@exemplo.test",
+      "turmas": [
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102"
+      ]
+    },
+    {
+      "numero_estudante": "E0345",
+      "nome": "Luke Brown",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0345@exemplo.test",
+      "turmas": [
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102"
+      ]
+    },
+    {
+      "numero_estudante": "E0346",
+      "nome": "Vegeta Uzumaki",
+      "curso": "INF",
+      "ano_ingresso": 2023,
+      "email": "e0346@exemplo.test",
+      "turmas": [
+        "T-INF106",
+        "T-INF107",
+        "T-INF108",
+        "T-INF101"
+      ]
+    },
+    {
+      "numero_estudante": "E0347",
+      "nome": "Sam Organa",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0347@exemplo.test",
+      "turmas": [
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103"
+      ]
+    },
+    {
+      "numero_estudante": "E0348",
+      "nome": "Goku Lion",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0348@exemplo.test",
+      "turmas": [
+        "T-GES107",
+        "T-GES101",
+        "T-GES102",
+        "T-GES103"
+      ]
+    },
+    {
+      "numero_estudante": "E0349",
+      "nome": "Leia Weasley",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0349@exemplo.test",
+      "turmas": [
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103"
+      ]
+    },
+    {
+      "numero_estudante": "E0350",
+      "nome": "Leia Lion",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0350@exemplo.test",
+      "turmas": [
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103"
+      ]
+    },
+    {
+      "numero_estudante": "E0351",
+      "nome": "Ash Gamgee",
+      "curso": "INF",
+      "ano_ingresso": 2023,
+      "email": "e0351@exemplo.test",
+      "turmas": [
+        "T-INF107",
+        "T-INF108",
+        "T-INF101",
+        "T-INF102"
+      ]
+    },
+    {
+      "numero_estudante": "E0352",
+      "nome": "Han Hyrule",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0352@exemplo.test",
+      "turmas": [
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104"
+      ]
+    },
+    {
+      "numero_estudante": "E0353",
+      "nome": "Mario Potter",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0353@exemplo.test",
+      "turmas": [
+        "T-GES101",
+        "T-GES102",
+        "T-GES103",
+        "T-GES104"
+      ]
+    },
+    {
+      "numero_estudante": "E0354",
+      "nome": "Vegeta Ketchum",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0354@exemplo.test",
+      "turmas": [
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104"
+      ]
+    },
+    {
+      "numero_estudante": "E0355",
+      "nome": "Naruto Uzumaki",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0355@exemplo.test",
+      "turmas": [
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104"
+      ]
+    },
+    {
+      "numero_estudante": "E0356",
+      "nome": "Harry Weasley",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0356@exemplo.test",
+      "turmas": [
+        "T-INF108",
+        "T-INF101",
+        "T-INF102",
+        "T-INF103"
+      ]
+    },
+    {
+      "numero_estudante": "E0357",
+      "nome": "Zelda Dragon",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0357@exemplo.test",
+      "turmas": [
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105"
+      ]
+    },
+    {
+      "numero_estudante": "E0358",
+      "nome": "Vegeta Starfall",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0358@exemplo.test",
+      "turmas": [
+        "T-GES102",
+        "T-GES103",
+        "T-GES104",
+        "T-GES105"
+      ]
+    },
+    {
+      "numero_estudante": "E0359",
+      "nome": "Mario Gamgee",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0359@exemplo.test",
+      "turmas": [
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105"
+      ]
+    },
+    {
+      "numero_estudante": "E0360",
+      "nome": "Nami Starfall",
+      "curso": "ECO",
+      "ano_ingresso": 2025,
+      "email": "e0360@exemplo.test",
+      "turmas": [
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105"
+      ]
+    },
+    {
+      "numero_estudante": "E0361",
+      "nome": "Sakura Dragon",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0361@exemplo.test",
+      "turmas": [
+        "T-INF101",
+        "T-INF102",
+        "T-INF103",
+        "T-INF104"
+      ]
+    },
+    {
+      "numero_estudante": "E0362",
+      "nome": "Frodo Uzumaki",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0362@exemplo.test",
+      "turmas": [
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106"
+      ]
+    },
+    {
+      "numero_estudante": "E0363",
+      "nome": "Simba Dragon",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0363@exemplo.test",
+      "turmas": [
+        "T-GES103",
+        "T-GES104",
+        "T-GES105",
+        "T-GES106"
+      ]
+    },
+    {
+      "numero_estudante": "E0364",
+      "nome": "Finn Uchiha",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0364@exemplo.test",
+      "turmas": [
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106"
+      ]
+    },
+    {
+      "numero_estudante": "E0365",
+      "nome": "Nala Kenobi",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0365@exemplo.test",
+      "turmas": [
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106"
+      ]
+    },
+    {
+      "numero_estudante": "E0366",
+      "nome": "Luffy Brown",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0366@exemplo.test",
+      "turmas": [
+        "T-INF102",
+        "T-INF103",
+        "T-INF104",
+        "T-INF105"
+      ]
+    },
+    {
+      "numero_estudante": "E0367",
+      "nome": "Han Monkey",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0367@exemplo.test",
+      "turmas": [
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107"
+      ]
+    },
+    {
+      "numero_estudante": "E0368",
+      "nome": "Link Ketchum",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0368@exemplo.test",
+      "turmas": [
+        "T-GES104",
+        "T-GES105",
+        "T-GES106",
+        "T-GES107"
+      ]
+    },
+    {
+      "numero_estudante": "E0369",
+      "nome": "Nami Skyrunner",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0369@exemplo.test",
+      "turmas": [
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107"
+      ]
+    },
+    {
+      "numero_estudante": "E0370",
+      "nome": "Zelda Potter",
+      "curso": "ECO",
+      "ano_ingresso": 2025,
+      "email": "e0370@exemplo.test",
+      "turmas": [
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107"
+      ]
+    },
+    {
+      "numero_estudante": "E0371",
+      "nome": "Frodo Weasley",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0371@exemplo.test",
+      "turmas": [
+        "T-INF103",
+        "T-INF104",
+        "T-INF105",
+        "T-INF106"
+      ]
+    },
+    {
+      "numero_estudante": "E0372",
+      "nome": "Rey Baggins",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0372@exemplo.test",
+      "turmas": [
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101"
+      ]
+    },
+    {
+      "numero_estudante": "E0373",
+      "nome": "Frodo Uchiha",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0373@exemplo.test",
+      "turmas": [
+        "T-GES105",
+        "T-GES106",
+        "T-GES107",
+        "T-GES101"
+      ]
+    },
+    {
+      "numero_estudante": "E0374",
+      "nome": "Nami Haruno",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0374@exemplo.test",
+      "turmas": [
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101"
+      ]
+    },
+    {
+      "numero_estudante": "E0375",
+      "nome": "Naruto Hyrule",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0375@exemplo.test",
+      "turmas": [
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101"
+      ]
+    },
+    {
+      "numero_estudante": "E0376",
+      "nome": "Nala Solo",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0376@exemplo.test",
+      "turmas": [
+        "T-INF104",
+        "T-INF105",
+        "T-INF106",
+        "T-INF107"
+      ]
+    },
+    {
+      "numero_estudante": "E0377",
+      "nome": "Rey Kenobi",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0377@exemplo.test",
+      "turmas": [
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102"
+      ]
+    },
+    {
+      "numero_estudante": "E0378",
+      "nome": "Simba Gamgee",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0378@exemplo.test",
+      "turmas": [
+        "T-GES106",
+        "T-GES107",
+        "T-GES101",
+        "T-GES102"
+      ]
+    },
+    {
+      "numero_estudante": "E0379",
+      "nome": "Aragorn Brown",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0379@exemplo.test",
+      "turmas": [
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102"
+      ]
+    },
+    {
+      "numero_estudante": "E0380",
+      "nome": "Nami Solo",
+      "curso": "ECO",
+      "ano_ingresso": 2025,
+      "email": "e0380@exemplo.test",
+      "turmas": [
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102"
+      ]
+    },
+    {
+      "numero_estudante": "E0381",
+      "nome": "Ron Hyrule",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0381@exemplo.test",
+      "turmas": [
+        "T-INF105",
+        "T-INF106",
+        "T-INF107",
+        "T-INF108"
+      ]
+    },
+    {
+      "numero_estudante": "E0382",
+      "nome": "Ron Skyrunner",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0382@exemplo.test",
+      "turmas": [
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103"
+      ]
+    },
+    {
+      "numero_estudante": "E0383",
+      "nome": "Aragorn Uzumaki",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0383@exemplo.test",
+      "turmas": [
+        "T-GES107",
+        "T-GES101",
+        "T-GES102",
+        "T-GES103"
+      ]
+    },
+    {
+      "numero_estudante": "E0384",
+      "nome": "Goku Uzumaki",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0384@exemplo.test",
+      "turmas": [
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103"
+      ]
+    },
+    {
+      "numero_estudante": "E0385",
+      "nome": "Luke Haruno",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0385@exemplo.test",
+      "turmas": [
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103"
+      ]
+    },
+    {
+      "numero_estudante": "E0386",
+      "nome": "Rey Starfall",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0386@exemplo.test",
+      "turmas": [
+        "T-INF106",
+        "T-INF107",
+        "T-INF108",
+        "T-INF101"
+      ]
+    },
+    {
+      "numero_estudante": "E0387",
+      "nome": "Vegeta Haruno",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0387@exemplo.test",
+      "turmas": [
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104"
+      ]
+    },
+    {
+      "numero_estudante": "E0388",
+      "nome": "Sam Potter",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0388@exemplo.test",
+      "turmas": [
+        "T-GES101",
+        "T-GES102",
+        "T-GES103",
+        "T-GES104"
+      ]
+    },
+    {
+      "numero_estudante": "E0389",
+      "nome": "Nala Baggins",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0389@exemplo.test",
+      "turmas": [
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104"
+      ]
+    },
+    {
+      "numero_estudante": "E0390",
+      "nome": "Ash Hyrule",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0390@exemplo.test",
+      "turmas": [
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104"
+      ]
+    },
+    {
+      "numero_estudante": "E0391",
+      "nome": "Zelda Starfall",
+      "curso": "INF",
+      "ano_ingresso": 2023,
+      "email": "e0391@exemplo.test",
+      "turmas": [
+        "T-INF107",
+        "T-INF108",
+        "T-INF101",
+        "T-INF102"
+      ]
+    },
+    {
+      "numero_estudante": "E0392",
+      "nome": "Mario Uzumaki",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0392@exemplo.test",
+      "turmas": [
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105"
+      ]
+    },
+    {
+      "numero_estudante": "E0393",
+      "nome": "Nala Roronoa",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0393@exemplo.test",
+      "turmas": [
+        "T-GES102",
+        "T-GES103",
+        "T-GES104",
+        "T-GES105"
+      ]
+    },
+    {
+      "numero_estudante": "E0394",
+      "nome": "Leia Haruno",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0394@exemplo.test",
+      "turmas": [
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105"
+      ]
+    },
+    {
+      "numero_estudante": "E0395",
+      "nome": "Frodo Lion",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0395@exemplo.test",
+      "turmas": [
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105"
+      ]
+    },
+    {
+      "numero_estudante": "E0396",
+      "nome": "Rey Uchiha",
+      "curso": "INF",
+      "ano_ingresso": 2023,
+      "email": "e0396@exemplo.test",
+      "turmas": [
+        "T-INF108",
+        "T-INF101",
+        "T-INF102",
+        "T-INF103"
+      ]
+    },
+    {
+      "numero_estudante": "E0397",
+      "nome": "Sasuke Weasley",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0397@exemplo.test",
+      "turmas": [
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106"
+      ]
+    },
+    {
+      "numero_estudante": "E0398",
+      "nome": "Naruto Uchiha",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0398@exemplo.test",
+      "turmas": [
+        "T-GES103",
+        "T-GES104",
+        "T-GES105",
+        "T-GES106"
+      ]
+    },
+    {
+      "numero_estudante": "E0399",
+      "nome": "Frodo Ketchum",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0399@exemplo.test",
+      "turmas": [
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106"
+      ]
+    },
+    {
+      "numero_estudante": "E0400",
+      "nome": "Han Haruno",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0400@exemplo.test",
+      "turmas": [
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106"
+      ]
+    },
+    {
+      "numero_estudante": "E0401",
+      "nome": "Ash Skyrunner",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0401@exemplo.test",
+      "turmas": [
+        "T-INF101",
+        "T-INF102",
+        "T-INF103",
+        "T-INF104"
+      ]
+    },
+    {
+      "numero_estudante": "E0402",
+      "nome": "Ron Lion",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0402@exemplo.test",
+      "turmas": [
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107"
+      ]
+    },
+    {
+      "numero_estudante": "E0403",
+      "nome": "Link Uchiha",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0403@exemplo.test",
+      "turmas": [
+        "T-GES104",
+        "T-GES105",
+        "T-GES106",
+        "T-GES107"
+      ]
+    },
+    {
+      "numero_estudante": "E0404",
+      "nome": "Luke Uzumaki",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0404@exemplo.test",
+      "turmas": [
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107"
+      ]
+    },
+    {
+      "numero_estudante": "E0405",
+      "nome": "Han Baggins",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0405@exemplo.test",
+      "turmas": [
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107"
+      ]
+    },
+    {
+      "numero_estudante": "E0406",
+      "nome": "Luke Baggins",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0406@exemplo.test",
+      "turmas": [
+        "T-INF102",
+        "T-INF103",
+        "T-INF104",
+        "T-INF105"
+      ]
+    },
+    {
+      "numero_estudante": "E0407",
+      "nome": "Zoro Organa",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0407@exemplo.test",
+      "turmas": [
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101"
+      ]
+    },
+    {
+      "numero_estudante": "E0408",
+      "nome": "Rey Hyrule",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0408@exemplo.test",
+      "turmas": [
+        "T-GES105",
+        "T-GES106",
+        "T-GES107",
+        "T-GES101"
+      ]
+    },
+    {
+      "numero_estudante": "E0409",
+      "nome": "Luffy Organa",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0409@exemplo.test",
+      "turmas": [
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101"
+      ]
+    },
+    {
+      "numero_estudante": "E0410",
+      "nome": "Nala Haruno",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0410@exemplo.test",
+      "turmas": [
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101"
+      ]
+    },
+    {
+      "numero_estudante": "E0411",
+      "nome": "Finn Starfall",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0411@exemplo.test",
+      "turmas": [
+        "T-INF103",
+        "T-INF104",
+        "T-INF105",
+        "T-INF106"
+      ]
+    },
+    {
+      "numero_estudante": "E0412",
+      "nome": "Han Kenobi",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0412@exemplo.test",
+      "turmas": [
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102"
+      ]
+    },
+    {
+      "numero_estudante": "E0413",
+      "nome": "Vegeta Kenobi",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0413@exemplo.test",
+      "turmas": [
+        "T-GES106",
+        "T-GES107",
+        "T-GES101",
+        "T-GES102"
+      ]
+    },
+    {
+      "numero_estudante": "E0414",
+      "nome": "Nami Kusanagi",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0414@exemplo.test",
+      "turmas": [
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102"
+      ]
+    },
+    {
+      "numero_estudante": "E0415",
+      "nome": "Sasuke Dragon",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0415@exemplo.test",
+      "turmas": [
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102"
+      ]
+    },
+    {
+      "numero_estudante": "E0416",
+      "nome": "Sam Ketchum",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0416@exemplo.test",
+      "turmas": [
+        "T-INF104",
+        "T-INF105",
+        "T-INF106",
+        "T-INF107"
+      ]
+    },
+    {
+      "numero_estudante": "E0417",
+      "nome": "Leia Ketchum",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0417@exemplo.test",
+      "turmas": [
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103"
+      ]
+    },
+    {
+      "numero_estudante": "E0418",
+      "nome": "Ash Baggins",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0418@exemplo.test",
+      "turmas": [
+        "T-GES107",
+        "T-GES101",
+        "T-GES102",
+        "T-GES103"
+      ]
+    },
+    {
+      "numero_estudante": "E0419",
+      "nome": "Simba Ketchum",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0419@exemplo.test",
+      "turmas": [
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103"
+      ]
+    },
+    {
+      "numero_estudante": "E0420",
+      "nome": "Luffy Lion",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0420@exemplo.test",
+      "turmas": [
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103"
+      ]
+    },
+    {
+      "numero_estudante": "E0421",
+      "nome": "Finn Brown",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0421@exemplo.test",
+      "turmas": [
+        "T-INF105",
+        "T-INF106",
+        "T-INF107",
+        "T-INF108"
+      ]
+    },
+    {
+      "numero_estudante": "E0422",
+      "nome": "Zoro Solo",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0422@exemplo.test",
+      "turmas": [
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104"
+      ]
+    },
+    {
+      "numero_estudante": "E0423",
+      "nome": "Sasuke Ketchum",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0423@exemplo.test",
+      "turmas": [
+        "T-GES101",
+        "T-GES102",
+        "T-GES103",
+        "T-GES104"
+      ]
+    },
+    {
+      "numero_estudante": "E0424",
+      "nome": "Harry Monkey",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0424@exemplo.test",
+      "turmas": [
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104"
+      ]
+    },
+    {
+      "numero_estudante": "E0425",
+      "nome": "Mario Uchiha",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0425@exemplo.test",
+      "turmas": [
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104"
+      ]
+    },
+    {
+      "numero_estudante": "E0426",
+      "nome": "Simba Weasley",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0426@exemplo.test",
+      "turmas": [
+        "T-INF106",
+        "T-INF107",
+        "T-INF108",
+        "T-INF101"
+      ]
+    },
+    {
+      "numero_estudante": "E0427",
+      "nome": "Aragorn Ketchum",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0427@exemplo.test",
+      "turmas": [
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105"
+      ]
+    },
+    {
+      "numero_estudante": "E0428",
+      "nome": "Zoro Roronoa",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0428@exemplo.test",
+      "turmas": [
+        "T-GES102",
+        "T-GES103",
+        "T-GES104",
+        "T-GES105"
+      ]
+    },
+    {
+      "numero_estudante": "E0429",
+      "nome": "Han Organa",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0429@exemplo.test",
+      "turmas": [
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105"
+      ]
+    },
+    {
+      "numero_estudante": "E0430",
+      "nome": "Mario Kusanagi",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0430@exemplo.test",
+      "turmas": [
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105"
+      ]
+    },
+    {
+      "numero_estudante": "E0431",
+      "nome": "Ash Potter",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0431@exemplo.test",
+      "turmas": [
+        "T-INF107",
+        "T-INF108",
+        "T-INF101",
+        "T-INF102"
+      ]
+    },
+    {
+      "numero_estudante": "E0432",
+      "nome": "Goku Haruno",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0432@exemplo.test",
+      "turmas": [
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106"
+      ]
+    },
+    {
+      "numero_estudante": "E0433",
+      "nome": "Sakura Gamgee",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0433@exemplo.test",
+      "turmas": [
+        "T-GES103",
+        "T-GES104",
+        "T-GES105",
+        "T-GES106"
+      ]
+    },
+    {
+      "numero_estudante": "E0434",
+      "nome": "Ash Uzumaki",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0434@exemplo.test",
+      "turmas": [
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106"
+      ]
+    },
+    {
+      "numero_estudante": "E0435",
+      "nome": "Luke Lion",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0435@exemplo.test",
+      "turmas": [
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106"
+      ]
+    },
+    {
+      "numero_estudante": "E0436",
+      "nome": "Sam Starfall",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0436@exemplo.test",
+      "turmas": [
+        "T-INF108",
+        "T-INF101",
+        "T-INF102",
+        "T-INF103"
+      ]
+    },
+    {
+      "numero_estudante": "E0437",
+      "nome": "Ron Potter",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0437@exemplo.test",
+      "turmas": [
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107"
+      ]
+    },
+    {
+      "numero_estudante": "E0438",
+      "nome": "Zoro Haruno",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0438@exemplo.test",
+      "turmas": [
+        "T-GES104",
+        "T-GES105",
+        "T-GES106",
+        "T-GES107"
+      ]
+    },
+    {
+      "numero_estudante": "E0439",
+      "nome": "Mario Brown",
+      "curso": "CAU",
+      "ano_ingresso": 2026,
+      "email": "e0439@exemplo.test",
+      "turmas": [
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107"
+      ]
+    },
+    {
+      "numero_estudante": "E0440",
+      "nome": "Nami Hyrule",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0440@exemplo.test",
+      "turmas": [
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107"
+      ]
+    },
+    {
+      "numero_estudante": "E0441",
+      "nome": "Link Monkey",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0441@exemplo.test",
+      "turmas": [
+        "T-INF101",
+        "T-INF102",
+        "T-INF103",
+        "T-INF104"
+      ]
+    },
+    {
+      "numero_estudante": "E0442",
+      "nome": "Nala Ketchum",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0442@exemplo.test",
+      "turmas": [
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101"
+      ]
+    },
+    {
+      "numero_estudante": "E0443",
+      "nome": "Harry Uchiha",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0443@exemplo.test",
+      "turmas": [
+        "T-GES105",
+        "T-GES106",
+        "T-GES107",
+        "T-GES101"
+      ]
+    },
+    {
+      "numero_estudante": "E0444",
+      "nome": "Zoro Skyrunner",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0444@exemplo.test",
+      "turmas": [
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101"
+      ]
+    },
+    {
+      "numero_estudante": "E0445",
+      "nome": "Nami Gamgee",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0445@exemplo.test",
+      "turmas": [
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101"
+      ]
+    },
+    {
+      "numero_estudante": "E0446",
+      "nome": "Aragorn Hyrule",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0446@exemplo.test",
+      "turmas": [
+        "T-INF102",
+        "T-INF103",
+        "T-INF104",
+        "T-INF105"
+      ]
+    },
+    {
+      "numero_estudante": "E0447",
+      "nome": "Sasuke Brown",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0447@exemplo.test",
+      "turmas": [
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102"
+      ]
+    },
+    {
+      "numero_estudante": "E0448",
+      "nome": "Naruto Haruno",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0448@exemplo.test",
+      "turmas": [
+        "T-GES106",
+        "T-GES107",
+        "T-GES101",
+        "T-GES102"
+      ]
+    },
+    {
+      "numero_estudante": "E0449",
+      "nome": "Vegeta Roronoa",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0449@exemplo.test",
+      "turmas": [
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102"
+      ]
+    },
+    {
+      "numero_estudante": "E0450",
+      "nome": "Nami Organa",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0450@exemplo.test",
+      "turmas": [
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102"
+      ]
+    },
+    {
+      "numero_estudante": "E0451",
+      "nome": "Harry Baggins",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0451@exemplo.test",
+      "turmas": [
+        "T-INF103",
+        "T-INF104",
+        "T-INF105",
+        "T-INF106"
+      ]
+    },
+    {
+      "numero_estudante": "E0452",
+      "nome": "Mario Solo",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0452@exemplo.test",
+      "turmas": [
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103"
+      ]
+    },
+    {
+      "numero_estudante": "E0453",
+      "nome": "Zoro Hyrule",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0453@exemplo.test",
+      "turmas": [
+        "T-GES107",
+        "T-GES101",
+        "T-GES102",
+        "T-GES103"
+      ]
+    },
+    {
+      "numero_estudante": "E0454",
+      "nome": "Frodo Potter",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0454@exemplo.test",
+      "turmas": [
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103"
+      ]
+    },
+    {
+      "numero_estudante": "E0455",
+      "nome": "Zelda Solo",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0455@exemplo.test",
+      "turmas": [
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103"
+      ]
+    },
+    {
+      "numero_estudante": "E0456",
+      "nome": "Sam Kusanagi",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0456@exemplo.test",
+      "turmas": [
+        "T-INF104",
+        "T-INF105",
+        "T-INF106",
+        "T-INF107"
+      ]
+    },
+    {
+      "numero_estudante": "E0457",
+      "nome": "Rey Dragon",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0457@exemplo.test",
+      "turmas": [
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104"
+      ]
+    },
+    {
+      "numero_estudante": "E0458",
+      "nome": "Luke Dragon",
+      "curso": "GES",
+      "ano_ingresso": 2025,
+      "email": "e0458@exemplo.test",
+      "turmas": [
+        "T-GES101",
+        "T-GES102",
+        "T-GES103",
+        "T-GES104"
+      ]
+    },
+    {
+      "numero_estudante": "E0459",
+      "nome": "Luke Roronoa",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0459@exemplo.test",
+      "turmas": [
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104"
+      ]
+    },
+    {
+      "numero_estudante": "E0460",
+      "nome": "Sasuke Lion",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0460@exemplo.test",
+      "turmas": [
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104"
+      ]
+    },
+    {
+      "numero_estudante": "E0461",
+      "nome": "Link Potter",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0461@exemplo.test",
+      "turmas": [
+        "T-INF105",
+        "T-INF106",
+        "T-INF107",
+        "T-INF108"
+      ]
+    },
+    {
+      "numero_estudante": "E0462",
+      "nome": "Sakura Organa",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0462@exemplo.test",
+      "turmas": [
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105"
+      ]
+    },
+    {
+      "numero_estudante": "E0463",
+      "nome": "Naruto Monkey",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0463@exemplo.test",
+      "turmas": [
+        "T-GES102",
+        "T-GES103",
+        "T-GES104",
+        "T-GES105"
+      ]
+    },
+    {
+      "numero_estudante": "E0464",
+      "nome": "Zoro Uchiha",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0464@exemplo.test",
+      "turmas": [
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105"
+      ]
+    },
+    {
+      "numero_estudante": "E0465",
+      "nome": "Ash Starfall",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0465@exemplo.test",
+      "turmas": [
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105"
+      ]
+    },
+    {
+      "numero_estudante": "E0466",
+      "nome": "Misty Organa",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0466@exemplo.test",
+      "turmas": [
+        "T-INF106",
+        "T-INF107",
+        "T-INF108",
+        "T-INF101"
+      ]
+    },
+    {
+      "numero_estudante": "E0467",
+      "nome": "Mario Ketchum",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0467@exemplo.test",
+      "turmas": [
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106"
+      ]
+    },
+    {
+      "numero_estudante": "E0468",
+      "nome": "Nami Potter",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0468@exemplo.test",
+      "turmas": [
+        "T-GES103",
+        "T-GES104",
+        "T-GES105",
+        "T-GES106"
+      ]
+    },
+    {
+      "numero_estudante": "E0469",
+      "nome": "Aragorn Lion",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0469@exemplo.test",
+      "turmas": [
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106"
+      ]
+    },
+    {
+      "numero_estudante": "E0470",
+      "nome": "Nami Dragon",
+      "curso": "ECO",
+      "ano_ingresso": 2023,
+      "email": "e0470@exemplo.test",
+      "turmas": [
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106"
+      ]
+    },
+    {
+      "numero_estudante": "E0471",
+      "nome": "Sam Solo",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0471@exemplo.test",
+      "turmas": [
+        "T-INF107",
+        "T-INF108",
+        "T-INF101",
+        "T-INF102"
+      ]
+    },
+    {
+      "numero_estudante": "E0472",
+      "nome": "Mario Kenobi",
+      "curso": "DIR",
+      "ano_ingresso": 2025,
+      "email": "e0472@exemplo.test",
+      "turmas": [
+        "T-DIR104",
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107"
+      ]
+    },
+    {
+      "numero_estudante": "E0473",
+      "nome": "Ron Uzumaki",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0473@exemplo.test",
+      "turmas": [
+        "T-GES104",
+        "T-GES105",
+        "T-GES106",
+        "T-GES107"
+      ]
+    },
+    {
+      "numero_estudante": "E0474",
+      "nome": "Sakura Lion",
+      "curso": "CAU",
+      "ano_ingresso": 2023,
+      "email": "e0474@exemplo.test",
+      "turmas": [
+        "T-CAU104",
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107"
+      ]
+    },
+    {
+      "numero_estudante": "E0475",
+      "nome": "Aragorn Haruno",
+      "curso": "ECO",
+      "ano_ingresso": 2026,
+      "email": "e0475@exemplo.test",
+      "turmas": [
+        "T-ECO104",
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107"
+      ]
+    },
+    {
+      "numero_estudante": "E0476",
+      "nome": "Luffy Potter",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0476@exemplo.test",
+      "turmas": [
+        "T-INF108",
+        "T-INF101",
+        "T-INF102",
+        "T-INF103"
+      ]
+    },
+    {
+      "numero_estudante": "E0477",
+      "nome": "Ron Weasley",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0477@exemplo.test",
+      "turmas": [
+        "T-DIR105",
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101"
+      ]
+    },
+    {
+      "numero_estudante": "E0478",
+      "nome": "Sasuke Gamgee",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0478@exemplo.test",
+      "turmas": [
+        "T-GES105",
+        "T-GES106",
+        "T-GES107",
+        "T-GES101"
+      ]
+    },
+    {
+      "numero_estudante": "E0479",
+      "nome": "Harry Starfall",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0479@exemplo.test",
+      "turmas": [
+        "T-CAU105",
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101"
+      ]
+    },
+    {
+      "numero_estudante": "E0480",
+      "nome": "Ash Kusanagi",
+      "curso": "ECO",
+      "ano_ingresso": 2025,
+      "email": "e0480@exemplo.test",
+      "turmas": [
+        "T-ECO105",
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101"
+      ]
+    },
+    {
+      "numero_estudante": "E0481",
+      "nome": "Simba Potter",
+      "curso": "INF",
+      "ano_ingresso": 2026,
+      "email": "e0481@exemplo.test",
+      "turmas": [
+        "T-INF101",
+        "T-INF102",
+        "T-INF103",
+        "T-INF104"
+      ]
+    },
+    {
+      "numero_estudante": "E0482",
+      "nome": "Misty Brown",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0482@exemplo.test",
+      "turmas": [
+        "T-DIR106",
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102"
+      ]
+    },
+    {
+      "numero_estudante": "E0483",
+      "nome": "Aragorn Potter",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0483@exemplo.test",
+      "turmas": [
+        "T-GES106",
+        "T-GES107",
+        "T-GES101",
+        "T-GES102"
+      ]
+    },
+    {
+      "numero_estudante": "E0484",
+      "nome": "Zoro Brown",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0484@exemplo.test",
+      "turmas": [
+        "T-CAU106",
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102"
+      ]
+    },
+    {
+      "numero_estudante": "E0485",
+      "nome": "Aragorn Skyrunner",
+      "curso": "ECO",
+      "ano_ingresso": 2025,
+      "email": "e0485@exemplo.test",
+      "turmas": [
+        "T-ECO106",
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102"
+      ]
+    },
+    {
+      "numero_estudante": "E0486",
+      "nome": "Sam Uzumaki",
+      "curso": "INF",
+      "ano_ingresso": 2024,
+      "email": "e0486@exemplo.test",
+      "turmas": [
+        "T-INF102",
+        "T-INF103",
+        "T-INF104",
+        "T-INF105"
+      ]
+    },
+    {
+      "numero_estudante": "E0487",
+      "nome": "Rey Haruno",
+      "curso": "DIR",
+      "ano_ingresso": 2023,
+      "email": "e0487@exemplo.test",
+      "turmas": [
+        "T-DIR107",
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103"
+      ]
+    },
+    {
+      "numero_estudante": "E0488",
+      "nome": "Zelda Brown",
+      "curso": "GES",
+      "ano_ingresso": 2023,
+      "email": "e0488@exemplo.test",
+      "turmas": [
+        "T-GES107",
+        "T-GES101",
+        "T-GES102",
+        "T-GES103"
+      ]
+    },
+    {
+      "numero_estudante": "E0489",
+      "nome": "Link Kusanagi",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0489@exemplo.test",
+      "turmas": [
+        "T-CAU107",
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103"
+      ]
+    },
+    {
+      "numero_estudante": "E0490",
+      "nome": "Naruto Lion",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0490@exemplo.test",
+      "turmas": [
+        "T-ECO107",
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103"
+      ]
+    },
+    {
+      "numero_estudante": "E0491",
+      "nome": "Zelda Ketchum",
+      "curso": "INF",
+      "ano_ingresso": 2025,
+      "email": "e0491@exemplo.test",
+      "turmas": [
+        "T-INF103",
+        "T-INF104",
+        "T-INF105",
+        "T-INF106"
+      ]
+    },
+    {
+      "numero_estudante": "E0492",
+      "nome": "Nami Weasley",
+      "curso": "DIR",
+      "ano_ingresso": 2026,
+      "email": "e0492@exemplo.test",
+      "turmas": [
+        "T-DIR101",
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104"
+      ]
+    },
+    {
+      "numero_estudante": "E0493",
+      "nome": "Rey Ketchum",
+      "curso": "GES",
+      "ano_ingresso": 2024,
+      "email": "e0493@exemplo.test",
+      "turmas": [
+        "T-GES101",
+        "T-GES102",
+        "T-GES103",
+        "T-GES104"
+      ]
+    },
+    {
+      "numero_estudante": "E0494",
+      "nome": "Nami Uzumaki",
+      "curso": "CAU",
+      "ano_ingresso": 2025,
+      "email": "e0494@exemplo.test",
+      "turmas": [
+        "T-CAU101",
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104"
+      ]
+    },
+    {
+      "numero_estudante": "E0495",
+      "nome": "Luffy Starfall",
+      "curso": "ECO",
+      "ano_ingresso": 2024,
+      "email": "e0495@exemplo.test",
+      "turmas": [
+        "T-ECO101",
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104"
+      ]
+    },
+    {
+      "numero_estudante": "E0496",
+      "nome": "Frodo Skyrunner",
+      "curso": "INF",
+      "ano_ingresso": 2023,
+      "email": "e0496@exemplo.test",
+      "turmas": [
+        "T-INF104",
+        "T-INF105",
+        "T-INF106",
+        "T-INF107"
+      ]
+    },
+    {
+      "numero_estudante": "E0497",
+      "nome": "Simba Baggins",
+      "curso": "DIR",
+      "ano_ingresso": 2024,
+      "email": "e0497@exemplo.test",
+      "turmas": [
+        "T-DIR102",
+        "T-DIR103",
+        "T-DIR104",
+        "T-DIR105"
+      ]
+    },
+    {
+      "numero_estudante": "E0498",
+      "nome": "Han Ketchum",
+      "curso": "GES",
+      "ano_ingresso": 2026,
+      "email": "e0498@exemplo.test",
+      "turmas": [
+        "T-GES102",
+        "T-GES103",
+        "T-GES104",
+        "T-GES105"
+      ]
+    },
+    {
+      "numero_estudante": "E0499",
+      "nome": "Aragorn Monkey",
+      "curso": "CAU",
+      "ano_ingresso": 2024,
+      "email": "e0499@exemplo.test",
+      "turmas": [
+        "T-CAU102",
+        "T-CAU103",
+        "T-CAU104",
+        "T-CAU105"
+      ]
+    },
+    {
+      "numero_estudante": "E0500",
+      "nome": "Zelda Hyrule",
+      "curso": "ECO",
+      "ano_ingresso": 2025,
+      "email": "e0500@exemplo.test",
+      "turmas": [
+        "T-ECO102",
+        "T-ECO103",
+        "T-ECO104",
+        "T-ECO105"
+      ]
+    }
+  ]
+}

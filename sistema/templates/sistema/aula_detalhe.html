@@ -1,0 +1,181 @@
+{% extends 'sistema/base.html' %}
+
+{% block title %}{{ aula.uc.nome }} — Aula{% endblock %}
+
+{% block content %}
+
+<!-- Cabeçalho -->
+<div class="d-flex justify-content-between align-items-start mb-3">
+    <div>
+        <h3>{{ aula.uc.nome }}</h3>
+        <p class="text-muted mb-1">
+            <i class="bi bi-people"></i> {{ aula.turma.codigo }} |
+            <i class="bi bi-geo-alt"></i> {{ aula.sala.codigo }} |
+            <i class="bi bi-calendar"></i> {{ aula.data }} |
+            <i class="bi bi-clock"></i> {{ aula.hora_inicio }} — {{ aula.hora_fim }}
+        </p>
+    </div>
+    <span class="badge-estado badge-{{ aula.estado }}">{{ aula.get_estado_display }}</span>
+</div>
+
+<!-- Estado da aula -->
+<div class="card mb-3">
+    <div class="card-body">
+        <h5><i class="bi bi-info-circle"></i> Estado da Aula</h5>
+
+        <div id="estado-container">
+            {% if aula.estado == "agendada" %}
+                <p>Clique em <strong>Iniciar Aula</strong> para começar.</p>
+                <button class="btn btn-primary btn-mobile" id="btn-iniciar" data-aula="{{ aula.id }}">
+                    <i class="bi bi-play-circle"></i> Iniciar Aula
+                </button>
+
+            {% elif aula.estado == "em_curso" %}
+                <div class="alert alert-warning">
+                    <i class="bi bi-hourglass-split"></i>
+                    Aula em curso. Valide a sua localização para continuar.
+                </div>
+
+                <!-- Botões de validação -->
+                <div class="row">
+                    <div class="col-md-6 mb-2">
+                        <button class="btn btn-success btn-mobile w-100" id="btn-validar-gps">
+                            <i class="bi bi-geo-alt"></i> Validar com GPS
+                        </button>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <button class="btn btn-info btn-mobile w-100" id="btn-validar-qr-camera">
+                            <i class="bi bi-camera"></i> Ler QR com Câmara
+                        </button>
+                    </div>
+                </div>
+
+                <!-- QR Manual (fallback) -->
+                <div class="mt-3">
+                    <label class="form-label small">Ou insira o código QR manualmente:</label>
+                    <div class="input-group">
+                        <input type="text" id="qr-input" class="form-control" placeholder="Ex: QR-SALA-101">
+                        <button class="btn btn-outline-info" id="btn-validar-qr-manual">Validar</button>
+                    </div>
+                </div>
+
+                <!-- Leitor de QR Code (câmara) — escondido por defeito -->
+                <div id="qr-reader" style="display:none; margin-top:15px;"></div>
+
+                <!-- Resultado da validação -->
+                <div id="resultado-validacao" class="mt-3"></div>
+
+                        {% elif aula.estado == "bloqueada" %}
+                <div class="alert alert-danger">
+                    <i class="bi bi-x-octagon"></i>
+                    <strong>AULA BLOQUEADA</strong><br>
+                    O docente não se encontra na sala de aula definida para esta actividade.
+                </div>
+                <p><strong>Sala prevista:</strong> {{ aula.sala.codigo }} — {{ aula.sala.edificio }}</p>
+
+                {% with pedido=aula.pedidos_revisao.last %}
+                {% if pedido and pedido.estado == "pendente" %}
+                    <div class="alert alert-info">
+                        <i class="bi bi-hourglass-split"></i>
+                        Pedido de revisão enviado. A aguardar a decisão da coordenação.
+                    </div>
+                {% else %}
+                    {% if pedido and pedido.estado == "rejeitado" %}
+                        <div class="alert alert-warning">
+                            O último pedido foi rejeitado.
+                            {% if pedido.observacao %}<br><strong>Coordenação:</strong> {{ pedido.observacao }}{% endif %}
+                        </div>
+                    {% endif %}
+                    <div class="mt-3">
+                        <label class="form-label">Pedir revisão à coordenação *</label>
+                        <textarea id="motivo-revisao" class="form-control mb-2" rows="3"
+                                  placeholder="Explique o motivo (ex.: o GPS não apanhou a sala)..."></textarea>
+                        <button class="btn btn-warning btn-mobile" id="btn-pedir-revisao">
+                            <i class="bi bi-send"></i> Pedir Revisão
+                        </button>
+                    </div>
+                {% endif %}
+                {% endwith %}
+
+            {% elif aula.estado == "validada" %}
+                <div class="alert alert-success">
+                    <i class="bi bi-check-circle"></i>
+                    <strong>Aula validada!</strong>
+                </div>
+                <p><strong>Sumário:</strong> {{ aula.sumario }}</p>
+                <p><strong>Tema:</strong> {{ aula.tema }}</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<!-- Formulário de sumário (só em curso) -->
+{% if aula.estado == "em_curso" %}
+<div class="card mb-3">
+    <div class="card-body">
+        <h5><i class="bi bi-journal-text"></i> Sumário e Tema</h5>
+        <div class="mb-2">
+            <label class="form-label">Tema da aula *</label>
+            <input type="text" id="tema" class="form-control" placeholder="Ex: Introdução a algoritmos">
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Sumário *</label>
+            <textarea id="sumario" class="form-control" rows="3" placeholder="Descreva o conteúdo lecionado..."></textarea>
+        </div>
+    </div>
+</div>
+
+<!-- Presenças -->
+<div class="card mb-3">
+    <div class="card-body">
+        <h5><i class="bi bi-check2-square"></i> Presenças</h5>
+        <div class="table-responsive">
+            <table class="table table-sm">
+                <thead>
+                    <tr>
+                        <th>Estudante</th>
+                        <th>Presente</th>
+                        <th>Falta</th>
+                        <th>Justificada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for estudante in estudantes %}
+                    <tr>
+                        <td>{{ estudante.nome }}</td>
+                        <td><input type="radio" name="estudante_{{ estudante.id }}" value="presente" checked></td>
+                        <td><input type="radio" name="estudante_{{ estudante.id }}" value="falta"></td>
+                        <td><input type="radio" name="estudante_{{ estudante.id }}" value="falta_justificada"></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <button class="btn btn-warning btn-mobile" id="btn-guardar-presencas">
+            <i class="bi bi-save"></i> Guardar Presenças
+        </button>
+    </div>
+</div>
+
+<!-- Botão encerrar -->
+<div class="card mb-3">
+    <div class="card-body text-center">
+        <h5><i class="bi bi-lock"></i> Encerrar Aula</h5>
+        <p class="text-muted">A aula só é considerada realizada quando todos os passos forem cumpridos.</p>
+        <button class="btn btn-danger btn-mobile" id="btn-encerrar">
+            <i class="bi bi-stop-circle"></i> Encerrar e Validar Aula
+        </button>
+        <div id="resultado-encerrar" class="mt-3"></div>
+    </div>
+</div>
+{% endif %}
+
+<a href="{% url 'painel' %}" class="btn btn-secondary btn-mobile">
+    <i class="bi bi-arrow-left"></i> Voltar ao Painel
+</a>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="/static/js/validacao.js"></script>
+{% endblock %}

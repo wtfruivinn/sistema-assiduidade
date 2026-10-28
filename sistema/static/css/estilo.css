@@ -1,0 +1,142 @@
+/* ============================================================
+   Estilos personalizados — Sistema de Assiduidade
+   ============================================================ */
+
+body {
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Cartões */
+.card {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-1px);
+    transition: all 0.2s;
+}
+
+.btn-success {
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.btn-danger {
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+/* Inputs */
+.form-control, .input-group-text {
+    border-radius: 8px;
+}
+
+.input-group .form-control {
+    border-left: none;
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+    border-right: none;
+}
+
+/* Alertas */
+.alert {
+    border-radius: 8px;
+    border: none;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* Rodapé */
+footer {
+    margin-top: auto;
+}
+
+/* Badges de estado */
+.badge-estado {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.badge-agendada {
+    background-color: #cfe2ff;
+    color: #084298;
+}
+
+.badge-em_curso {
+    background-color: #fff3cd;
+    color: #664d03;
+}
+
+.badge-validada {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.badge-bloqueada {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+/* ============================================================
+   Mobile (PWA)
+   ============================================================ */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    /* Botões grandes para mobile */
+    .btn-mobile {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    /* Aulas em cartões grandes */
+    .card-aula {
+        margin-bottom: 15px;
+    }
+}

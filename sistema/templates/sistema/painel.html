@@ -1,0 +1,120 @@
+{% extends 'sistema/base.html' %}
+
+{% block title %}Painel do Docente — Sistema de Assiduidade{% endblock %}
+
+{% block content %}
+
+<div class="row mb-4">
+    <div class="col-12">
+        <h2>
+            <i class="bi bi-speedometer2 text-primary"></i>
+            Painel do Docente
+        </h2>
+        {% if docente %}
+        <p class="text-muted">
+            Bem-vindo, <strong>{{ docente.nome }}</strong> —
+            {{ docente.categoria.designacao }} ({{ docente.categoria.valor_hora }} MT/h)
+        </p>
+        {% else %}
+        <p class="text-muted">
+            Bem-vindo, <strong>{{ user.username }}</strong> (modo administrador)
+        </p>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Estatísticas -->
+<div class="row mb-4">
+    <div class="col-md-4 col-6 mb-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <i class="bi bi-calendar3 text-primary" style="font-size: 2rem;"></i>
+                <h3 class="mt-2 mb-0">{{ total_aulas }}</h3>
+                <small class="text-muted">Total de Aulas</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-6 mb-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <i class="bi bi-clock-history text-warning" style="font-size: 2rem;"></i>
+                <h3 class="mt-2 mb-0">{{ aulas_agendadas }}</h3>
+                <small class="text-muted">Agendadas</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-12 mb-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <i class="bi bi-check-circle text-success" style="font-size: 2rem;"></i>
+                <h3 class="mt-2 mb-0">{{ aulas_validadas }}</h3>
+                <small class="text-muted">Validadas</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Lista de aulas -->
+<h4 class="mb-3">
+    <i class="bi bi-list-task"></i> As Minhas Aulas
+</h4>
+
+{% if aulas %}
+    <div class="row">
+    {% for aula in aulas %}
+        <div class="col-md-6 col-12 card-aula">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title mb-0">{{ aula.uc.nome }}</h5>
+                        <span class="badge-estado badge-{{ aula.estado }}">
+                            {{ aula.get_estado_display }}
+                        </span>
+                    </div>
+
+                    <p class="card-text mb-2">
+                        <i class="bi bi-people"></i> <strong>Turma:</strong> {{ aula.turma.codigo }}<br>
+                        <i class="bi bi-geo-alt"></i> <strong>Sala:</strong> {{ aula.sala.codigo }}<br>
+                        <i class="bi bi-calendar"></i> <strong>Data:</strong> {{ aula.data }}<br>
+                        <i class="bi bi-clock"></i> <strong>Hora:</strong> {{ aula.hora_inicio }} — {{ aula.hora_fim }}
+                    </p>
+
+                    {% if aula.sumario %}
+                    <p class="text-muted small">
+                        <strong>Sumário:</strong> {{ aula.sumario|truncatewords:15 }}
+                    </p>
+                    {% endif %}
+
+                    <!-- BOTÕES CLICÁVEIS (NOVO) -->
+                    <div class="mt-3">
+                        {% if aula.estado == "agendada" %}
+                        <a href="{% url 'detalhe_aula' aula.id %}" class="btn btn-primary btn-sm btn-mobile w-100">
+                            <i class="bi bi-play-circle"></i> Iniciar Aula
+                        </a>
+                        {% elif aula.estado == "em_curso" %}
+                        <a href="{% url 'detalhe_aula' aula.id %}" class="btn btn-warning btn-sm btn-mobile w-100">
+                            <i class="bi bi-hourglass-split"></i> Continuar Aula
+                        </a>
+                        {% elif aula.estado == "bloqueada" %}
+                        <a href="{% url 'detalhe_aula' aula.id %}" class="btn btn-danger btn-sm btn-mobile w-100">
+                            <i class="bi bi-x-octagon"></i> Aula Bloqueada
+                        </a>
+                        {% elif aula.estado == "validada" %}
+                        <a href="{% url 'detalhe_aula' aula.id %}" class="btn btn-success btn-sm btn-mobile w-100">
+                            <i class="bi bi-check-circle"></i> Ver Aula Concluída
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+{% else %}
+    <div class="alert alert-info">
+        <i class="bi bi-info-circle"></i>
+        Ainda não tem aulas registadas.
+    </div>
+{% endif %}
+
+{% endblock %}
