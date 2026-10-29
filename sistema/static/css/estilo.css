@@ -29,7 +29,7 @@
     --bs-body-font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
-/* Transição suave entre páginas (browsers que suportam) */
+/* Transição suave entre páginas */
 @view-transition {
     navigation: auto;
 }
@@ -729,7 +729,9 @@ main > *:nth-child(n+6) { animation-delay: .3s; }
     }
 }
 
-/* Logótipo oficial */
+/* ------------------------------------------------------------
+   Logótipo Oficial
+   ------------------------------------------------------------ */
 .navbar-uz .logo-navbar {
     height: 44px;
     width: 44px;
@@ -748,4 +750,26 @@ main > *:nth-child(n+6) { animation-delay: .3s; }
     background: #fff;
     box-shadow: 0 0 0 4px var(--uz-dourado), 0 12px 30px rgba(0, 0, 0, .35);
     margin-bottom: 1.4rem;
+}
+
+/* ------------------------------------------------------------
+   AJUSTE DO LOGÓTIPO NO TELEMÓVEL (CENTRALIZADO)
+   ------------------------------------------------------------ */
+@media (max-width: 991.98px) {
+    .navbar-uz .navbar-brand {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .navbar-uz .marca {
+        text-align: center;
+    }
+    
+    .navbar-uz .navbar-toggler {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
 }
