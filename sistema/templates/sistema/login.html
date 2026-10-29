@@ -1,100 +1,84 @@
 {% extends 'sistema/base.html' %}
 {% load static %}
 
-{% block title %}Entrar — Sistema de Assiduidade{% endblock %}
-
 {% block body_class %}pagina-login{% endblock %}
 
-{% comment %}As mensagens aparecem dentro do cartão de login, por isso o bloco geral fica vazio.{% endcomment %}
-{% block mensagens %}{% endblock %}
+{% block title %}Login — Sistema de Assiduidade{% endblock %}
 
 {% block content %}
 <div class="login-shell">
-
-    <!-- Lado esquerdo: identidade institucional -->
-    <section class="login-lado">
-        <div class="login-lado-conteudo">
-            <img src="{% static 'img/logo-uz.png' %}" class="logo-login" alt="Logótipo da Universidade Zambeze" width="110" height="110">
-            <p class="login-selo">Universidade Zambeze</p>
-            <h1>Sistema Integrado de Controlo de Assiduidade</h1>
+    
+    <!-- Lado Esquerdo: Logótipo e Apresentação -->
+    <div class="login-lado">
+        <div class="login-lado-conteudo text-center text-lg-start mx-auto mx-lg-0">
+            
+            <!-- Logótipo: Centralizado no mobile, à esquerda no PC -->
+            <img src="{% static 'img/logo-uz.png' %}" class="logo-login mx-auto mx-lg-0" alt="Universidade Zambeze">
+            
+            <div class="login-selo">Universidade Zambeze</div>
+            <h1>Sistema de Assiduidade</h1>
             <p class="login-sub">
-                Aulas lecionadas, presenças e horas docentes, validadas no local e com registo de auditoria.
+                Controlo de presenças, registo académico e gestão de horas lectivas.
             </p>
+
             <ul class="login-pontos">
-                <li><i class="bi bi-geo-alt-fill"></i> Validação do local por GPS, QR Code e Wi-Fi</li>
-                <li><i class="bi bi-clipboard-check"></i> Sumário e presenças obrigatórios</li>
-                <li><i class="bi bi-cash-coin"></i> Cálculo automático das horas e do pagamento</li>
-                <li><i class="bi bi-shield-check"></i> Auditoria de todas as ações</li>
+                <li>
+                    <i class="bi bi-geo-alt-fill"></i>
+                    Validação de localização por GPS e QR Code
+                </li>
+                <li>
+                    <i class="bi bi-journal-check"></i>
+                    Registo de sumários e presenças
+                </li>
+                <li>
+                    <i class="bi bi-cash-stack"></i>
+                    Cálculo automático de horas e pagamentos
+                </li>
             </ul>
         </div>
-    </section>
+    </div>
 
-    <!-- Lado direito: formulário -->
-    <section class="login-form-lado">
+    <!-- Lado Direito: Formulário de Login -->
+    <div class="login-form-lado">
         <div class="login-caixa">
-            <h2 class="sem-linha">Iniciar sessão</h2>
-            <p class="text-muted mb-4">Entre com as suas credenciais institucionais.</p>
-
-            {% if messages %}
-                {% for message in messages %}
-                <div class="alert alert-{% if message.tags == 'error' %}danger{% else %}{{ message.tags }}{% endif %}">
-                    {{ message }}
-                </div>
-                {% endfor %}
-            {% endif %}
+            <h2 class="mb-2">Iniciar Sessão</h2>
+            <p class="text-muted mb-4">Acesso restrito a docentes e funcionários autorizados.</p>
 
             {% if erro %}
-            <div class="alert alert-danger">
-                <i class="bi bi-exclamation-triangle"></i> {{ erro }}
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <i class="bi bi-exclamation-triangle-fill me-2"></i> {{ erro }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
             </div>
             {% endif %}
 
             <form method="post">
                 {% csrf_token %}
+                
                 <div class="mb-3">
-                    <label class="form-label" for="campo-utilizador">Utilizador</label>
+                    <label class="form-label">Utilizador</label>
                     <div class="input-group">
-                        <span class="input-group-text"><i class="bi bi-person"></i></span>
-                        <input type="text" id="campo-utilizador" name="username" class="form-control"
-                               placeholder="nome.utilizador" required autofocus autocomplete="username">
+                        <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                        <input type="text" name="username" class="form-control" placeholder="nome.utilizador" required autofocus>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <label class="form-label" for="campo-password">Palavra-passe</label>
+
+                <div class="mb-4">
+                    <label class="form-label">Palavra-passe</label>
                     <div class="input-group">
-                        <span class="input-group-text"><i class="bi bi-key"></i></span>
-                        <input type="password" id="campo-password" name="password" class="form-control"
-                               placeholder="••••••••" required autocomplete="current-password">
-                        <button type="button" class="btn btn-outline-secondary" id="ver-password" aria-label="Mostrar palavra-passe">
-                            <i class="bi bi-eye"></i>
-                        </button>
+                        <span class="input-group-text"><i class="bi bi-key-fill"></i></span>
+                        <input type="password" name="password" class="form-control" placeholder="••••••••" required>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-entrar w-100 mt-3">
-                    <i class="bi bi-box-arrow-in-right"></i> Entrar
+
+                <button type="submit" class="btn btn-entrar w-100 mb-3">
+                    <i class="bi bi-box-arrow-in-right me-1"></i> Entrar
                 </button>
             </form>
 
-            <p class="login-nota text-center mt-4 mb-0">
-                Acesso restrito a docentes e funcionários autorizados.
+            <p class="login-nota text-center mt-3">
+                &copy; 2026 Universidade Zambeze
             </p>
         </div>
-    </section>
-
+    </div>
 </div>
-{% endblock %}
-
-{% block extra_js %}
-<script>
-    (function () {
-        var botao = document.getElementById('ver-password');
-        var campo = document.getElementById('campo-password');
-        if (!botao || !campo) return;
-        botao.addEventListener('click', function () {
-            var visivel = campo.type === 'text';
-            campo.type = visivel ? 'password' : 'text';
-            botao.innerHTML = visivel ? '<i class="bi bi-eye"></i>' : '<i class="bi bi-eye-slash"></i>';
-        });
-    })();
-</script>
 {% endblock %}

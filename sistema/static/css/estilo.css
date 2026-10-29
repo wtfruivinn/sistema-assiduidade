@@ -772,4 +772,17 @@ main > *:nth-child(n+6) { animation-delay: .3s; }
         right: 15px;
         top: 15px;
     }
+
+    /* Login: Centralizar logótipo */
+    .login-lado-conteudo {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .login-lado .logo-login {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 }
