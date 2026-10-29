@@ -17,6 +17,22 @@
     </div>
 </div>
 
+<!-- Botões de Ação -->
+<div class="row mb-4">
+    <div class="col-12 d-flex flex-wrap gap-2">
+        <form method="post" action="{% url 'coordenacao_gerar_aulas' %}" class="d-inline">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-warning">
+                <i class="bi bi-calendar-week"></i> Gerar Aulas da Semana
+            </button>
+        </form>
+        
+        <a href="{% url 'coordenacao_criar_horario' %}" class="btn btn-primary">
+            <i class="bi bi-calendar-plus"></i> Criar Horário e Aula Manualmente
+        </a>
+    </div>
+</div>
+
 <!-- Resumo -->
 <div class="row mb-4">
     <div class="col-md-3 col-6 mb-3">
@@ -57,8 +73,99 @@
     </div>
 </div>
 
-<!-- Pedidos de revisão por decidir -->
+<!-- Pedidos de Horário (Docentes) -->
+<h4 class="mb-3 mt-4">
+    <i class="bi bi-calendar-plus"></i> Pedidos de Horário (Docentes)
+</h4>
+{% if pedidos_horarios_pendentes %}
+<div class="card mb-4">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table align-middle mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>Docente</th>
+                        <th>Turma / Sala</th>
+                        <th>Horário</th>
+                        <th style="min-width: 260px;">Decisão</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for p in pedidos_horarios_pendentes %}
+                    <tr>
+                        <td><strong>{{ p.docente.nome }}</strong></td>
+                        <td>{{ p.turma.codigo }} / {{ p.sala.codigo }}</td>
+                        <td>
+                            {{ p.get_dia_semana_display }} - {{ p.hora_inicio }} às {{ p.hora_fim }}<br>
+                            <small class="text-muted">A partir de: {{ p.data_inicio|date:"d/m/Y"|default:"—" }}</small>
+                        </td>
+                        <td>
+                            <form method="post" action="{% url 'coordenacao_aprovar_horario' p.id %}">
+                                {% csrf_token %}
+                                <input type="text" name="observacao" class="form-control form-control-sm mb-2" placeholder="Observação (obrigatória ao rejeitar)">
+                                <button type="submit" name="acao" value="aprovar" class="btn btn-success btn-sm">Aprovar</button>
+                                <button type="submit" name="acao" value="rejeitar" class="btn btn-outline-danger btn-sm">Rejeitar</button>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="alert alert-info">Não há pedidos de horário pendentes.</div>
+{% endif %}
+
+<!-- Horas Pendentes -->
 <h4 class="mb-3">
+    <i class="bi bi-clock-history"></i> Horas por Aprovar
+</h4>
+{% if horas_pendentes %}
+<div class="card mb-4">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table table-sm align-middle mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>Docente</th>
+                        <th>Aula / UC</th>
+                        <th>Data</th>
+                        <th>Horas</th>
+                        <th>Valor</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for h in horas_pendentes %}
+                    <tr>
+                        <td>{{ h.docente.nome }}</td>
+                        <td>{{ h.aula.uc.nome }}</td>
+                        <td>{{ h.data|date:"d/m/Y" }}</td>
+                        <td>{{ h.horas }}h</td>
+                        <td>{{ h.valor_total }} MT</td>
+                        <td>
+                            <form method="post" action="{% url 'coordenacao_aprovar_horas' h.id %}">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-sm btn-success">
+                                    <i class="bi bi-check-lg"></i> Aprovar
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="alert alert-info">Não há horas pendentes.</div>
+{% endif %}
+
+<!-- Pedidos de revisão por decidir -->
+<h4 class="mb-3 mt-4">
     <i class="bi bi-inbox"></i> Pedidos de revisão por decidir
 </h4>
 

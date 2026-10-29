@@ -9,7 +9,7 @@ from .models import (
     CategoriaDocente, Docente, Curso, UC, Turma, Recinto, Sala,
     Estudante, Inscricao, Horario, Aula, ValidacaoAula,
     Presenca, HorasDocente, FolhaPagamento, Auditoria,
-    PedidoRevisao
+    PedidoRevisao, PedidoHorario  # <-- ADICIONADO AQUI
 )
 from .auditoria import registar_auditoria
  
@@ -29,7 +29,6 @@ def _gerar_folha(modeladmin, request, queryset, mes, ano):
     ignoradas = 0
     for docente in queryset:
         folha = FolhaPagamento.objects.filter(docente=docente, mes=mes, ano=ano).first()
-        # Folha já validada ou paga não se mexe
         if folha and folha.estado != "rascunho":
             ignoradas += 1
             continue
@@ -209,7 +208,6 @@ def marcar_folhas_pagas(modeladmin, request, queryset):
         for folha in queryset.filter(estado="validada"):
             folha.estado = "paga"
             folha.save()
-            # As horas desse mês passam também a "paga"
             horas_pagas = HorasDocente.objects.filter(
                 docente=folha.docente, estado="validada",
                 data__month=folha.mes, data__year=folha.ano,
@@ -287,7 +285,7 @@ class FolhaPagamentoAdmin(admin.ModelAdmin):
  
  
 # ============================================================
-# AUDITORIA — SÓ DE LEITURA (RN12: não se edita nem se apaga)
+# AUDITORIA — SÓ DE LEITURA
 # ============================================================
  
 @admin.register(Auditoria)
@@ -323,7 +321,6 @@ def aprovar_pedidos(modeladmin, request, queryset):
             pedido.data_decisao = timezone.now()
             pedido.save()
  
-            # Validação manual feita pela coordenação
             ValidacaoAula.objects.create(
                 aula=aula,
                 docente=aula.docente,
@@ -372,4 +369,14 @@ class PedidoRevisaoAdmin(admin.ModelAdmin):
     search_fields = ("docente__nome", "motivo")
     readonly_fields = ("data_pedido",)
     actions = [aprovar_pedidos, rejeitar_pedidos]
- 
+
+
+# ============================================================
+# ADMIN — PEDIDO DE HORÁRIO (NOVO)
+# ============================================================
+@admin.register(PedidoHorario)
+class PedidoHorarioAdmin(admin.ModelAdmin):
+    list_display = ("docente", "turma", "sala", "dia_semana", "hora_inicio", "hora_fim", "estado")
+    list_filter = ("estado", "dia_semana")
+    search_fields = ("docente__nome", "turma__codigo")
+    readonly_fields = ("data_pedido", "decidido_por", "data_decisao")

@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
- 
- 
+
+
 # ============================================================
 # CATEGORIAS DE DOCENTES
 # ============================================================
@@ -10,15 +10,15 @@ class CategoriaDocente(models.Model):
     valor_hora = models.DecimalField(max_digits=10, decimal_places=2)
     data_inicio = models.DateField()
     data_fim = models.DateField(null=True, blank=True)
- 
+
     class Meta:
         verbose_name = "Categoria de Docente"
         verbose_name_plural = "Categorias de Docentes"
- 
+
     def __str__(self):
         return f"{self.designacao} - {self.valor_hora} MT/h"
- 
- 
+
+
 # ============================================================
 # DOCENTES
 # ============================================================
@@ -29,15 +29,15 @@ class Docente(models.Model):
     categoria = models.ForeignKey(CategoriaDocente, on_delete=models.PROTECT)
     departamento = models.CharField(max_length=100)
     estado = models.BooleanField(default=True)
- 
+
     class Meta:
         verbose_name = "Docente"
         verbose_name_plural = "Docentes"
- 
+
     def __str__(self):
         return f"{self.numero_docente} - {self.nome}"
- 
- 
+
+
 # ============================================================
 # CURSOS
 # ============================================================
@@ -52,11 +52,11 @@ class Curso(models.Model):
     faculdade = models.CharField(max_length=10, choices=FACULDADES, default="FCT")
     duracao_anos = models.IntegerField()
     estado = models.BooleanField(default=True)
- 
+
     def __str__(self):
         return self.nome
- 
- 
+
+
 # ============================================================
 # UNIDADES CURRICULARES (UCs)
 # ============================================================
@@ -66,30 +66,30 @@ class UC(models.Model):
     curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
     creditos = models.IntegerField()
     carga_horaria = models.IntegerField(help_text="Horas totais")
- 
+
     class Meta:
         verbose_name = "Unidade Curricular"
         verbose_name_plural = "Unidades Curriculares"
- 
+
     def __str__(self):
         return f"{self.codigo} - {self.nome}"
- 
- 
+
+
 # ============================================================
 # TURMAS
 # ============================================================
 class Turma(models.Model):
     codigo = models.CharField(max_length=20, unique=True)
     uc = models.ForeignKey(UC, on_delete=models.CASCADE)
-    ano_letivo = models.CharField(max_length=10)  # Ex: "2025/2026"
-    semestre = models.CharField(max_length=10)    # Ex: "1º"
+    ano_letivo = models.CharField(max_length=10)
+    semestre = models.CharField(max_length=10)
     capacidade = models.IntegerField()
     estado = models.BooleanField(default=True)
- 
+
     def __str__(self):
         return f"{self.codigo} - {self.uc.nome} ({self.ano_letivo})"
- 
- 
+
+
 # ============================================================
 # RECINTOS (campus)
 # ============================================================
@@ -99,15 +99,15 @@ class Recinto(models.Model):
     longitude = models.DecimalField(max_digits=10, decimal_places=7)
     raio_metros = models.IntegerField(default=300, help_text="Raio do recinto em metros")
     estado = models.BooleanField(default=True)
- 
+
     class Meta:
         verbose_name = "Recinto"
         verbose_name_plural = "Recintos"
- 
+
     def __str__(self):
         return f"{self.nome} (raio {self.raio_metros} m)"
- 
- 
+
+
 # ============================================================
 # SALAS
 # ============================================================
@@ -129,15 +129,15 @@ class Sala(models.Model):
     ip_subnet = models.CharField(max_length=50, blank=True, help_text="Ex: 192.168.10.0/24")
     beacon_id = models.CharField(max_length=100, blank=True)
     estado = models.BooleanField(default=True)
- 
+
     class Meta:
         verbose_name = "Sala"
         verbose_name_plural = "Salas"
- 
+
     def __str__(self):
         return f"{self.codigo} - {self.edificio} (Piso {self.piso})"
- 
- 
+
+
 # ============================================================
 # ESTUDANTES
 # ============================================================
@@ -149,15 +149,15 @@ class Estudante(models.Model):
     ano_ingresso = models.IntegerField()
     email = models.EmailField(blank=True)
     estado = models.BooleanField(default=True)
- 
+
     class Meta:
         verbose_name = "Estudante"
         verbose_name_plural = "Estudantes"
- 
+
     def __str__(self):
         return f"{self.numero_estudante} - {self.nome}"
- 
- 
+
+
 # ============================================================
 # INSCRIÇÕES
 # ============================================================
@@ -166,14 +166,14 @@ class Inscricao(models.Model):
     turma = models.ForeignKey(Turma, on_delete=models.CASCADE)
     data_inscricao = models.DateField(auto_now_add=True)
     estado = models.CharField(max_length=20, default="ativa")
- 
+
     class Meta:
         unique_together = ("estudante", "turma")
- 
+
     def __str__(self):
         return f"{self.estudante.nome} → {self.turma.codigo}"
- 
- 
+
+
 # ============================================================
 # HORÁRIOS
 # ============================================================
@@ -194,11 +194,11 @@ class Horario(models.Model):
     hora_fim = models.TimeField()
     ano_letivo = models.CharField(max_length=10)
     semestre = models.CharField(max_length=10)
- 
+
     def __str__(self):
         return f"{self.turma.codigo} - {self.dia_semana} {self.hora_inicio}-{self.hora_fim}"
- 
- 
+
+
 # ============================================================
 # AULAS
 # ============================================================
@@ -222,15 +222,15 @@ class Aula(models.Model):
     estado = models.CharField(max_length=20, choices=ESTADOS, default="agendada")
     hora_inicio_real = models.TimeField(null=True, blank=True)
     hora_fim_real = models.TimeField(null=True, blank=True)
- 
+
     class Meta:
         verbose_name = "Aula"
         verbose_name_plural = "Aulas"
- 
+
     def __str__(self):
         return f"{self.turma.codigo} - {self.data} ({self.estado})"
- 
- 
+
+
 # ============================================================
 # VALIDAÇÃO DA AULA
 # ============================================================
@@ -245,11 +245,11 @@ class ValidacaoAula(models.Model):
     horario_validado = models.BooleanField(default=False)
     qr_validado = models.BooleanField(default=False)
     resultado = models.CharField(max_length=20, help_text="autorizado | bloqueado")
- 
+
     def __str__(self):
         return f"Validação {self.aula} → {self.resultado}"
- 
- 
+
+
 # ============================================================
 # PRESENÇAS
 # ============================================================
@@ -263,14 +263,14 @@ class Presenca(models.Model):
     estudante = models.ForeignKey(Estudante, on_delete=models.CASCADE)
     estado = models.CharField(max_length=20, choices=ESTADOS)
     data_hora = models.DateTimeField(auto_now_add=True)
- 
+
     class Meta:
         unique_together = ("aula", "estudante")
- 
+
     def __str__(self):
         return f"{self.estudante.nome} - {self.estado}"
- 
- 
+
+
 # ============================================================
 # HORAS DOCENTES
 # ============================================================
@@ -287,15 +287,15 @@ class HorasDocente(models.Model):
     valor_hora = models.DecimalField(max_digits=10, decimal_places=2)
     valor_total = models.DecimalField(max_digits=10, decimal_places=2)
     estado = models.CharField(max_length=20, choices=ESTADOS, default="pendente")
- 
+
     class Meta:
         verbose_name = "Horas do Docente"
         verbose_name_plural = "Horas dos Docentes"
- 
+
     def __str__(self):
         return f"{self.docente.nome} - {self.horas}h = {self.valor_total} MT"
- 
- 
+
+
 # ============================================================
 # FOLHA DE PAGAMENTO
 # ============================================================
@@ -313,16 +313,16 @@ class FolhaPagamento(models.Model):
     estado = models.CharField(max_length=20, choices=ESTADOS, default="rascunho")
     data_geracao = models.DateTimeField(auto_now_add=True)
     data_validacao = models.DateTimeField(null=True, blank=True)
- 
+
     class Meta:
         unique_together = ("docente", "mes", "ano")
         verbose_name = "Folha de Pagamento"
         verbose_name_plural = "Folhas de Pagamento"
- 
+
     def __str__(self):
         return f"{self.docente.nome} - {self.mes}/{self.ano}"
- 
- 
+
+
 # ============================================================
 # AUDITORIA
 # ============================================================
@@ -335,15 +335,15 @@ class Auditoria(models.Model):
     ip = models.GenericIPAddressField(null=True, blank=True)
     localizacao = models.CharField(max_length=200, blank=True)
     detalhes = models.TextField(blank=True)
- 
+
     class Meta:
         verbose_name = "Auditoria"
         verbose_name_plural = "Auditorias"
- 
+
     def __str__(self):
         return f"{self.utilizador} - {self.operacao} em {self.entidade}"
- 
- 
+
+
 # ============================================================
 # PEDIDO DE REVISÃO (aula bloqueada)
 # ============================================================
@@ -363,14 +363,44 @@ class PedidoRevisao(models.Model):
     )
     data_decisao = models.DateTimeField(null=True, blank=True)
     observacao = models.TextField(blank=True, help_text="Resposta da coordenação")
- 
+
     class Meta:
         verbose_name = "Pedido de Revisão"
         verbose_name_plural = "Pedidos de Revisão"
- 
+
     def __str__(self):
         return f"Revisão {self.aula} - {self.estado}"
- 
 
 
+# ============================================================
+# PEDIDO DE HORÁRIO (docente propõe à coordenação)
+# ============================================================
+class PedidoHorario(models.Model):
+    ESTADOS = [
+        ("pendente", "Pendente"),
+        ("aprovado", "Aprovado"),
+        ("rejeitado", "Rejeitado"),
+    ]
+    docente = models.ForeignKey(Docente, on_delete=models.CASCADE)
+    turma = models.ForeignKey(Turma, on_delete=models.CASCADE)
+    sala = models.ForeignKey(Sala, on_delete=models.PROTECT)
+    dia_semana = models.CharField(max_length=3, choices=Horario.DIAS_SEMANA)
+    hora_inicio = models.TimeField()
+    hora_fim = models.TimeField()
+    ano_letivo = models.CharField(max_length=10, default="2025/2026")
+    semestre = models.CharField(max_length=10, default="1º")
+    data_inicio = models.DateField(null=True, blank=True, help_text="Data a partir da qual o horário começa a valer")
+    estado = models.CharField(max_length=20, choices=ESTADOS, default="pendente")
+    data_pedido = models.DateTimeField(auto_now_add=True)
+    decidido_por = models.ForeignKey(
+        User, on_delete=models.SET_NULL, null=True, blank=True, related_name="horarios_decididos"
+    )
+    data_decisao = models.DateTimeField(null=True, blank=True)
+    observacao = models.TextField(blank=True, help_text="Resposta da coordenação")
 
+    class Meta:
+        verbose_name = "Pedido de Horário"
+        verbose_name_plural = "Pedidos de Horário"
+
+    def __str__(self):
+        return f"{self.docente.nome} → {self.turma.codigo} ({self.estado})"

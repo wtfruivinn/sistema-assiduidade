@@ -1,0 +1,93 @@
+{% extends 'sistema/base.html' %}
+
+{% block title %}Criar Horário — Coordenação{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center mt-4">
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-body p-4">
+                <h3><i class="bi bi-calendar-plus text-primary"></i> Criar Horário e Aula</h3>
+                <p class="text-muted">A coordenação cria o horário e a aula de uma só vez (sem necessidade de aprovação).</p>
+
+                <form method="post">
+                    {% csrf_token %}
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Turma (Cadeira)</label>
+                            <select name="turma" class="form-select" required>
+                                <option value="">Escolha a turma</option>
+                                {% for t in turmas %}
+                                <option value="{{ t.id }}">
+                                    {{ t.uc.curso.nome }} → {{ t.uc.nome }} → {{ t.codigo }}
+                                </option>
+                                {% endfor %}
+                            </select>
+                            <small class="text-muted">Mostra Curso → Cadeira → Turma</small>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Docente</label>
+                            <select name="docente" class="form-select" required>
+                                <option value="">Escolha o docente</option>
+                                {% for d in docentes %}
+                                <option value="{{ d.id }}">
+                                    {{ d.nome }} ({{ d.departamento }})
+                                </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Sala</label>
+                            <select name="sala" class="form-select" required>
+                                <option value="">Escolha a sala</option>
+                                {% for s in salas %}
+                                <option value="{{ s.id }}">{{ s.codigo }} - {{ s.edificio }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Dia da Semana</label>
+                            <select name="dia_semana" class="form-select" required>
+                                <option value="SEG">Segunda-feira</option>
+                                <option value="TER">Terça-feira</option>
+                                <option value="QUA">Quarta-feira</option>
+                                <option value="QUI">Quinta-feira</option>
+                                <option value="SEX">Sexta-feira</option>
+                                <option value="SAB">Sábado</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label class="form-label">Data de Início</label>
+                            <input type="date" name="data_inicio" class="form-control" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label class="form-label">Hora Início</label>
+                            <input type="time" name="hora_inicio" class="form-control" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label class="form-label">Hora Fim</label>
+                            <input type="time" name="hora_fim" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 mt-3">
+                        <i class="bi bi-plus-circle"></i> Criar Horário e Aula
+                    </button>
+                    <a href="{% url 'coordenacao' %}" class="btn btn-secondary w-100 mt-2">Cancelar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

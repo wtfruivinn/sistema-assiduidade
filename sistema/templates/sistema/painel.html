@@ -54,6 +54,15 @@
     </div>
 </div>
 
+<!-- NOVO: Botão Propor Horário -->
+<div class="row mb-4">
+    <div class="col-12 text-center">
+        <a href="{% url 'propor_horario' %}" class="btn btn-primary btn-lg">
+            <i class="bi bi-calendar-plus"></i> Propor Novo Horário
+        </a>
+    </div>
+</div>
+
 <!-- Lista de aulas -->
 <h4 class="mb-3">
     <i class="bi bi-list-task"></i> As Minhas Aulas
@@ -85,7 +94,7 @@
                     </p>
                     {% endif %}
 
-                    <!-- BOTÕES CLICÁVEIS (NOVO) -->
+                    <!-- BOTÕES CLICÁVEIS -->
                     <div class="mt-3">
                         {% if aula.estado == "agendada" %}
                         <a href="{% url 'detalhe_aula' aula.id %}" class="btn btn-primary btn-sm btn-mobile w-100">

@@ -7,11 +7,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # ============================================================
 # SEGURANÇA (Produção)
 # ============================================================
+# Usa a variável de ambiente no Render; localmente usa a chave fornecida.
 SECRET_KEY = os.environ.get(
     'DJANGO_SECRET_KEY', 
-    '*)lv2+s7hoys2!gm6qm4mp4n8=$w%k42i!j7kc*l*4$d%2@8%&'
+    '8w5kLwNZW8PY_pj2L_ikQtMJpI0VWIhkekKwJSiF5e97eNXiWhpbglAt0CBK6bJp-K4'
 )
 
+# No servidor, DEBUG tem de ser False.
 DEBUG = False
 
 # ============================================================
@@ -21,12 +23,12 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
     'ruivo999.pythonanywhere.com',
-    '.onrender.com',  # NOVO: Aceita qualquer subdomínio do Render
+    '.onrender.com',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     'https://ruivo999.pythonanywhere.com',
-    'https://*.onrender.com',  # NOVO: Aceita qualquer subdomínio do Render
+    'https://*.onrender.com',
 ]
 
 # ============================================================
@@ -103,15 +105,16 @@ USE_I18N = True
 USE_TZ = True
 
 # ============================================================
-# FICHEIROS ESTÁTICOS
+# FICHEIROS ESTÁTICOS (WhiteNoise)
 # ============================================================
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-if DEBUG:
-    STATICFILES_DIRS = [BASE_DIR / 'sistema' / 'static']
-else:
-    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# O STATICFILES_DIRS tem de estar sempre definido, independentemente do DEBUG.
+STATICFILES_DIRS = [BASE_DIR / 'sistema' / 'static']
+
+# O WhiteNoise comprime e serve os ficheiros em produção
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # ============================================================
 # EMAIL
@@ -124,8 +127,9 @@ MAILERS = {
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
-# API REST: só utilizadores autenticados
+# ============================================================
+# API REST
+# ============================================================
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
         "rest_framework.permissions.IsAuthenticated",
