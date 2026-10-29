@@ -5,7 +5,7 @@ from sistema.api import (
     DocenteViewSet, AulaViewSet, SalaViewSet, PresencaViewSet,
     FolhaPagamentoListView, FolhaPagamentoGerarView,
 )
-from sistema import views
+from sistema import views, views_coordenacao
  
 router = DefaultRouter()
 router.register(r"docentes", DocenteViewSet, basename="docente")
@@ -30,6 +30,11 @@ urlpatterns = [
     path("logout/", views.pagina_logout, name="logout"),
     path("painel/", views.painel_docente, name="painel"),
     path("aula/<int:aula_id>/", views.detalhe_aula, name="detalhe_aula"),
+ 
+    # Painel da Coordenação / RH
+    path("coordenacao/", views_coordenacao.coordenacao_painel, name="coordenacao"),
+    path("coordenacao/pedidos/<int:pedido_id>/decidir/",
+         views_coordenacao.coordenacao_decidir_pedido, name="coordenacao_decidir_pedido"),
  
     # API AJAX (chamada pelo JavaScript)
     path("ajax/aula/<int:aula_id>/iniciar/", views.api_iniciar_aula, name="api_iniciar"),

@@ -1,0 +1,170 @@
+{% extends 'sistema/base.html' %}
+
+{% block title %}Coordenação — Sistema de Assiduidade{% endblock %}
+
+{% block content %}
+
+<div class="row mb-4">
+    <div class="col-12">
+        <h2>
+            <i class="bi bi-diagram-3 text-primary"></i>
+            Painel da Coordenação
+        </h2>
+        <p class="text-muted">
+            Bem-vindo, <strong>{{ user.username }}</strong>.
+            Aqui decide os pedidos de revisão e acompanha as aulas.
+        </p>
+    </div>
+</div>
+
+<!-- Resumo -->
+<div class="row mb-4">
+    <div class="col-md-3 col-6 mb-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <i class="bi bi-envelope-exclamation text-warning" style="font-size: 2rem;"></i>
+                <h3 class="mt-2 mb-0">{{ n_pedidos_pendentes }}</h3>
+                <small class="text-muted">Pedidos por decidir</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-6 mb-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <i class="bi bi-x-octagon text-danger" style="font-size: 2rem;"></i>
+                <h3 class="mt-2 mb-0">{{ n_aulas_bloqueadas }}</h3>
+                <small class="text-muted">Aulas bloqueadas</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-6 mb-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <i class="bi bi-hourglass-split text-primary" style="font-size: 2rem;"></i>
+                <h3 class="mt-2 mb-0">{{ n_horas_pendentes }}</h3>
+                <small class="text-muted">Horas pendentes</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-6 mb-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <i class="bi bi-calendar-day text-success" style="font-size: 2rem;"></i>
+                <h3 class="mt-2 mb-0">{{ n_aulas_hoje }}</h3>
+                <small class="text-muted">Aulas hoje</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pedidos de revisão por decidir -->
+<h4 class="mb-3">
+    <i class="bi bi-inbox"></i> Pedidos de revisão por decidir
+</h4>
+
+{% if pedidos_pendentes %}
+<div class="card mb-4">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table align-middle mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>Docente</th>
+                        <th>Aula</th>
+                        <th>Motivo</th>
+                        <th style="min-width: 260px;">Decisão</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for p in pedidos_pendentes %}
+                    <tr>
+                        <td>
+                            <strong>{{ p.docente.nome }}</strong><br>
+                            <small class="text-muted">{{ p.docente.numero_docente }}</small>
+                        </td>
+                        <td>
+                            {{ p.aula.uc.nome }}<br>
+                            <small class="text-muted">
+                                {{ p.aula.turma.codigo }} · {{ p.aula.sala.codigo }} ·
+                                {{ p.aula.data|date:"d/m/Y" }}
+                            </small>
+                        </td>
+                        <td>
+                            {{ p.motivo }}<br>
+                            <small class="text-muted">Pedido em {{ p.data_pedido|date:"d/m/Y H:i" }}</small>
+                        </td>
+                        <td>
+                            <form method="post" action="{% url 'coordenacao_decidir_pedido' p.id %}">
+                                {% csrf_token %}
+                                <input type="text" name="observacao" class="form-control form-control-sm mb-2"
+                                       placeholder="Observação (obrigatória ao rejeitar)">
+                                <button type="submit" name="acao" value="aprovar" class="btn btn-success btn-sm">
+                                    <i class="bi bi-check-circle"></i> Aprovar
+                                </button>
+                                <button type="submit" name="acao" value="rejeitar" class="btn btn-outline-danger btn-sm">
+                                    <i class="bi bi-x-circle"></i> Rejeitar
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="alert alert-success">
+    <i class="bi bi-check-circle"></i>
+    Não há pedidos por decidir.
+</div>
+{% endif %}
+
+<!-- Últimas decisões -->
+<h4 class="mb-3 mt-4">
+    <i class="bi bi-clock-history"></i> Últimas decisões
+</h4>
+
+{% if pedidos_decididos %}
+<div class="card mb-4">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table table-sm align-middle mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>Docente</th>
+                        <th>Aula</th>
+                        <th>Estado</th>
+                        <th>Decidido por</th>
+                        <th>Observação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for p in pedidos_decididos %}
+                    <tr>
+                        <td>{{ p.docente.nome }}</td>
+                        <td>{{ p.aula.uc.nome }} · {{ p.aula.data|date:"d/m/Y" }}</td>
+                        <td>
+                            {% if p.estado == "aprovado" %}
+                                <span class="badge bg-success">Aprovado</span>
+                            {% else %}
+                                <span class="badge bg-danger">Rejeitado</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {{ p.decidido_por.username|default:"—" }}<br>
+                            <small class="text-muted">{{ p.data_decisao|date:"d/m/Y H:i" }}</small>
+                        </td>
+                        <td>{{ p.observacao|default:"—" }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% else %}
+<p class="text-muted">Ainda não há decisões registadas.</p>
+{% endif %}
+
+{% endblock %}
