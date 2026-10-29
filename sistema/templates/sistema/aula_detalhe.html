@@ -4,18 +4,21 @@
 
 {% block content %}
 
-<!-- Cabeçalho -->
-<div class="d-flex justify-content-between align-items-start mb-3">
-    <div>
-        <h3>{{ aula.uc.nome }}</h3>
-        <p class="text-muted mb-1">
-            <i class="bi bi-people"></i> {{ aula.turma.codigo }} |
-            <i class="bi bi-geo-alt"></i> {{ aula.sala.codigo }} |
-            <i class="bi bi-calendar"></i> {{ aula.data }} |
-            <i class="bi bi-clock"></i> {{ aula.hora_inicio }} — {{ aula.hora_fim }}
-        </p>
+<!-- Cabeçalho da aula -->
+<div class="aula-cabecalho mb-4">
+    <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 position-relative" style="z-index:1;">
+        <div>
+            <span class="aula-uc-codigo">{{ aula.uc.codigo }}</span>
+            <h2>{{ aula.uc.nome }}</h2>
+        </div>
+        <span class="badge-estado badge-{{ aula.estado }}">{{ aula.get_estado_display }}</span>
     </div>
-    <span class="badge-estado badge-{{ aula.estado }}">{{ aula.get_estado_display }}</span>
+    <div class="d-flex flex-wrap gap-2 mt-3 position-relative" style="z-index:1;">
+        <span class="chip"><i class="bi bi-people"></i> {{ aula.turma.codigo }}</span>
+        <span class="chip"><i class="bi bi-geo-alt"></i> {{ aula.sala.codigo }} · {{ aula.sala.edificio }}</span>
+        <span class="chip"><i class="bi bi-calendar-event"></i> {{ aula.data|date:"d/m/Y" }}</span>
+        <span class="chip"><i class="bi bi-clock"></i> {{ aula.hora_inicio|time:"H:i" }} — {{ aula.hora_fim|time:"H:i" }}</span>
+    </div>
 </div>
 
 <!-- Estado da aula -->
@@ -25,12 +28,18 @@
 
         <div id="estado-container">
             {% if aula.estado == "agendada" %}
-                <p>Clique em <strong>Iniciar Aula</strong> para começar.</p>
+                <p class="mb-3">Clique em <strong>Iniciar Aula</strong> para começar. Depois terá de validar a sua localização.</p>
                 <button class="btn btn-primary btn-mobile" id="btn-iniciar" data-aula="{{ aula.id }}">
                     <i class="bi bi-play-circle"></i> Iniciar Aula
                 </button>
 
             {% elif aula.estado == "em_curso" %}
+                <div class="passos">
+                    <span class="passo"><b>1</b> Validar localização</span>
+                    <span class="passo"><b>2</b> Sumário e presenças</span>
+                    <span class="passo"><b>3</b> Encerrar a aula</span>
+                </div>
+
                 <div class="alert alert-warning">
                     <i class="bi bi-hourglass-split"></i>
                     Aula em curso. Valide a sua localização para continuar.
@@ -65,7 +74,7 @@
                 <!-- Resultado da validação -->
                 <div id="resultado-validacao" class="mt-3"></div>
 
-                        {% elif aula.estado == "bloqueada" %}
+            {% elif aula.estado == "bloqueada" %}
                 <div class="alert alert-danger">
                     <i class="bi bi-x-octagon"></i>
                     <strong>AULA BLOQUEADA</strong><br>
@@ -102,8 +111,14 @@
                     <i class="bi bi-check-circle"></i>
                     <strong>Aula validada!</strong>
                 </div>
-                <p><strong>Sumário:</strong> {{ aula.sumario }}</p>
-                <p><strong>Tema:</strong> {{ aula.tema }}</p>
+                <p class="mb-2"><strong>Tema:</strong> {{ aula.tema }}</p>
+                <p class="mb-0"><strong>Sumário:</strong> {{ aula.sumario }}</p>
+
+            {% else %}
+                <div class="alert alert-info">
+                    <i class="bi bi-info-circle"></i>
+                    Esta aula está <strong>{{ aula.get_estado_display|lower }}</strong>.
+                </div>
             {% endif %}
         </div>
     </div>
@@ -114,11 +129,11 @@
 <div class="card mb-3">
     <div class="card-body">
         <h5><i class="bi bi-journal-text"></i> Sumário e Tema</h5>
-        <div class="mb-2">
+        <div class="mb-3">
             <label class="form-label">Tema da aula *</label>
             <input type="text" id="tema" class="form-control" placeholder="Ex: Introdução a algoritmos">
         </div>
-        <div class="mb-2">
+        <div class="mb-1">
             <label class="form-label">Sumário *</label>
             <textarea id="sumario" class="form-control" rows="3" placeholder="Descreva o conteúdo lecionado..."></textarea>
         </div>
@@ -129,23 +144,23 @@
 <div class="card mb-3">
     <div class="card-body">
         <h5><i class="bi bi-check2-square"></i> Presenças</h5>
-        <div class="table-responsive">
-            <table class="table table-sm">
+        <div class="table-responsive mb-3">
+            <table class="table table-sm table-hover align-middle">
                 <thead>
                     <tr>
                         <th>Estudante</th>
-                        <th>Presente</th>
-                        <th>Falta</th>
-                        <th>Justificada</th>
+                        <th class="text-center">Presente</th>
+                        <th class="text-center">Falta</th>
+                        <th class="text-center">Justificada</th>
                     </tr>
                 </thead>
                 <tbody>
                     {% for estudante in estudantes %}
                     <tr>
                         <td>{{ estudante.nome }}</td>
-                        <td><input type="radio" name="estudante_{{ estudante.id }}" value="presente" checked></td>
-                        <td><input type="radio" name="estudante_{{ estudante.id }}" value="falta"></td>
-                        <td><input type="radio" name="estudante_{{ estudante.id }}" value="falta_justificada"></td>
+                        <td class="text-center"><input type="radio" name="estudante_{{ estudante.id }}" value="presente" checked></td>
+                        <td class="text-center"><input type="radio" name="estudante_{{ estudante.id }}" value="falta"></td>
+                        <td class="text-center"><input type="radio" name="estudante_{{ estudante.id }}" value="falta_justificada"></td>
                     </tr>
                     {% endfor %}
                 </tbody>
@@ -160,7 +175,7 @@
 <!-- Botão encerrar -->
 <div class="card mb-3">
     <div class="card-body text-center">
-        <h5><i class="bi bi-lock"></i> Encerrar Aula</h5>
+        <h5 class="justify-content-center"><i class="bi bi-lock"></i> Encerrar Aula</h5>
         <p class="text-muted">A aula só é considerada realizada quando todos os passos forem cumpridos.</p>
         <button class="btn btn-danger btn-mobile" id="btn-encerrar">
             <i class="bi bi-stop-circle"></i> Encerrar e Validar Aula

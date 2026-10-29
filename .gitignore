@@ -15,3 +15,5 @@ staticfiles/
 
 # VS Code
 .vscode/
+
+qrcodes/
