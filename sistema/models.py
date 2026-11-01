@@ -404,3 +404,33 @@ class PedidoHorario(models.Model):
 
     def __str__(self):
         return f"{self.docente.nome} → {self.turma.codigo} ({self.estado})"
+
+
+# ============================================================
+# PEDIDO DE MUDANÇA DE SALA (docente pede à coordenação)
+# ============================================================
+class PedidoMudancaSala(models.Model):
+    ESTADOS = [
+        ("pendente", "Pendente"),
+        ("aprovado", "Aprovado"),
+        ("rejeitado", "Rejeitado"),
+    ]
+    aula = models.ForeignKey(Aula, on_delete=models.CASCADE, related_name="pedidos_mudanca_sala")
+    docente = models.ForeignKey(Docente, on_delete=models.PROTECT)
+    sala_original = models.ForeignKey(Sala, on_delete=models.PROTECT, related_name="mudancas_origem")
+    sala_nova = models.ForeignKey(Sala, on_delete=models.PROTECT, related_name="mudancas_destino")
+    motivo = models.TextField()
+    estado = models.CharField(max_length=20, choices=ESTADOS, default="pendente")
+    data_pedido = models.DateTimeField(auto_now_add=True)
+    decidido_por = models.ForeignKey(
+        User, on_delete=models.SET_NULL, null=True, blank=True, related_name="mudancas_decididas"
+    )
+    data_decisao = models.DateTimeField(null=True, blank=True)
+    observacao = models.TextField(blank=True, help_text="Resposta da coordenação")
+
+    class Meta:
+        verbose_name = "Pedido de Mudança de Sala"
+        verbose_name_plural = "Pedidos de Mudança de Sala"
+
+    def __str__(self):
+        return f"Mudança {self.aula} → {self.sala_nova.codigo} ({self.estado})"

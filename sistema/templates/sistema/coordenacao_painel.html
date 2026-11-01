@@ -118,6 +118,54 @@
 <div class="alert alert-info">Não há pedidos de horário pendentes.</div>
 {% endif %}
 
+<!-- Pedidos de Mudança de Sala -->
+<h4 class="mb-3 mt-4">
+    <i class="bi bi-arrow-left-right"></i> Pedidos de Mudança de Sala
+</h4>
+{% if pedidos_mudanca_pendentes %}
+<div class="card mb-4">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table align-middle mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>Docente</th>
+                        <th>Aula</th>
+                        <th>De → Para</th>
+                        <th>Motivo</th>
+                        <th style="min-width: 260px;">Decisão</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for p in pedidos_mudanca_pendentes %}
+                    <tr>
+                        <td><strong>{{ p.docente.nome }}</strong></td>
+                        <td>{{ p.aula.uc.nome }} · {{ p.aula.data|date:"d/m/Y" }}</td>
+                        <td>
+                            <span class="badge bg-secondary">{{ p.sala_original.codigo }}</span>
+                            →
+                            <span class="badge bg-info">{{ p.sala_nova.codigo }}</span>
+                        </td>
+                        <td>{{ p.motivo }}</td>
+                        <td>
+                            <form method="post" action="{% url 'coordenacao_aprovar_mudanca_sala' p.id %}">
+                                {% csrf_token %}
+                                <input type="text" name="observacao" class="form-control form-control-sm mb-2" placeholder="Observação (obrigatória ao rejeitar)">
+                                <button type="submit" name="acao" value="aprovar" class="btn btn-success btn-sm">Aprovar</button>
+                                <button type="submit" name="acao" value="rejeitar" class="btn btn-outline-danger btn-sm">Rejeitar</button>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="alert alert-info">Não há pedidos de mudança de sala pendentes.</div>
+{% endif %}
+
 <!-- Horas Pendentes -->
 <h4 class="mb-3">
     <i class="bi bi-clock-history"></i> Horas por Aprovar

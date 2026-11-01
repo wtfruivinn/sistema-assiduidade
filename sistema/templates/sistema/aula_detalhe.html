@@ -32,6 +32,9 @@
                 <button class="btn btn-primary btn-mobile" id="btn-iniciar" data-aula="{{ aula.id }}">
                     <i class="bi bi-play-circle"></i> Iniciar Aula
                 </button>
+                <a href="{% url 'pedir_mudanca_sala' aula.id %}" class="btn btn-outline-secondary btn-mobile mt-2">
+                    <i class="bi bi-arrow-left-right"></i> Pedir Mudança de Sala
+                </a>
 
             {% elif aula.estado == "em_curso" %}
                 <div class="passos">

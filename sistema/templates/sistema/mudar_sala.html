@@ -1,0 +1,49 @@
+{% extends 'sistema/base.html' %}
+
+{% block title %}Pedir Mudança de Sala — Sistema de Assiduidade{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center mt-4">
+    <div class="col-md-7">
+        <div class="card shadow">
+            <div class="card-body p-4">
+                <h3><i class="bi bi-arrow-left-right text-primary"></i> Pedir Mudança de Sala</h3>
+                <p class="text-muted">
+                    Aula: <strong>{{ aula.uc.nome }}</strong> ({{ aula.turma.codigo }})<br>
+                    Sala atual: <strong>{{ aula.sala.codigo }} — {{ aula.sala.edificio }}</strong><br>
+                    Data: {{ aula.data|date:"d/m/Y" }} | Hora: {{ aula.hora_inicio|time:"H:i" }} — {{ aula.hora_fim|time:"H:i" }}
+                </p>
+
+                <form method="post">
+                    {% csrf_token %}
+
+                    <div class="mb-3">
+                        <label class="form-label">Nova Sala *</label>
+                        <select name="sala_nova" class="form-select" required>
+                            <option value="">Escolha a nova sala</option>
+                            {% for s in salas %}
+                            <option value="{{ s.id }}">{{ s.codigo }} — {{ s.edificio }} (Piso {{ s.piso }})</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Motivo da mudança *</label>
+                        <textarea name="motivo" class="form-control" rows="3" required minlength="10"
+                                  placeholder="Explique o motivo (mínimo 10 caracteres): ex. a sala original está ocupada, o projetor avariou..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="bi bi-send"></i> Enviar Pedido à Coordenação
+                    </button>
+                    <a href="{% url 'detalhe_aula' aula.id %}" class="btn btn-secondary w-100 mt-2">
+                        <i class="bi bi-arrow-left"></i> Cancelar
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

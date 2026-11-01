@@ -5,7 +5,7 @@ from sistema.api import (
     DocenteViewSet, AulaViewSet, SalaViewSet, PresencaViewSet,
     FolhaPagamentoListView, FolhaPagamentoGerarView,
 )
-from sistema import views, views_coordenacao
+from sistema import views, views_coordenacao, views_rh
 
 router = DefaultRouter()
 router.register(r"docentes", DocenteViewSet, basename="docente")
@@ -34,13 +34,33 @@ urlpatterns = [
     # Propor Horário (Docente)
     path("propor-horario/", views.propor_horario, name="propor_horario"),
 
-    # Painel da Coordenação / RH
+    # Ganhos do Docente
+    path("ganhos/", views.pagina_ganhos, name="ganhos"),
+
+    # Mudança de Sala (Docente)
+    path("aula/<int:aula_id>/mudar-sala/", views.pedir_mudanca_sala, name="pedir_mudanca_sala"),
+
+    # Auditoria (Superuser / Coordenação)
+    path("auditoria/", views.pagina_auditoria, name="auditoria"),
+    # Presenças do Docente
+    path("presencas/", views.pagina_presencas, name="presencas"),
+    
+    # Painel da Coordenação
     path("coordenacao/", views_coordenacao.coordenacao_painel, name="coordenacao"),
     path("coordenacao/pedidos/<int:pedido_id>/decidir/", views_coordenacao.coordenacao_decidir_pedido, name="coordenacao_decidir_pedido"),
     path("coordenacao/horarios/<int:pedido_id>/decidir/", views_coordenacao.coordenacao_aprovar_horario, name="coordenacao_aprovar_horario"),
     path("coordenacao/horas/<int:hora_id>/aprovar/", views_coordenacao.coordenacao_aprovar_horas, name="coordenacao_aprovar_horas"),
     path("coordenacao/gerar-aulas/", views_coordenacao.coordenacao_gerar_aulas, name="coordenacao_gerar_aulas"),
     path("coordenacao/criar-horario/", views_coordenacao.coordenacao_criar_horario, name="coordenacao_criar_horario"),
+    path("coordenacao/mudanca-sala/<int:pedido_id>/decidir/", views_coordenacao.coordenacao_aprovar_mudanca_sala, name="coordenacao_aprovar_mudanca_sala"),
+
+    # RH (Recursos Humanos)
+    path("rh/", views_rh.rh_painel, name="rh_painel"),
+    path("rh/horas/<int:hora_id>/aprovar/", views_rh.rh_aprovar_horas, name="rh_aprovar_horas"),
+    path("rh/gerar-folha/", views_rh.rh_gerar_folha, name="rh_gerar_folha"),
+    path("rh/folha/<int:folha_id>/validar/", views_rh.rh_validar_folha, name="rh_validar_folha"),
+    path("rh/folha/<int:folha_id>/pagar/", views_rh.rh_pagar_folha, name="rh_pagar_folha"),
+    path("rh/exportar-excel/", views_rh.rh_exportar_excel, name="rh_exportar_excel"),
 
     # API AJAX
     path("ajax/aula/<int:aula_id>/iniciar/", views.api_iniciar_aula, name="api_iniciar"),

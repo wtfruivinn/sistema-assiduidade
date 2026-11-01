@@ -33,7 +33,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark navbar-uz sticky-top">
     <div class="container">
         
-        <!-- Logótipo: Centralizado no mobile, à esquerda no PC -->
+        <!-- Logótipo -->
         <a class="navbar-brand d-flex align-items-center gap-2 mx-auto mx-lg-0" href="/">
             <img src="{% static 'img/logo-uz.png' %}" class="logo-navbar" alt="Universidade Zambeze" width="44" height="44">
             <span class="marca text-center text-lg-start">
@@ -42,7 +42,6 @@
             </span>
         </a>
 
-        <!-- Botão hamburger: Empurrado para a direita no mobile -->
         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-label="Abrir menu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,12 +49,42 @@
         <div class="collapse navbar-collapse" id="menuPrincipal">
             <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
                 {% if user.is_authenticated %}
-                    {% if user.is_superuser or user.groups.exists %}
+                    
+                    {# ADMIN (superuser): Coordenação + Auditoria #}
+                    {% if user.is_superuser %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'coordenacao' %}">
                             <i class="bi bi-diagram-3"></i> Coordenação
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'auditoria' %}">
+                            <i class="bi bi-shield-check"></i> Auditoria
+                        </a>
+                    </li>
+
+                    {# RH (grupo RH): apenas RH #}
+                    {% elif user.groups.all.0.name == "RH" %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'rh_painel' %}">
+                            <i class="bi bi-cash-stack"></i> RH
+                        </a>
+                    </li>
+
+                    {# COORDENAÇÃO (grupo Coordenacao): Coordenação + Auditoria #}
+                    {% elif user.groups.all.0.name == "Coordenacao" %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'coordenacao' %}">
+                            <i class="bi bi-diagram-3"></i> Coordenação
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'auditoria' %}">
+                            <i class="bi bi-shield-check"></i> Auditoria
+                        </a>
+                    </li>
+
+                    {# DOCENTE: apenas O meu painel #}
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'painel' %}">
@@ -63,6 +92,7 @@
                         </a>
                     </li>
                     {% endif %}
+
                     <li class="nav-item">
                         <span class="chip-utilizador">
                             <i class="bi bi-person-circle"></i> {{ user.username }}

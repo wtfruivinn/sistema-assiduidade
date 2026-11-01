@@ -11,10 +11,10 @@ from django.views.decorators.http import require_POST
 from .auditoria import registar_auditoria
 from .models import (
     Aula, Docente, Horario, HorasDocente, PedidoHorario, PedidoRevisao, 
-    Sala, Turma, UC, ValidacaoAula
+    Sala, Turma, UC, ValidacaoAula, PedidoMudancaSala
 )
 
-GRUPOS_COORDENACAO = ("Coordenacao", "RH")
+GRUPOS_COORDENACAO = ("Coordenacao",)
 
 
 def e_coordenacao(user):
@@ -66,11 +66,19 @@ def coordenacao_painel(request):
         .order_by("data_pedido")
     )
 
+    # NOVO: Pedidos de mudança de sala pendentes
+    pedidos_mudanca_pendentes = (
+        PedidoMudancaSala.objects.filter(estado="pendente")
+        .select_related("docente", "aula", "sala_original", "sala_nova")
+        .order_by("data_pedido")
+    )
+
     context = {
         "pedidos_pendentes": pendentes,
         "pedidos_decididos": decididos,
         "horas_pendentes": horas_pendentes,
         "pedidos_horarios_pendentes": pedidos_horarios_pendentes,
+        "pedidos_mudanca_pendentes": pedidos_mudanca_pendentes,
         "n_pedidos_pendentes": pendentes.count(),
         "n_aulas_bloqueadas": Aula.objects.filter(estado="bloqueada").count(),
         "n_horas_pendentes": horas_pendentes.count(),
@@ -161,7 +169,7 @@ def coordenacao_aprovar_horas(request, hora_id):
 
 
 # ============================================================
-# APROVAR/REJEITAR PEDIDO DE HORÁRIO (agora cria também a Aula)
+# APROVAR/REJEITAR PEDIDO DE HORÁRIO
 # ============================================================
 @coordenacao_required
 @require_POST
@@ -284,7 +292,7 @@ def coordenacao_gerar_aulas(request):
 
 
 # ============================================================
-# CRIAR HORÁRIO E AULA (Coordenação) - NOVA FUNÇÃO
+# CRIAR HORÁRIO E AULA (Coordenação)
 # ============================================================
 @coordenacao_required
 def coordenacao_criar_horario(request):
@@ -336,7 +344,6 @@ def coordenacao_criar_horario(request):
             except Exception as e:
                 messages.error(request, f"Erro ao criar: {str(e)}")
 
-    # Dados para os dropdowns
     turmas = Turma.objects.filter(estado=True).select_related("uc", "uc__curso")
     docentes = Docente.objects.filter(estado=True).order_by("nome")
     salas = Sala.objects.filter(estado=True).order_by("codigo")
@@ -346,3 +353,50 @@ def coordenacao_criar_horario(request):
         "docentes": docentes,
         "salas": salas,
     })
+
+
+# ============================================================
+# APROVAR/REJEITAR PEDIDO DE MUDANÇA DE SALA
+# ============================================================
+@coordenacao_required
+@require_POST
+def coordenacao_aprovar_mudanca_sala(request, pedido_id):
+    pedido = get_object_or_404(PedidoMudancaSala, id=pedido_id)
+    if pedido.estado != "pendente":
+        messages.warning(request, "Este pedido já foi decidido.")
+        return redirect("coordenacao")
+
+    acao = request.POST.get("acao")
+    obs = request.POST.get("observacao", "").strip()
+
+    if acao == "aprovar":
+        with transaction.atomic():
+            aula = pedido.aula
+            aula.sala = pedido.sala_nova
+            aula.save()
+
+            pedido.estado = "aprovado"
+            pedido.decidido_por = request.user
+            pedido.data_decisao = timezone.now()
+            pedido.observacao = obs
+            pedido.save()
+
+        registar_auditoria(request, "PedidoMudancaSala", pedido.id, "aprovar_mudanca_sala",
+                           detalhes=f"Aula {aula.id} mudou de {pedido.sala_original.codigo} para {pedido.sala_nova.codigo}.")
+        messages.success(request, f"Mudança de sala aprovada: {pedido.sala_original.codigo} → {pedido.sala_nova.codigo}.")
+
+    elif acao == "rejeitar":
+        if len(obs) < 5:
+            messages.warning(request, "Escreva o motivo da rejeição (mínimo 5 caracteres).")
+            return redirect("coordenacao")
+        pedido.estado = "rejeitado"
+        pedido.decidido_por = request.user
+        pedido.data_decisao = timezone.now()
+        pedido.observacao = obs
+        pedido.save()
+
+        registar_auditoria(request, "PedidoMudancaSala", pedido.id, "rejeitar_mudanca_sala",
+                           detalhes=f"Motivo: {obs}")
+        messages.success(request, "Pedido de mudança de sala rejeitado.")
+
+    return redirect("coordenacao")

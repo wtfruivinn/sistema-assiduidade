@@ -1,0 +1,102 @@
+{% extends 'sistema/base.html' %}
+
+{% block title %}Os Meus Ganhos — Sistema de Assiduidade{% endblock %}
+
+{% block content %}
+
+<div class="row mb-4">
+    <div class="col-12">
+        <h2><i class="bi bi-cash-coin text-success"></i> Os Meus Ganhos</h2>
+        <p class="text-muted">
+            Bem-vindo, <strong>{{ docente.nome }}</strong>.
+            Aqui pode consultar as suas horas e os valores a receber.
+        </p>
+    </div>
+</div>
+
+<!-- Cartões de Resumo -->
+<div class="row mb-4">
+    <div class="col-md-6 col-6 mb-3">
+        <div class="card text-center border-primary">
+            <div class="card-body">
+                <i class="bi bi-clock-history text-primary" style="font-size: 2.5rem;"></i>
+                <h3 class="mt-2 mb-0">{{ total_horas|floatformat:1 }}h</h3>
+                <small class="text-muted">Total de Horas</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-6 mb-3">
+        <div class="card text-center border-success">
+            <div class="card-body">
+                <i class="bi bi-cash-stack text-success" style="font-size: 2.5rem;"></i>
+                <h3 class="mt-2 mb-0">{{ total_valor|floatformat:2 }} MT</h3>
+                <small class="text-muted">Valor Total a Receber</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Histórico de Horas -->
+<h4 class="mb-3 mt-4">
+    <i class="bi bi-list-check"></i> Histórico de Aulas
+</h4>
+
+{% if registos %}
+<div class="card mb-4">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>Data</th>
+                        <th>Aula</th>
+                        <th>Horas</th>
+                        <th>Valor/hora</th>
+                        <th>Total</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for r in registos %}
+                    <tr>
+                        <td>{{ r.data|date:"d/m/Y" }}</td>
+                        <td>{{ r.aula.uc.nome }} ({{ r.aula.turma.codigo }})</td>
+                        <td>{{ r.horas }}h</td>
+                        <td>{{ r.valor_hora }} MT</td>
+                        <td><strong>{{ r.valor_total }} MT</strong></td>
+                        <td>
+                            {% if r.estado == "pendente" %}
+                                <span class="badge bg-warning text-dark">Pendente</span>
+                            {% elif r.estado == "validada" %}
+                                <span class="badge bg-info text-dark">Validada</span>
+                            {% else %}
+                                <span class="badge bg-success">Paga</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+                <tfoot class="table-light">
+                    <tr>
+                        <td colspan="2"><strong>TOTAL</strong></td>
+                        <td><strong>{{ total_horas|floatformat:1 }}h</strong></td>
+                        <td>—</td>
+                        <td><strong>{{ total_valor|floatformat:2 }} MT</strong></td>
+                        <td>—</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="alert alert-info">
+    <i class="bi bi-info-circle"></i> Ainda não tem registos de horas.
+</div>
+{% endif %}
+
+<a href="{% url 'painel' %}" class="btn btn-secondary btn-mobile mt-3">
+    <i class="bi bi-arrow-left"></i> Voltar ao Painel
+</a>
+
+{% endblock %}

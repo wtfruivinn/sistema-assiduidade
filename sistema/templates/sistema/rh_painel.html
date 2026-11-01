@@ -1,0 +1,183 @@
+{% extends 'sistema/base.html' %}
+
+{% block title %}Painel do RH — Sistema de Assiduidade{% endblock %}
+
+{% block content %}
+
+<div class="row mb-4">
+    <div class="col-12">
+        <h2>
+            <i class="bi bi-cash-stack text-primary"></i>
+            Painel de Recursos Humanos
+        </h2>
+        <p class="text-muted">
+            Bem-vindo, <strong>{{ user.username }}</strong>. 
+            Aqui gere as horas e as folhas de pagamento dos docentes.
+        </p>
+    </div>
+</div>
+
+<!-- Resumo -->
+<div class="row mb-4">
+    <div class="col-md-6 col-6 mb-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <i class="bi bi-hourglass-split text-warning" style="font-size: 2rem;"></i>
+                <h3 class="mt-2 mb-0">{{ total_horas_pendentes|floatformat:1 }}h</h3>
+                <small class="text-muted">Horas Pendentes</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-6 mb-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <i class="bi bi-cash-coin text-success" style="font-size: 2rem;"></i>
+                <h3 class="mt-2 mb-0">{{ total_valor_pendente|floatformat:2 }} MT</h3>
+                <small class="text-muted">Valor Pendente</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Horas Pendentes -->
+<h4 class="mb-3 mt-4">
+    <i class="bi bi-clock-history"></i> Horas por Aprovar
+</h4>
+{% if horas_pendentes %}
+<div class="card mb-4">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table table-sm align-middle mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>Docente</th>
+                        <th>Aula / UC</th>
+                        <th>Data</th>
+                        <th>Horas</th>
+                        <th>Valor</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for h in horas_pendentes %}
+                    <tr>
+                        <td>{{ h.docente.nome }}</td>
+                        <td>{{ h.aula.uc.nome }}</td>
+                        <td>{{ h.data|date:"d/m/Y" }}</td>
+                        <td>{{ h.horas }}h</td>
+                        <td>{{ h.valor_total }} MT</td>
+                        <td>
+                            <form method="post" action="{% url 'rh_aprovar_horas' h.id %}">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-sm btn-success">
+                                    <i class="bi bi-check-lg"></i> Aprovar
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="alert alert-info">Não há horas pendentes.</div>
+{% endif %}
+
+<!-- Gerar Folha -->
+<div class="card mb-4">
+    <div class="card-body">
+        <h5><i class="bi bi-file-earmark-spreadsheet"></i> Gerar Folha de Pagamento</h5>
+        <form method="post" action="{% url 'rh_gerar_folha' %}" class="row g-2 align-items-end">
+            {% csrf_token %}
+            <div class="col-md-3">
+                <label class="form-label">Mês</label>
+                <select name="mes" class="form-select">
+                    {% for m in "123456789"|make_list %}
+                    <option value="{{ m }}">{{ m }}</option>
+                    {% endfor %}
+                    <option value="10">10</option>
+                    <option value="11" selected>11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Ano</label>
+                <input type="number" name="ano" class="form-control" value="2026" required>
+            </div>
+            <div class="col-md-4">
+                <button type="submit" class="btn btn-primary w-100">
+                    <i class="bi bi-calculator"></i> Gerar Folha
+                </button>
+            </div>
+            <div class="col-md-2">
+                <a href="{% url 'rh_exportar_excel' %}" class="btn btn-outline-success w-100">
+                    <i class="bi bi-file-earmark-excel"></i> Excel
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Folhas de Pagamento -->
+<h4 class="mb-3 mt-4">
+    <i class="bi bi-list-check"></i> Folhas de Pagamento
+</h4>
+
+{% if folhas %}
+<div class="card mb-4">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table align-middle mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>Docente</th>
+                        <th>Período</th>
+                        <th>Horas</th>
+                        <th>Valor</th>
+                        <th>Estado</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for f in folhas %}
+                    <tr>
+                        <td>{{ f.docente.nome }}</td>
+                        <td>{{ f.mes }}/{{ f.ano }}</td>
+                        <td>{{ f.total_horas }}h</td>
+                        <td>{{ f.valor_total }} MT</td>
+                        <td>
+                            {% if f.estado == "rascunho" %}
+                                <span class="badge bg-secondary">Rascunho</span>
+                            {% elif f.estado == "validada" %}
+                                <span class="badge bg-info">Validada</span>
+                            {% else %}
+                                <span class="badge bg-success">Paga</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if f.estado == "rascunho" %}
+                            <form method="post" action="{% url 'rh_validar_folha' f.id %}" class="d-inline">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-sm btn-info">Validar</button>
+                            </form>
+                            {% elif f.estado == "validada" %}
+                            <form method="post" action="{% url 'rh_pagar_folha' f.id %}" class="d-inline">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-sm btn-success">Pagar</button>
+                            </form>
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="alert alert-info">Ainda não há folhas geradas.</div>
+{% endif %}
+
+{% endblock %}
