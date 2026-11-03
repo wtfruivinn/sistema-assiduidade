@@ -38,3 +38,6 @@ else:
     rh.groups.add(g_rh)
     print('rh_user já existia e foi associado ao grupo RH.')
 "
+
+# ATUALIZA AS SENHAS DOS DOCENTES (A nossa nova adição)
+python update_passwords.py
