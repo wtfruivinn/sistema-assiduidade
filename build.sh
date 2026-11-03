@@ -5,7 +5,7 @@ pip install -r requirements.txt
 python manage.py collectstatic --no-input
 python manage.py migrate
 
-# 1. Cria o superuser admin
+# 1. Cria o superuser admin (se não existir)
 python manage.py shell -c "
 from django.contrib.auth import get_user_model;
 User = get_user_model();
@@ -13,7 +13,7 @@ if not User.objects.filter(username='admin').exists():
     User.objects.create_superuser('admin', 'cdambiro@gmail.com', 'caos1993')
 "
 
-# 2. Cria os grupos e associa o admin
+# 2. Cria os grupos e associa o admin ao grupo Coordenacao
 python manage.py shell -c "
 from django.contrib.auth.models import Group, User;
 g_coord, _ = Group.objects.get_or_create(name='Coordenacao');
@@ -22,7 +22,7 @@ admin = User.objects.get(username='admin');
 admin.groups.add(g_coord);
 "
 
-# 3. Cria o rh_user
+# 3. Cria o utilizador rh_user e associa-o ao grupo RH
 python manage.py shell -c "
 from django.contrib.auth import get_user_model;
 from django.contrib.auth.models import Group;
@@ -36,13 +36,10 @@ else:
     rh.groups.add(g_rh)
 "
 
-# 4. Gera o ficheiro JSON
-echo 'A gerar dados de demonstração...'
+# 4. Gera o ficheiro dados_demo.json
+echo 'A gerar dados...'
 python gerar_dados.py
 
-# 🔥 5. AQUI ESTÁ O SEGREDO: Carrega os dados do JSON para a base de dados!
+# 5. Importa os dados do JSON para a base de dados do Render
 echo 'A importar dados para a base de dados...'
-python manage.py loaddata dados_demo.json
-
-# 6. Finalmente, atualiza as senhas
-python update_passwords.py
+python importar_dados.py

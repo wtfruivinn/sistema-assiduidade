@@ -130,7 +130,6 @@ for cod, edificio, piso in salas_def:
         "edificio": edificio,
         "piso": piso,
         "recinto": RECINTO,
-        # posição dentro de ~45 m do centro do campus
         "latitude": round(LAT0 + random.uniform(-0.0004, 0.0004), 7),
         "longitude": round(LON0 + random.uniform(-0.0004, 0.0004), 7),
         "qr_code": f"QR-{cod}",
@@ -151,11 +150,11 @@ random.shuffle(combos)
 codigos_cursos = [c[0] for c in cursos_def]
 estudantes = []
 for idx in range(500):
-    curso = codigos_cursos[idx % 5]          # 100 por curso
+    curso = codigos_cursos[idx % 5]
     lista_turmas = ucs_por_curso[curso]
     n = len(lista_turmas)
     ini = (idx // 5) % n
-    inscritas = [lista_turmas[(ini + k) % n] for k in range(4)]  # 4 UCs por estudante
+    inscritas = [lista_turmas[(ini + k) % n] for k in range(4)]
     numero = f"E{idx + 1:04d}"
     estudantes.append({
         "numero_estudante": numero,
