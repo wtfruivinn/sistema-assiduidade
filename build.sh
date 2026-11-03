@@ -5,7 +5,7 @@ pip install -r requirements.txt
 python manage.py collectstatic --no-input
 python manage.py migrate
 
-# Cria o superuser admin (se não existir)
+# 1. Cria o superuser admin (se não existir)
 python manage.py shell -c "
 from django.contrib.auth import get_user_model;
 User = get_user_model();
@@ -13,7 +13,7 @@ if not User.objects.filter(username='admin').exists():
     User.objects.create_superuser('admin', 'cdambiro@gmail.com', 'caos1993')
 "
 
-# Cria os grupos e associa o admin ao grupo Coordenacao
+# 2. Cria os grupos e associa o admin ao grupo Coordenacao
 python manage.py shell -c "
 from django.contrib.auth.models import Group, User;
 g_coord, _ = Group.objects.get_or_create(name='Coordenacao');
@@ -23,7 +23,7 @@ admin.groups.add(g_coord);
 print('Grupos e admin configurados.')
 "
 
-# Cria o utilizador rh_user e associa-o ao grupo RH (NOVO)
+# 3. Cria o utilizador rh_user e associa-o ao grupo RH
 python manage.py shell -c "
 from django.contrib.auth import get_user_model;
 from django.contrib.auth.models import Group;
@@ -39,5 +39,9 @@ else:
     print('rh_user já existia e foi associado ao grupo RH.')
 "
 
-# ATUALIZA AS SENHAS DOS DOCENTES (A nossa nova adição)
+# 4. NOVO: Gera os dados base (docentes, turmas, etc.)
+echo 'A gerar dados de demonstração...'
+python gerar_dados.py
+
+# 5. Atualiza as senhas dos docentes
 python update_passwords.py
