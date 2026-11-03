@@ -5,7 +5,7 @@ pip install -r requirements.txt
 python manage.py collectstatic --no-input
 python manage.py migrate
 
-# 1. Cria o superuser admin (se não existir)
+# 1. Cria o superuser admin
 python manage.py shell -c "
 from django.contrib.auth import get_user_model;
 User = get_user_model();
@@ -13,17 +13,16 @@ if not User.objects.filter(username='admin').exists():
     User.objects.create_superuser('admin', 'cdambiro@gmail.com', 'caos1993')
 "
 
-# 2. Cria os grupos e associa o admin ao grupo Coordenacao
+# 2. Cria os grupos e associa o admin
 python manage.py shell -c "
 from django.contrib.auth.models import Group, User;
 g_coord, _ = Group.objects.get_or_create(name='Coordenacao');
 g_rh, _ = Group.objects.get_or_create(name='RH');
 admin = User.objects.get(username='admin');
 admin.groups.add(g_coord);
-print('Grupos e admin configurados.')
 "
 
-# 3. Cria o utilizador rh_user e associa-o ao grupo RH
+# 3. Cria o rh_user
 python manage.py shell -c "
 from django.contrib.auth import get_user_model;
 from django.contrib.auth.models import Group;
@@ -32,16 +31,18 @@ g_rh = Group.objects.get(name='RH');
 if not User.objects.filter(username='rh_user').exists():
     rh = User.objects.create_user('rh_user', 'rh@unizambeze.ac.mz', 'Rh2026!')
     rh.groups.add(g_rh)
-    print('rh_user criado e associado ao grupo RH.')
 else:
     rh = User.objects.get(username='rh_user')
     rh.groups.add(g_rh)
-    print('rh_user já existia e foi associado ao grupo RH.')
 "
 
-# 4. NOVO: Gera os dados base (docentes, turmas, etc.)
+# 4. Gera o ficheiro JSON
 echo 'A gerar dados de demonstração...'
 python gerar_dados.py
 
-# 5. Atualiza as senhas dos docentes
+# 🔥 5. AQUI ESTÁ O SEGREDO: Carrega os dados do JSON para a base de dados!
+echo 'A importar dados para a base de dados...'
+python manage.py loaddata dados_demo.json
+
+# 6. Finalmente, atualiza as senhas
 python update_passwords.py
