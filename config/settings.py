@@ -1,23 +1,30 @@
 import os
 from pathlib import Path
+import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # ============================================================
+# DJANGO-ENVIRON
+# ============================================================
+env = environ.Env(
+    DEBUG=(bool, False)
+)
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+
+# ============================================================
 # SEGURANÇA (Produção)
 # ============================================================
-# Usa a variável de ambiente no Render; localmente usa a chave fornecida.
 SECRET_KEY = os.environ.get(
     'DJANGO_SECRET_KEY', 
     '8w5kLwNZW8PY_pj2L_ikQtMJpI0VWIhkekKwJSiF5e97eNXiWhpbglAt0CBK6bJp-K4'
 )
 
-# No servidor, DEBUG tem de ser False.
 DEBUG = False
 
 # ============================================================
-# HOSTS PERMITIDOS (PythonAnywhere + Render)
+# HOSTS PERMITIDOS
 # ============================================================
 ALLOWED_HOSTS = [
     '127.0.0.1',
@@ -48,7 +55,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # Para servir estáticos em produção
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -77,13 +84,10 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 # ============================================================
-# BASE DE DADOS
+# BASE DE DADOS (POSTGRES NO RENDER, SQLITE NO PC)
 # ============================================================
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': env.db('DATABASE_URL', default=f'sqlite:///{BASE_DIR}/db.sqlite3')
 }
 
 # ============================================================
@@ -105,15 +109,11 @@ USE_I18N = True
 USE_TZ = True
 
 # ============================================================
-# FICHEIROS ESTÁTICOS (WhiteNoise)
+# FICHEIROS ESTÁTICOS
 # ============================================================
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-
-# O STATICFILES_DIRS tem de estar sempre definido, independentemente do DEBUG.
 STATICFILES_DIRS = [BASE_DIR / 'sistema' / 'static']
-
-# O WhiteNoise comprime e serve os ficheiros em produção
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # ============================================================
